@@ -1,14 +1,7 @@
 /* Font ===========================> */
 /* Font ===========================> */
 
-@font-face {
-  font-family: inter;
-  src: url(Fonts/UcC73FwrK3iLTeHuS-fvQtMwCp50KnMa1ZL7.ttf);
-}
-@font-face {
-  font-family: bifont;
-  src: url(Fonts/bootstrap-icons.ttf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* Font ===========================> */
 /* Font ===========================> */
@@ -24,7 +17,7 @@
   -moz-user-select: none;
   -webkit-user-select: none;
   cursor: pointer;
-  font-family: inter;
+  font-family: "Roboto", sans-serif;
 }
 
 html,
@@ -342,13 +335,15 @@ body {
 }
 .chat-offcanvas-close-btn,
 .chat-offcanvas-icon,
-#chatoffcanvasdropdownMenuButton1 {
+#chatoffcanvasdropdownMenuButton1,
+#chatoffcanvaschatdropdown {
   font-size: 14px;
   background-color: transparent;
 }
 .chat-offcanvas-close-btn:hover,
 .chat-offcanvas-icon:hover,
-#chatoffcanvasdropdownMenuButton1:hover {
+#chatoffcanvasdropdownMenuButton1:hover,
+#chatoffcanvaschatdropdown:hover {
   background-color: #eff2f6;
 }
 .chat-offcanvas-h5 {
@@ -388,7 +383,7 @@ body {
   background-color: red;
 }
 .chat-contact-li:nth-child(4)::before {
- display: none;
+  display: none;
 }
 .chat-contact-name {
   font-size: 14px;
@@ -399,6 +394,70 @@ body {
 }
 .chat-contact-massage-time {
   font-size: 12px;
+}
+
+.chat-Massage-chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  z-index: 99999 !important;
+  top: 2%;
+  right: 30%;
+}
+.chat-history {
+  overflow-y: scroll;
+  height: 300px;
+}
+.chat-contact-massage-dp {
+  width: 30px;
+  height: 30px;
+}
+.chat-massages-time {
+  font-size: 12px;
+}
+.massege-text {
+  font-size: 13px;
+}
+.chat-massage-input {
+  border: 1px solid transparent;
+  outline: none;
+}
+.chat-massage-input:focus {
+  border: 1px solid #0f6fec;
+}
+.chat-massage-btn-1 {
+  width: 40px;
+  height: 40px;
+  color: #d6293e;
+  font-weight: 900;
+  font-size: 30px;
+}
+.chat-massage-btn-1:hover {
+  background-color: #d6293e;
+  color: #ffffffff;
+}
+.chat-massage-btn-2 {
+  width: 40px;
+  height: 40px;
+  color: black;
+  font-weight: 900;
+}
+.chat-massage-btn-2:hover {
+  background-color: black;
+  color: #ffffffff;
+}
+.chat-massage-btn-3 {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  color: #0cbc87;
+  font-weight: 900;
+}
+.chat-massage-btn-3:hover {
+  background-color: #0cbc87;
+  color: #ffffffff;
 }
 /* OffCanvas ===========================> */
 /* OffCanvas ===========================> */

@@ -78,13 +78,13 @@
               aria-label="Toggle navigation"
             >
               <span
-                class="navbar-menu-line-1 position-absolute d-block border-1 rounded-5 opacity-1 start-0"
+                class="navbar-menu-line-1 position-absolute d-block rounded-5 opacity-1 start-0"
               ></span>
               <span
-                class="navbar-menu-line-2 position-absolute d-block border-1 rounded-5 opacity-1 start-0"
+                class="navbar-menu-line-2 position-absolute d-block rounded-5 opacity-1 start-0"
               ></span>
               <span
-                class="navbar-menu-line-3 position-absolute d-block border-1 rounded-5 opacity-1 start-0"
+                class="navbar-menu-line-3 position-absolute d-block rounded-5 opacity-1 start-0"
               ></span>
             </div>
 
@@ -518,7 +518,7 @@
                           class="dropdown-notification-btns d-flex gap-3 flex-row justify-content-center align-items-center"
                         >
                           <button
-                            class="btn btn-light bg-opacity-10 text-dark px-3 py-2 border-1 rounded-1 fw-normal"
+                            class="btn btn-light bg-opacity-10 text-dark px-3 py-2 rounded-1 fw-normal"
                           >
                             Say happy birthday 🎂
                           </button>
@@ -648,7 +648,7 @@
                         href="#"
                         class="dropdown-item d-flex flex-row justify-content-start align-items-center gap-3"
                       >
-                        <i class="bi-gear-fill"></i>
+                        <i class="bi-gear"></i>
                         Setting & Privacy
                       </a>
                     </li>
@@ -742,7 +742,7 @@
     ></button>
 
     <div
-      class="offcanvas offcanvas-end show"
+      class="offcanvas offcanvas-end"
       tabindex="-1"
       id="offcanvasRight"
       aria-labelledby="offcanvasRightLabel"
@@ -813,7 +813,7 @@
                   >Block setting</a
                 >
               </li>
-              <li><a class="dropdown-divider" href="#"></a></li>
+              <li><hr class="dropdown-divider" /></li>
               <li
                 class="d-flex flex-row justify-content-center align-items-center px-3"
               >
@@ -837,7 +837,7 @@
           role="search"
         >
           <i
-            class="bi bi-search navbar-search-icon position-absolute start-0 px-4 py-2"
+            class="bi bi-search chat-offcanvas-form-icon position-absolute start-0 px-4 py-2"
           ></i>
 
           <input
@@ -988,36 +988,308 @@
               </div>
             </div>
           </li>
-
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-            doloremque!
-          </li>
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-            doloremque!
-          </li>
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-            doloremque!
-          </li>
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-            doloremque!
-          </li>
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-            doloremque!
-          </li>
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-            doloremque!
-          </li>
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-            doloremque!
-          </li>
         </ul>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" id="liveToastBtn">
+      Show live toast
+    </button>
+
+    <div
+      class="toast-container chat-Massage-chat position-fixed p-3 d-flex flex-cloumn"
+      class=""
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div class="toast-header bg-light border py-2 px-2 w-100">
+        <div
+          class="d-flex flex-row justify-content-center align-items-center gap-2"
+        >
+          <img
+            src="Avatar/01.jpg"
+            class="chat-contact-dp rounded-circle me-2"
+            alt="Dp"
+          />
+          <div
+            class="d-flex flex-wrap justify-content-start align-items-center"
+          >
+            <span class="fw-bolder text-dark chat-contact-name w-100"
+              >Frances Guerrero</span
+            >
+            <span class="fw-light text-dark chat-contact-massage">
+              🟢 Online
+            </span>
+          </div>
+
+          <div class="dropdown">
+            <i
+              class="bi bi-three-dots-vertical px-2 py-2"
+              id="chatoffcanvaschatdropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-display="static"
+            ></i>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="chatoffcanvaschatdropdown"
+            >
+              <li
+                class="d-flex flex-row justify-content-center align-items-center px-3"
+              >
+                <i class="bi bi-camera-video"></i>
+                <a class="dropdown-item py-2 px-3 fs-6 fw-normal w-100" href="#"
+                  >Video Call</a
+                >
+              </li>
+              <li
+                class="d-flex flex-row justify-content-center align-items-center px-3"
+              >
+                <i class="bi bi-telephone"></i>
+                <a class="dropdown-item py-2 px-3 fs-6 fw-normal w-100" href="#"
+                  >Voice Call</a
+                >
+              </li>
+              <li
+                class="d-flex flex-row justify-content-center align-items-center px-3"
+              >
+                <i class="bi bi-trash"></i>
+                <a class="dropdown-item py-2 px-3 fs-6 fw-normal w-100" href="#"
+                  >Delete</a
+                >
+              </li>
+              <li
+                class="d-flex flex-row justify-content-center align-items-center px-3"
+              >
+                <i class="bi bi-chat-square-text"></i>
+                <a class="dropdown-item py-2 px-3 fs-6 fw-normal w-100" href="#"
+                  >Mark as Unread</a
+                >
+              </li>
+              <li
+                class="d-flex flex-row justify-content-center align-items-center px-3"
+              >
+                <i class="bi bi-volume-down"></i>
+                <a class="dropdown-item py-2 px-3 fs-6 fw-normal w-100" href="#"
+                  >Muted</a
+                >
+              </li>
+              <li
+                class="d-flex flex-row justify-content-center align-items-center px-3"
+              >
+                <i class="bi bi-archive"></i>
+                <a class="dropdown-item py-2 px-3 fs-6 fw-normal w-100" href="#"
+                  >Archive</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li
+                class="d-flex flex-row justify-content-center align-items-center px-3"
+              >
+                <i class="bi bi-flag"></i>
+                <a class="dropdown-item py-2 px-3 fs-6 fw-normal w-100" href="#"
+                  >Report</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <i class="bi bi-dash-lg px-2 py-2 chat-offcanvas-icon"></i>
+
+          <button
+            class="bi bi-x-lg chat-offcanvas-close-btn border-0 px-2 py-2"
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+
+      <div class="toast-body w-100">
+        <div class="chat-history bg-info bg-opacity-10 w-100">
+          <div
+            class="chat-massages-time w-100 text-center text-dark text-opacity-75 mt-3"
+          >
+            Jul 16, 2022, 06:15 am
+          </div>
+          <div
+            class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div
+              class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2"
+            >
+              <img
+                src="Avatar/01.jpg "
+                alt="Dp"
+                class="chat-contact-massage-dp rounded-circle"
+              />
+              <div
+                class="d-flex flex-column justify-content-center align-items-start gap-2"
+              >
+                <span
+                  class="massege-text bg-dark bg-opacity-10 text-dark py-2 px-3 rounded-2"
+                >
+                  Applauded no discovery😊
+                </span>
+                <span class="chat-massages-time"> 6:15 AM </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div
+              class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2"
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-end w-100 gap-2"
+              >
+                <span
+                  class="massege-text bg-primary text-light py-2 px-3 rounded-2"
+                >
+                  With pleasure
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div
+              class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2"
+            >
+              <img
+                src="Avatar/01.jpg "
+                alt="Dp"
+                class="chat-contact-massage-dp rounded-circle"
+              />
+              <div
+                class="d-flex flex-column justify-content-center align-items-start gap-2"
+              >
+                <span
+                  class="massege-text bg-dark bg-opacity-10 text-dark py-2 px-3 rounded-2"
+                >
+                  Please find the attached
+                </span>
+                <span class="chat-massages-time"> 12:16 PM </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div
+              class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2"
+            >
+              <img
+                src="Avatar/01.jpg "
+                alt="Dp"
+                class="chat-contact-massage-dp rounded-circle"
+              />
+              <div
+                class="d-flex flex-column justify-content-center align-items-start gap-2"
+              >
+                <span
+                  class="massege-text bg-dark bg-opacity-10 text-dark py-2 px-3 rounded-2"
+                >
+                  How promotion excellent curiosity😮
+                </span>
+                <span class="chat-massages-time">3:22 PM </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div
+              class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2"
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-end w-100 gap-2"
+              >
+                <span
+                  class="massege-text bg-primary text-light py-2 px-3 rounded-2"
+                >
+                  And sir dare view.
+                </span>
+                <span class="chat-massages-time"
+                  >5:35 PM <i class="bi bi-check-lg"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="chat-massages-time w-100 text-center text-dark text-opacity-75"
+          >
+            2 New Messages
+          </div>
+
+          <div
+            class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div
+              class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2"
+            >
+              <img
+                src="Avatar/01.jpg "
+                alt="Dp"
+                class="chat-contact-massage-dp rounded-circle"
+              />
+              <div
+                class="d-flex flex-column justify-content-center align-items-start gap-2"
+              >
+                <span
+                  class="massege-text bg-dark bg-opacity-10 text-dark py-1 px-3 rounded-2"
+                >
+                  <i class="bi bi-three-dots"></i>
+                </span>
+                <span class="chat-massages-time"> </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 bg-dark bg-opacity-10 px-2 py-2">
+          <textarea
+            name=""
+            id=""
+            class="chat-massage-input w-100 ps-2 py-2 rounded-2 bg-light"
+            placeholder="Type a Massage"
+          ></textarea>
+
+          <div
+            class="chat-massage-btns d-flex flex-row justify-content-between align-items-center"
+          >
+            <div
+              class="d-flex flex-row justify-content-start align-items-center py-2 gap-2"
+            >
+              <button
+                class="border-0 rounded-2 chat-massage-btn-1 d-flex justify-content-center align-items-end"
+              >
+                ☺
+              </button>
+              <button
+                class="border-0 rounded-2 chat-massage-btn-2 d-flex justify-content-center align-items-center bi bi-send-fill"
+              ></button>
+              <button
+                class="border-0 rounded-2 chat-massage-btn-3 d-flex justify-content-center align-items-center"
+              >
+                GIF
+              </button>
+            </div>
+            <button
+              class="bg-primary text-light px-3 py-1 border-0 rounded-2 fs-6"
+            >
+              Send
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
