@@ -117,15 +117,20 @@
                     class="nav-link dropdown-toggle fs-6 fw-bold px-3"
                     href="javascript:void(0)"
                     role="button"
+                    id="navbardropdown1"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    data-bs-display="static"
+                    data-bs-auto-close="outside"
                   >
                     Demos
                     <i
                       class="bi bi-chevron-down navbar-dropdown-toggle-icon"
                     ></i>
                   </a>
-                  <ul class="dropdown-menu gap-2 px-2 py-2 border-0">
+                  <ul
+                    class="dropdown-menu gap-2 px-2 py-2 border-0"
+                    aria-labelledby="navbardropdown1"
+                  >
                     <li>
                       <a
                         class="dropdown-item active py-2 px-3 fs-6 w-100"
@@ -183,15 +188,20 @@
                     class="nav-link dropdown-toggle fs-6 fw-bold px-3"
                     href="javascript:void(0)"
                     role="button"
+                    id="navbardropdown2"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    data-bs-display="static"
+                    data-bs-auto-close="outside"
                   >
                     Pages
                     <i
                       class="bi bi-chevron-down navbar-dropdown-toggle-icon"
                     ></i>
                   </a>
-                  <ul class="dropdown-menu gap-2 px-2 py-2 border-0">
+                  <ul
+                    class="dropdown-menu gap-2 px-2 py-2 border-0"
+                    aria-labelledby="navbardropdown2"
+                  >
                     <li>
                       <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
                         >Album</a
@@ -290,15 +300,20 @@
                     class="nav-link dropdown-toggle fs-6 fw-bold px-3"
                     href="javascript:void(0)"
                     role="button"
+                    id="navbardropdown3"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    data-bs-display="static"
+                    data-bs-auto-close="outside"
                   >
                     Account
                     <i
                       class="bi bi-chevron-down navbar-dropdown-toggle-icon"
                     ></i>
                   </a>
-                  <ul class="dropdown-menu gap-2 px-2 py-2 border-0">
+                  <ul
+                    class="dropdown-menu gap-2 px-2 py-2 border-0"
+                    aria-labelledby="navbardropdown3"
+                  >
                     <li>
                       <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
                         >Create a page</a
@@ -358,12 +373,8 @@
 
             <!-- NavbarEnd -->
             <!-- NavbarEnd -->
-            <div
-              class="navbar-end h-100"
-            >
-              <ul
-                class="navbar-end-ul list-unstyled  h-100 w-100 gap-3"
-              >
+            <div class="navbar-end h-100">
+              <ul class="navbar-end-ul list-unstyled h-100 w-100 gap-3">
                 <li
                   class="nav-item d-flex align-items-center justify-content-center h-100"
                 >
@@ -389,12 +400,12 @@
                 >
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
+                    href="javascript:void(0)"
                     role="button"
+                    id="navbardropdown4"
                     data-bs-toggle="dropdown"
                     data-bs-display="static"
-                    aria-expanded="false"
-                    id="nav-link-icon-notification"
+                    data-bs-auto-close="outside"
                   >
                     <i
                       class="nav-link nav-link-icon bi bi-bell-fill d-flex flex-column justify-content-center align-items-center border border-dark border-opacity-10 rounded-1"
@@ -402,7 +413,8 @@
                   </a>
                   <ul
                     id="navbar-dropdown-right"
-                    class="dropdown-menu dropdown-menu-lg-end dropdown-menu-sm-end border-0"
+                    class="dropdown-menu-lg-end dropdown-menu-sm-end dropdown-menu border-0"
+                    aria-labelledby="navbardropdown4"
                   >
                     <li
                       class="dropdown-item d-flex flex-row justify-content-between align-items-center"
@@ -580,11 +592,12 @@
                 >
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
+                    href="javascript:void(0)"
                     role="button"
+                    id="navbardropdown5"
                     data-bs-toggle="dropdown"
                     data-bs-display="static"
-                    aria-expanded="false"
+                    data-bs-auto-close="outside"
                   >
                     <img
                       src="Avatar/01.jpg"
@@ -595,6 +608,7 @@
                   <ul
                     id="navbar-dropdown-right-2"
                     class="dropdown-menu dropdown-menu-lg-end dropdown-menu-sm-end border-0"
+                    aria-labelledby="navbardropdown5"
                   >
                     <li
                       class="dropdown-item d-flex flex-row justify-content-between align-items-center"
@@ -715,6 +729,300 @@
 
     <!-- Header -->
     <!-- Header -->
+
+    <!-- Offcanvas -->
+    <!-- Offcanvas -->
+
+    <button
+      class="bi bi-chat-left-text-fill rounded bg-primary text-white border-0 rounded-1 px-3 py-2 fs-6 chat-offcanvas-open-btn"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+    ></button>
+
+    <div
+      class="offcanvas offcanvas-end show"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+      tabindex="-1"
+    >
+      <div
+        class="offcanvas-header d-flex flex-wrap justify-content-between align-items-center"
+      >
+        <h5 id="offcanvasRightLabel chat-offcanvas-h5 text-dark fw-bolder fs-6">
+          Messaging
+        </h5>
+
+        <div
+          class="chat-offcanvas-icons d-flex flex-row justify-content-center align-items-center gap-2"
+        >
+          <i class="bi bi-pencil-square px-2 py-2 chat-offcanvas-icon"></i>
+          <div class="dropdown">
+            <i
+              class="bi bi-three-dots px-2 py-2"
+              id="chatoffcanvasdropdownMenuButton1"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-display="static"
+            ></i>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="chatoffcanvasdropdownMenuButton1"
+            >
+              <li
+                class="d-flex flex-row justify-content-center align-items-center px-3"
+              >
+                <i class="bi bi-check-square-fill"></i>
+                <a class="dropdown-item py-2 px-3 fs-6 fw-light w-100" href="#"
+                  >Mark all as read</a
+                >
+              </li>
+              <li
+                class="d-flex flex-row justify-content-center align-items-center px-3"
+              >
+                <i class="bi bi-gear-fill"></i>
+                <a class="dropdown-item py-2 px-3 fs-6 fw-light w-100" href="#"
+                  >Chat setting</a
+                >
+              </li>
+              <li
+                class="d-flex flex-row justify-content-center align-items-center px-3"
+              >
+                <i class="bi bi-bell-fill"></i>
+                <a class="dropdown-item py-2 px-3 fs-6 fw-light w-100" href="#"
+                  >Disable notification</a
+                >
+              </li>
+              <li
+                class="d-flex flex-row justify-content-center align-items-center px-3"
+              >
+                <i class="bi bi-volume-up-fill"></i>
+                <a class="dropdown-item py-2 px-3 fs-6 fw-light w-100" href="#"
+                  >Massage sounds</a
+                >
+              </li>
+              <li
+                class="d-flex flex-row justify-content-center align-items-center px-3"
+              >
+                <i class="bi bi-slash-circle-fill"></i>
+                <a class="dropdown-item py-2 px-3 fs-6 fw-light w-100" href="#"
+                  >Block setting</a
+                >
+              </li>
+              <li><a class="dropdown-divider" href="#"></a></li>
+              <li
+                class="d-flex flex-row justify-content-center align-items-center px-3"
+              >
+                <i class="bi bi-people-fill"></i>
+                <a class="dropdown-item py-2 px-3 fs-6 fw-light w-100" href="#"
+                  >Create a group chat</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button
+            class="bi bi-x-lg chat-offcanvas-close-btn border-0 px-2 py-2"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+      <div class="offcanvas-body chat-offcanvas-body p-0">
+        <form
+          class="chat-offcanvas-form position-relative w-100 px-2"
+          role="search"
+        >
+          <i
+            class="bi bi-search navbar-search-icon position-absolute start-0 px-4 py-2"
+          ></i>
+
+          <input
+            type="search"
+            class="form-control ps-5 py-2 me-2 chat-offcanvas-form-input"
+            placeholder="Search..."
+          />
+        </form>
+        <ul
+          class="chat-offcanvas-ul list-unstyled d-flex flex-column justify-content-center align-items-center gap-2 mt-3 w-100 py-2 px-2"
+        >
+          <li
+            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          >
+            <img
+              src="Avatar/01.jpg"
+              alt=""
+              class="chat-contact-dp rounded-circle"
+            />
+            <div
+              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-start"
+              >
+                <div class="fw-bolder text-dark chat-contact-name">
+                  Frances Guerrero
+                </div>
+                <span class="fw-light text-dark chat-contact-massage">
+                  Frances sent a photo.
+                </span>
+              </div>
+
+              <div>
+                <p class="text-nowrap chat-contact-massage-time">Just now</p>
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          >
+            <img
+              src="Avatar/02.jpg"
+              alt=""
+              class="chat-contact-dp rounded-circle"
+            />
+            <div
+              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-start"
+              >
+                <div class="fw-bolder text-dark chat-contact-name">
+                  Lori Ferguson
+                </div>
+                <span class="fw-light text-dark chat-contact-massage">
+                  You missed a call form Carolyn🤙
+                </span>
+              </div>
+
+              <div>
+                <p class="text-nowrap chat-contact-massage-time">1 Mint</p>
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          >
+            <img
+              src="Avatar/placeholder.jpg"
+              alt=""
+              class="chat-contact-dp rounded-circle"
+            />
+            <div
+              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-start"
+              >
+                <div class="fw-bolder text-dark chat-contact-name">
+                  Samuel Bishop
+                </div>
+                <span class="fw-light text-dark chat-contact-massage">
+                  Day sweetness why cordially 😊
+                </span>
+              </div>
+
+              <div>
+                <p class="text-nowrap chat-contact-massage-time">2 Mint</p>
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          >
+            <img
+              src="Avatar/04.jpg"
+              alt=""
+              class="chat-contact-dp rounded-circle"
+            />
+            <div
+              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-start"
+              >
+                <div class="fw-bolder text-dark chat-contact-name">
+                  Dennis Barrett
+                </div>
+                <span class="fw-light text-dark chat-contact-massage">
+                  Happy birthday🎂
+                </span>
+              </div>
+
+              <div>
+                <p class="text-nowrap chat-contact-massage-time">10 Mint</p>
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          >
+            <img
+              src="Avatar/05.jpg"
+              alt=""
+              class="chat-contact-dp status rounded-circle"
+            />
+            <div
+              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-start"
+              >
+                <div class="fw-bolder text-dark chat-contact-name">
+                  Judy Nguyen
+                </div>
+                <span class="fw-light text-dark chat-contact-massage">
+                  Thank you!
+                </span>
+              </div>
+
+              <div>
+                <p class="text-nowrap chat-contact-massage-time">2 Hrs</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            doloremque!
+          </li>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            doloremque!
+          </li>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            doloremque!
+          </li>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            doloremque!
+          </li>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            doloremque!
+          </li>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            doloremque!
+          </li>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            doloremque!
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Offcanvas -->
+    <!-- Offcanvas -->
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 

@@ -333,38 +333,84 @@ body {
 /* Header ===========================> */
 /* Header ===========================> */
 
-/* Page-Main ===========================> */
-/* Page-Main ===========================> */
-
-/* Page-Main ===========================> */
-/* Page-Main ===========================> */
-
-/* MediaQuiries ===========================> */
-/* MediaQuiries ===========================> */
-
-.dropdown {
+/* OffCanvas ===========================> */
+/* OffCanvas ===========================> */
+.chat-offcanvas-open-btn {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+}
+.chat-offcanvas-close-btn,
+.chat-offcanvas-icon,
+#chatoffcanvasdropdownMenuButton1 {
+  font-size: 14px;
+  background-color: transparent;
+}
+.chat-offcanvas-close-btn:hover,
+.chat-offcanvas-icon:hover,
+#chatoffcanvasdropdownMenuButton1:hover {
+  background-color: #eff2f6;
+}
+.chat-offcanvas-h5 {
+  font-weight: 900;
+}
+.chat-offcanvas-body {
+  width: 100% !important;
+}
+.chat-offcanvas-form-input {
+  cursor: text;
+  background-color: #eef0f2;
+  border: 2px solid transparent;
+}
+.chat-offcanvas-form-input:focus {
+  background-color: #eef0f2;
+  box-shadow: none !important;
+}
+.chat-contact-li {
   position: relative;
 }
-
-.dropdown > .dropdown-toggle:active {
-  pointer-events: auto;
+.chat-contact-dp {
+  position: relative;
+  width: 50px;
+  height: 50px;
 }
-
-@media (min-width: 991px) {
-  .dropdown:hover > .dropdown-menu {
-    min-width: 300px;
-    width: max-content;
-    display: block;
-    /* margin: 0 auto; */
-    position: absolute;
-    top: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .dropdown > .dropdown-toggle:active {
-    pointer-events: none;
-  }
+.chat-contact-li:before {
+  content: "";
+  position: absolute;
+  left: 13%;
+  top: 19%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: green;
 }
+.chat-contact-li:nth-child(3)::before {
+  background-color: red;
+}
+.chat-contact-li:nth-child(4)::before {
+ display: none;
+}
+.chat-contact-name {
+  font-size: 14px;
+}
+.chat-contact-massage {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.chat-contact-massage-time {
+  font-size: 12px;
+}
+/* OffCanvas ===========================> */
+/* OffCanvas ===========================> */
+
+/* Page-Main ===========================> */
+/* Page-Main ===========================> */
+
+/* Page-Main ===========================> */
+/* Page-Main ===========================> */
+
+/* MediaQuiries ===========================> */
+/* MediaQuiries ===========================> */
 
 @media (max-width: 1200px) {
   .navbar-end {
