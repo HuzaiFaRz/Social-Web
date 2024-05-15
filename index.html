@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social - Network, Community and Event Theme</title>
+    <link rel="shortcut icon" href="Logo/logo.svg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header
+      class="header fixed-top position-fixed top-0 start-0 end-0 bg-light w-100 d-flex flex-wrap justify-content-center align-items-center"
+      id="Header"
+    >
+      <nav
+        class="navbar navbar-expand-lg h-100 p-0 m-0 w-100 d-flex flex-wrap justify-content-center align-items-center"
+        id="Navbar"
+      >
+        <div
+          class="container-fluid h-100 w-100 p-0 d-flex flex-wrap align-items-center justify-content-center align-items-center"
+          id="NavbarContainer"
+        >
+          <div
+            class="row h-100 w-100 d-flex flex-wrap justify-content-start align-items-center position-relative"
+            id="NavbarRow"
+          >
+            <div
+              class="navbar-start h-100 d-flex flex-cloumn justify-content-center align-items-center"
+            >
+              <a class="navbar-brand" id="NavbarBrand" href="index.html">
+                <img
+                  src="Logo/logo.svg"
+                  alt="Logo"
+                  class="navbar-brand-logo border-0"
+                  id="NavbarBrandLogo"
+                />
+              </a>
+            </div>
+
+            <div
+              class="menu-lines position-relative border-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span
+                class="navbar-menu-line-1 position-absolute d-block border-1 rounded-5 opacity-1 start-0"
+              ></span>
+              <span
+                class="navbar-menu-line-2 position-absolute d-block border-1 rounded-5 opacity-1 start-0"
+              ></span>
+              <span
+                class="navbar-menu-line-3 position-absolute d-block border-1 rounded-5 opacity-1 start-0"
+              ></span>
+            </div>
+
+            <div
+              class="collapse navbar-collapse navbar-center"
+              id="navbarSupportedContent"
+            >
+              <form class="navbar-form position-relative" role="search">
+                <a
+                  href="index.html"
+                  class="bi bi-search navbar-search-icon position-absolute start-0 px-3 py-2"
+                  id="NavbarSearchIcon"
+                ></a>
+                <input
+                  class="form-control navbar-search-input ps-5 py-2"
+                  id="NavbarSearchInput"
+                  type="search"
+                  placeholder="Search..."
+                  aria-label="Search"
+                />
+              </form>
+              <ul class="navbar-nav px-3">
+                <li class="nav-item dropdown px-2 py-2">
+                  <a
+                    class="nav-link dropdown-toggle fs-6 fw-bold px-3"
+                    href="javascript:void(0)"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Demos
+                    <i
+                      class="bi bi-chevron-down navbar-dropdown-toggle-icon"
+                    ></i>
+                  </a>
+                  <ul class="dropdown-menu gap-2 px-2 py-2 border-0">
+                    <li>
+                      <a
+                        class="dropdown-item active py-2 px-3 fs-6 w-100"
+                        href="#"
+                        >Home Default</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Home Classic</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Home Post</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Home Video</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Home Event</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Landing Page</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >App Download</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item py-2 px-3 fs-6 w-100">
+                        <i
+                          class="bi bi-cloud-arrow-down-fill dropdown-item-cloud-icon"
+                        ></i>
+                        &nbsp; Buy Social
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown px-2 py-2">
+                  <a
+                    class="nav-link dropdown-toggle fs-6 fw-bold px-3"
+                    href="javascript:void(0)"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages
+                    <i
+                      class="bi bi-chevron-down navbar-dropdown-toggle-icon"
+                    ></i>
+                  </a>
+                  <ul class="dropdown-menu gap-2 px-2 py-2 border-0">
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Album</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Celebration</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Messaging</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Profile</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Events</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Events 2</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Event Details</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Event Details 2</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Groups</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Group details</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Post videos</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Post videos details</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Post details</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Videos details</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Blog</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Blog details</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Dropdown Level</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown px-2 py-2">
+                  <a
+                    class="nav-link dropdown-toggle fs-6 fw-bold px-3"
+                    href="javascript:void(0)"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Account
+                    <i
+                      class="bi bi-chevron-down navbar-dropdown-toggle-icon"
+                    ></i>
+                  </a>
+                  <ul class="dropdown-menu gap-2 px-2 py-2 border-0">
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Create a page</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Setting</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Notifications</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Help center</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Help details</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Authintication</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Error 404</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Offline</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 fs-6 w-100" href="#"
+                        >Privacy & Terms</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-end-link px-2 py-2">
+                  <a class="nav-link fs-6 fw-bold px-3">My Network</a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="navbar-end d-flex flex-row justify-content-center align-items-start h-100"
+            >
+              <ul
+                class="navbar-end list-unstyled d-flex flex-row justify-content-center align-items-center h-100"
+              >
+                <li
+                  class="nav-item d-flex align-items-center justify-content-center h-100"
+                >
+                  <a
+                    class="nav-link nav-link-icon bi bi-chat-left-text-fill d-flex flex-column justify-content-center align-items-center border border-dark border-opacity-10 rounded-1"
+                    href="#"
+                  >
+                  </a>
+                </li>
+
+                <li
+                  class="nav-item d-flex align-items-center justify-content-center h-100"
+                >
+                  <a
+                    class="nav-link nav-link-icon bi bi-gear-fill d-flex flex-column justify-content-center align-items-center border border-dark border-opacity-10 rounded-1"
+                    href="#"
+                  >
+                  </a>
+                </li>
+
+                <li
+                  class="nav-item dropdown d-flex align-items-center justify-content-center h-100"
+                >
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    data-bs-display="static"
+                    aria-expanded="false"
+                    id="nav-link-icon-notification"
+                  >
+                    <i
+                      class="nav-link nav-link-icon bi bi-bell-fill d-flex flex-column justify-content-center align-items-center border border-dark border-opacity-10 rounded-1"
+                    ></i>
+                  </a>
+                  <ul
+                    id="navbar-dropdown-right"
+                    class="dropdown-menu dropdown-menu-lg-end dropdown-menu-sm-end border-0"
+                  >
+                    <li
+                      class="dropdown-item d-flex flex-row justify-content-between align-items-center"
+                    >
+                      <div
+                        class="d-flex flex-wrap align-items-center justify-content-evenly gap-3"
+                      >
+                        <span class="text-dark"> Notifications </span>
+                        <span
+                          class="px-2 py-1 bg-danger bg-opacity-10 text-danger fw-normal border rounded-2"
+                        >
+                          4 New
+                        </span>
+                      </div>
+                      <div>
+                        <a
+                          class="text-primary fw-light text-decoration-none"
+                          href="#"
+                        >
+                          Clear all
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+
+                    <li class="dropdown-item w-100 p-2">
+                      <div
+                        class="dropdown-notification bg-info bg-opacity-25 w-100 py-3 px-3 d-flex flex-column justify-content-center align-items-start gap-3"
+                      >
+                        <div
+                          class="dropdown-notification-massege d-flex flex-nowrap justify-content-between align-items-center w-100"
+                        >
+                          <div
+                            class="position-relative d-flex gap-3 flex-wrap justify-content-center align-items-center"
+                          >
+                            <img
+                              src="Avatar/01.jpg"
+                              alt="Avatar"
+                              class="dropdown-notification-img rounded-circle"
+                            />
+
+                            <p class="text-dark fw-light mt-2">
+                              <span class="fw-bold text-dark">Judy Nguyen</span>
+                              sent you
+                              <br />
+                              a friend request.
+                            </p>
+                          </div>
+
+                          <span class="text-dark mb-4">Just Now</span>
+                        </div>
+
+                        <div
+                          class="dropdown-notification-btns d-flex gap-3 flex-row justify-content-center align-items-center"
+                        >
+                          <button
+                            class="btn btn-primary text-light px-3 py-2 border-0 rounded-1 fw-normal"
+                          >
+                            Accept
+                          </button>
+                          <button
+                            class="bg-danger bg-opacity-10 text-danger px-3 py-2 border-0 rounded-1 fw-normal"
+                          >
+                            Delete
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="dropdown-item w-100 p-2">
+                      <div
+                        class="dropdown-notification bg-info bg-opacity-25 w-100 py-3 px-3 d-flex flex-column justify-content-center align-items-start gap-3"
+                      >
+                        <div
+                          class="dropdown-notification-massege d-flex flex-nowrap justify-content-between align-items-center w-100"
+                        >
+                          <div
+                            class="position-relative d-flex gap-3 flex-wrap justify-content-center align-items-center"
+                          >
+                            <img
+                              src="Avatar/02.jpg"
+                              alt="Avatar"
+                              class="dropdown-notification-img rounded-circle"
+                            />
+
+                            <p class="text-dark fw-light mt-2">
+                              Wish
+                              <span class="fw-bold text-dark">Amanda Reed</span>
+                              a happy
+                              <br />
+                              birthday (Nov 12)
+                            </p>
+                          </div>
+
+                          <span class="text-dark mb-4">2mint</span>
+                        </div>
+
+                        <div
+                          class="dropdown-notification-btns d-flex gap-3 flex-row justify-content-center align-items-center"
+                        >
+                          <button
+                            class="btn btn-light bg-opacity-10 text-dark px-3 py-2 border-1 rounded-1 fw-normal"
+                          >
+                            Say happy birthday 🎂
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="dropdown-item w-100 p-2">
+                      <div
+                        class="dropdown-notification bg-light w-100 py-3 px-3 d-flex flex-column justify-content-center align-items-start gap-3"
+                        id="dropdown-notification-end"
+                      >
+                        <div
+                          class="dropdown-notification-massege d-flex flex-nowrap justify-content-between align-items-center w-100"
+                        >
+                          <span
+                            class="position-relative d-flex gap-3 flex-wrap justify-content-center align-items-center"
+                          >
+                            <div
+                              class="bg-success text-white rounded-circle px-2 py-2 fs-6"
+                            >
+                              WB
+                            </div>
+
+                            <p class="text-dark fw-light mt-2">
+                              Webestica has 15 like and 1 new <br />
+                              activity
+                            </p>
+                          </span>
+
+                          <span class="text-dark mb-4">1hr</span>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="dropdown-item w-100 p-2">
+                      <div
+                        class="dropdown-notification bg-light w-100 py-3 px-3 d-flex flex-column justify-content-center align-items-start gap-3"
+                        id="dropdown-notification-end"
+                      >
+                        <div
+                          class="dropdown-notification-massege d-flex flex-nowrap justify-content-between align-items-center w-100"
+                        >
+                          <span
+                            class="position-relative d-flex gap-3 flex-wrap justify-content-center align-items-center"
+                          >
+                            <img
+                              src="Logo/12.svg"
+                              alt="Logo"
+                              class="dropdown-notification-img rounded-circle"
+                            />
+
+                            <p class="text-dark fw-light mt-2">
+                              <b class="fw-bold">Bootstrap in the news:</b> The
+                              <br />
+                              search giant’s parent company, <br />
+                              Alphabet, just joined an <br />
+                              exclusive club of tech stocks.
+                            </p>
+                          </span>
+
+                          <span class="text-dark mb-4">1hr</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li
+                  class="nav-item dropdown d-flex align-items-center justify-content-center h-100"
+                >
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    data-bs-display="static"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="Avatar/01.jpg"
+                      alt="Profile"
+                      class="navbar-profile-img rounded-2 object-fit-cover"
+                    />
+                  </a>
+                  <ul
+                    id="navbar-dropdown-right-2"
+                    class="dropdown-menu dropdown-menu-lg-end dropdown-menu-sm-end border-0"
+                  >
+                    <li
+                      class="dropdown-item d-flex flex-row justify-content-between align-items-center"
+                    >
+                      <div
+                        class="d-flex flex-wrap align-items-center justify-content-start"
+                      >
+                        <img
+                          src="Avatar/01.jpg"
+                          class="navbar-profile-img rounded-circle"
+                          alt=""
+                        />
+
+                        <div
+                          class="d-flex flex-column justify-content-center align-items-center gap-1 px-3"
+                        >
+                          <span class="text-dark fw-bold"> Huzaifa Raza</span>
+                          <span
+                            class="text-dark text-opacity-75"
+                            style="font-size: 13px"
+                          >
+                            Web Developer
+                          </span>
+                        </div>
+
+                        <a
+                          href="#"
+                          class="mt-3 bg-primary bg-opacity-10 py-2 w-100 rounded-2 text-decoration-none fs-6 text-center"
+                          id="navbar-dropdown-profile-btn"
+                          >View Profile
+                        </a>
+                      </div>
+                    </li>
+
+                    <li class="mt-2">
+                      <a
+                        href="#"
+                        class="dropdown-item d-flex flex-row justify-content-start align-items-center gap-3"
+                      >
+                        <i class="bi-gear-fill"></i>
+                        Setting & Privacy
+                      </a>
+                    </li>
+                    <li class="mt-2">
+                      <a
+                        href="#"
+                        class="dropdown-item d-flex flex-row justify-content-start align-items-center gap-3"
+                      >
+                        <i class="bi-life-preserver"></i>
+                        Support
+                      </a>
+                    </li>
+
+                    <li class="mt-2">
+                      <a
+                        href="#"
+                        class="dropdown-item d-flex flex-row justify-content-start align-items-center gap-3"
+                      >
+                        <i class="bi-card-text"></i>
+                        Documentation
+                      </a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li class="mt-2 mb-2">
+                      <a
+                        href="#"
+                        class="dropdown-item d-flex flex-row justify-content-start align-items-center gap-3"
+                      >
+                        <i class="bi-power"></i>
+                        Sign Out
+                      </a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li
+                      class="px-1 py-2 d-flex flex-row align-items-center justify-content-center gap-2"
+                    >
+                      Mode:
+                      <div
+                        class="d-flex flex-row justify-content-start align-items-center gap-3"
+                      >
+                        <button
+                          class="bg-primary text-white border-0 rounded-2 px-3 py-2 bi-sun-fill"
+                          title="Light"
+                        ></button>
+                        <button
+                          class="bg-light text-dark border-0 rounded-2 px-3 py-2 bi-sun-fill"
+                          title="Dark"
+                        ></button>
+                        <button
+                          class="bg-light text-dark border-0 rounded-2 px-3 py-2 bi bi-circle-half"
+                          title="Auto"
+                        ></button>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
