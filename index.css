@@ -1,3 +1,6 @@
+/* Font ===========================> */
+/* Font ===========================> */
+
 @font-face {
   font-family: inter;
   src: url(Fonts/UcC73FwrK3iLTeHuS-fvQtMwCp50KnMa1ZL7.ttf);
@@ -6,6 +9,12 @@
   font-family: bifont;
   src: url(Fonts/bootstrap-icons.ttf);
 }
+
+/* Font ===========================> */
+/* Font ===========================> */
+
+/* Default ===========================> */
+/* Default ===========================> */
 * {
   transition: all 0.3s linear;
   margin: 0;
@@ -25,15 +34,46 @@ body {
   scroll-behavior: smooth;
   background-color: #eff2f6;
 }
+/* Default ===========================> */
+/* Default ===========================> */
+
+/* ScrollBar ===========================> */
+/* ScrollBar ===========================> */
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: #14191e26;
+  border-radius: 20px;
+}
+
+/* ScrollBar ===========================> */
+/* ScrollBar ===========================> */
+
+/* Header ===========================> */
+/* Header ===========================> */
 
 .header {
   height: 60px;
   background-color: #ffffffff;
 }
 
+/* Navbar ===========================> */
+/* Navbar ===========================> */
+
+/* NavbarStart ===========================> */
+/* NavbarStart ===========================> */
+
 .navbar-start {
   width: 10%;
 }
+/* NavbarStart ===========================> */
+/* NavbarStart ===========================> */
+
+/* NavbarCenter ===========================> */
+/* NavbarCenter ===========================> */
 
 .navbar-center {
   width: 70%;
@@ -42,13 +82,15 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
 .navbar-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
+/* NavbarCenterForm ===========================> */
+/* NavbarCenterForm ===========================> */
+
 .navbar-form {
   display: flex;
   flex-wrap: nowrap;
@@ -74,6 +116,12 @@ body {
   color: black;
   font-size: 18px;
 }
+
+/* NavbarCenterForm ===========================> */
+/* NavbarCenterForm ===========================> */
+
+/* NavbarCenterDrodowns ===========================> */
+/* NavbarCenterDrodowns ===========================> */
 .dropdown-toggle::after {
   display: none;
 }
@@ -88,13 +136,6 @@ body {
   box-shadow: 0px 20px 30px rgba(83, 88, 93, 0.1),
     0px 0px 30px rgba(83, 88, 93, 0.2);
 }
-
-#navbar-dropdown-right {
-  width: 350px !important;
-}
-#navbar-dropdown-right-2 {
-  width: 250px !important;
-}
 .dropdown-item {
   transition: all 0.3s linear;
   letter-spacing: 0.5px;
@@ -102,9 +143,72 @@ body {
   font-weight: 800;
   background-color: transparent;
 }
+.dropdown-item-cloud-icon {
+  color: #0cbc87;
+}
+.dropdown-item:hover,
+.nav-link:hover {
+  transition: all 0.3s linear;
+  color: #0f6fec;
+  background-color: transparent;
+}
+.dropdown-item.active {
+  background-color: transparent;
+  color: #0f6fec;
+}
+
+/* NavbarCenterDrodowns ===========================> */
+/* NavbarCenterDrodowns ===========================> */
+
+/* NavbarCenter ===========================> */
+/* NavbarCenter ===========================> */
+
+/* NavbarEnd ===========================> */
+/* NavbarEnd ===========================> */
+
+.navbar-end {
+  width: 20%;
+  cursor: pointer;
+}
+.navbar-end-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-end > .nav-item {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.nav-link-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #eef0f2;
+  color: #676a79;
+}
+.nav-link-icon:hover {
+  color: black;
+  background-color: #eef0f2;
+}
+.navbar-profile-img {
+  width: 40px;
+  height: 40px;
+}
+
+/* NavbarEndDrodowns ===========================> */
+/* NavbarEndDrodowns ===========================> */
+
+#navbar-dropdown-right {
+  width: 350px !important;
+}
+#navbar-dropdown-right-2 {
+  width: 250px !important;
+}
+
 #nav-link-icon-notification {
   position: relative;
 }
+
 #nav-link-icon-notification:before {
   content: "";
   position: absolute;
@@ -151,30 +255,14 @@ body {
   background-color: blue;
 }
 
-.dropdown-item:hover,
-.nav-link:hover {
-  transition: all 0.3s linear;
-  color: #0f6fec;
-  background-color: transparent;
-}
-.dropdown-item.active {
-  background-color: transparent;
-  color: #0f6fec;
-}
+/* NavbarEndDrodowns ===========================> */
+/* NavbarEndDrodowns ===========================> */
 
-.dropdown-item-cloud-icon {
-  color: #0cbc87;
-}
+/* NavbarEnd ===========================> */
+/* NavbarEnd ===========================> */
 
-.navbar-end {
-  width: 20%;
-  gap: 0.5rem;
-  cursor: pointer;
-}
-.navbar-end > .nav-item {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
+/* NavbarSmallScreen ===========================> */
+/* NavbarSmallScreen ===========================> */
 
 .menu-lines {
   display: none;
@@ -220,44 +308,72 @@ body {
   bottom: 10%;
 }
 
-.navbarMenuLinesButtonActive .navbar-menu-line-1 {
+.navbarMenuLinesActive .navbar-menu-line-1 {
   transform: rotateZ(45deg) translateY(-50%);
   top: 47%;
   transform-origin: 47% 0;
   width: 100%;
 }
 
-.navbarMenuLinesButtonActive .navbar-menu-line-2 {
+.navbarMenuLinesActive .navbar-menu-line-2 {
   transition: all 0s ease-in-out;
   visibility: hidden;
 }
 
-.navbarMenuLinesButtonActive .navbar-menu-line-3 {
+.navbarMenuLinesActive .navbar-menu-line-3 {
   transform: rotateZ(-45deg) translateY(-50%);
   bottom: 42%;
   transform-origin: 50% 0;
   width: 100%;
 }
 
-.nav-link-icon {
-  width: 40px;
-  height: 40px;
-  background-color: #eef0f2;
-  color: #676a79;
+/* NavbarSmallScreen ===========================> */
+/* NavbarSmallScreen ===========================> */
+
+/* Header ===========================> */
+/* Header ===========================> */
+
+/* Page-Main ===========================> */
+/* Page-Main ===========================> */
+
+/* Page-Main ===========================> */
+/* Page-Main ===========================> */
+
+/* MediaQuiries ===========================> */
+/* MediaQuiries ===========================> */
+
+.dropdown {
+  position: relative;
 }
-.nav-link-icon:hover {
-  color: black;
-  background-color: #eef0f2;
+
+.dropdown > .dropdown-toggle:active {
+  pointer-events: auto;
 }
-.navbar-profile-img {
-  width: 40px;
-  height: 40px;
+
+@media (min-width: 991px) {
+  .dropdown:hover > .dropdown-menu {
+    min-width: 300px;
+    width: max-content;
+    display: block;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .dropdown > .dropdown-toggle:active {
+    pointer-events: none;
+  }
 }
 
 @media (max-width: 1200px) {
   .navbar-end {
     width: 100%;
     background-color: #ffffffff;
+  }
+  .navbar-end-ul {
+    justify-content: center;
+    align-items: center;
   }
 
   .navbar-center {
@@ -289,9 +405,6 @@ body {
     padding-bottom: 2rem;
     background-color: #ffffffff;
   }
-  .navbar-nav {
-    overflow-y: auto;
-  }
 
   .navbar-search-input,
   .navbar-form,
@@ -308,29 +421,23 @@ body {
   .navbar-start {
     width: 20%;
   }
-  .navbar-menu-lines {
-    transition: all 0.5s ease-in-out;
-    width: 60px;
-    height: 45px;
-    background-color: transparent;
-    transform: rotate(0deg);
-    z-index: 1000;
-  }
+
   .navbar-end {
     width: 80%;
     height: 100%;
     position: absolute;
     right: 0;
+  }
+  .navbar-end-ul {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
   }
 }
 @media (max-width: 600px) {
   #navbar-dropdown-right {
     position: absolute;
-    transform: translate(-70%, 0);
+    transform: translate(-73%, 0);
   }
   #navbar-dropdown-right-2 {
     position: absolute;
@@ -369,26 +476,5 @@ body {
   }
 }
 
-/* .dropdown {
-  position: relative;
-}
-
-.dropdown > .dropdown-toggle:active {
-  pointer-events: auto;
-}
-
-@media (min-width: 1199.98px) {
-  .dropdown:hover > .dropdown-menu {
-    min-width: 300px;
-    width: max-content;
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    top: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .dropdown > .dropdown-toggle:active {
-    pointer-events: none;
-  }
-} */
+/* MediaQuiries ===========================> */
+/* MediaQuiries ===========================> */
