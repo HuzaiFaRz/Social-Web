@@ -5,13 +5,19 @@ function navbarMenu() {
   });
 }
 navbarMenu();
-const myToastEl = document.getElementById('liveToastBtn')
-myToastEl.addEventListener('hidden.bs.toast', () => {
-  // do something...
-})
+
+var chatMassageMinimize = document.querySelector(
+  ".chat-offcanvas-icon-minimiz"
+);
+var chatMassagebox = document.querySelector(".chat-Massage-chat");
+function chatMassage() {
+  chatMassageMinimize.addEventListener("click", function () {
+    chatMassagebox.classList.toggle("chatMassageboxMaximum");
+
  
-
-
+  });
+}
+chatMassage();
 // var offCanvasChatSearchInput = document.querySelector(
 //   ".chat-offcanvas-form-input"
 // );

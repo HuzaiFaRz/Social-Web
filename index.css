@@ -397,18 +397,21 @@ body {
 }
 
 .chat-Massage-chat {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 400px;
-  z-index: 99999 !important;
-  top: 2%;
-  right: 30%;
+  bottom: 0%;
+  right: 26%;
 }
+
 .chat-history {
   overflow-y: scroll;
   height: 300px;
+}
+.chatMassageboxMaximum .chat-history {
+  height: 0px;
 }
 .chat-contact-massage-dp {
   width: 30px;
