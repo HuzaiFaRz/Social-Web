@@ -29,8 +29,19 @@ var chatOffCanvasCloseBtn = document.querySelector(
   ".chat-offcanvas-massege-close-btn"
 );
 var chatMassageInput = document.querySelector(".chat-massage-input");
-var chatMassageBtnSend = document.querySelector(".chat-massage-btn-4");
+var chatMassageBtnSend = document.querySelector(".chat-massage-send-btn");
+
+var massegeText = document.querySelector(".massege-text.me").innerHTML;
+var massagesTextTime = document.querySelector(".massages-text-time.me");
+var chatHistory = document.querySelector(".chat-history");
 chatMassageBtnSend.addEventListener("click", function () {
+  chatHistory.innerHTML = `<span class="massege-text me bg-primary text-light py-2 px-3 rounded-2">${chatMassageInput.value}</span>
+
+
+ 
+
+<span class="chat-massages-time"> 12:16 PM </span>`;
+
   chatMassageInput.value = "";
 });
 
@@ -151,13 +162,9 @@ function chatMassageMaximum() {
     // });
     break;
   }
-  for (var b = 0; b <= chatContactDp.length; b++) {
-    console.log(chatContactDp[b]);
-  }
+  for (var b = 0; b <= chatContactDp.length; b++) {}
 
-  for (var c = 0; c <= chatContactName.length; c++) {
-    console.log(chatContactName[0].innerHTML);
-  }
+  for (var c = 0; c <= chatContactName.length; c++) {}
 }
 chatMassageMaximum();
 
