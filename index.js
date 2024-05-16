@@ -13,11 +13,147 @@ var chatMassagebox = document.querySelector(".chat-Massage-chat");
 function chatMassage() {
   chatMassageMinimize.addEventListener("click", function () {
     chatMassagebox.classList.toggle("chatMassageboxMaximum");
-
- 
   });
 }
 chatMassage();
+var chatContacLi = document.querySelectorAll(".chat-contact-li");
+var chatContactDp = document.querySelectorAll(".chat-contact-dp");
+var chatContactName = document.querySelectorAll(".chat-contact-name");
+var chatContactMassageDp = document.querySelectorAll(
+  ".chat-contact-massage-dp"
+);
+var chatContactMassageName = document.querySelectorAll(
+  ".chat-contact-massage-name"
+);
+var chatOffCanvasCloseBtn = document.querySelector(
+  ".chat-offcanvas-massege-close-btn"
+);
+function chatMassageMaximum() {
+  chatOffCanvasCloseBtn.addEventListener("click", function () {
+    chatMassagebox.style.display = "none";
+  });
+
+  for (var a = 0; a <= chatContacLi.length; a++) {
+    chatContacLi[0].addEventListener("click", function () {
+      chatMassagebox.style.display = "flex";
+      chatContactMassageDp.forEach(function (z) {
+        z.src = "Avatar/01.jpg";
+      });
+      chatContactMassageName.forEach(function (x) {
+        x.innerHTML = chatContactName[0].innerHTML;
+      });
+    });
+    chatContacLi[1].addEventListener("click", function () {
+      chatMassagebox.style.display = "flex";
+      chatContactMassageDp.forEach(function (z) {
+        z.src = "Avatar/02.jpg";
+      });
+      chatContactMassageName.forEach(function (x) {
+        x.innerHTML = chatContactName[1].innerHTML;
+      });
+    });
+    chatContacLi[2].addEventListener("click", function () {
+      chatMassagebox.style.display = "flex";
+      chatContactMassageDp.forEach(function (z) {
+        z.src = "Avatar/placeholder.jpg";
+      });
+      chatContactMassageName.forEach(function (x) {
+        x.innerHTML = chatContactName[2].innerHTML;
+      });
+    });
+    chatContacLi[3].addEventListener("click", function () {
+      chatMassagebox.style.display = "flex";
+      chatContactMassageDp.forEach(function (z) {
+        z.src = "Avatar/04.jpg";
+      });
+      chatContactMassageName.forEach(function (x) {
+        x.innerHTML = chatContactName[3].innerHTML;
+      });
+    });
+    chatContacLi[4].addEventListener("click", function () {
+      chatMassagebox.style.display = "flex";
+      chatContactMassageDp.forEach(function (z) {
+        z.src = "Avatar/05.jpg";
+      });
+      chatContactMassageName.forEach(function (x) {
+        x.innerHTML = chatContactName[4].innerHTML;
+      });
+    });
+    chatContacLi[5].addEventListener("click", function () {
+      chatMassagebox.style.display = "flex";
+      chatContactMassageDp.forEach(function (z) {
+        z.src = "Avatar/02.jpg";
+      });
+      chatContactMassageName.forEach(function (x) {
+        x.innerHTML = chatContactName[5].innerHTML;
+      });
+    });
+    chatContacLi[6].addEventListener("click", function () {
+      chatMassagebox.style.display = "flex";
+      chatContactMassageDp.forEach(function (z) {
+        z.src = "Avatar/02.jpg";
+      });
+      chatContactMassageName.forEach(function (x) {
+        x.innerHTML = chatContactName[6].innerHTML;
+      });
+    });
+    chatContacLi[7].addEventListener("click", function () {
+      chatMassagebox.style.display = "flex";
+      chatContactMassageDp.forEach(function (z) {
+        z.src = "Avatar/02.jpg";
+      });
+      chatContactMassageName.forEach(function (x) {
+        x.innerHTML = chatContactName[7].innerHTML;
+      });
+    });
+    chatContacLi[8].addEventListener("click", function () {
+      chatMassagebox.style.display = "flex";
+      chatContactMassageDp.forEach(function (z) {
+        z.src = "Avatar/02.jpg";
+      });
+      chatContactMassageName.forEach(function (x) {
+        x.innerHTML = chatContactName[8].innerHTML;
+      });
+    });
+    chatContacLi[9].addEventListener("click", function () {
+      chatMassagebox.style.display = "flex";
+      chatContactMassageDp.forEach(function (z) {
+        z.src = "Avatar/02.jpg";
+      });
+      chatContactMassageName.forEach(function (x) {
+        x.innerHTML = chatContactName[9].innerHTML;
+      });
+    });
+    chatContacLi[10].addEventListener("click", function () {
+      chatMassagebox.style.display = "flex";
+      chatContactMassageDp.forEach(function (z) {
+        z.src = "Avatar/02.jpg";
+      });
+      chatContactMassageName.forEach(function (x) {
+        x.innerHTML = chatContactName[10].innerHTML;
+      });
+    });
+    chatContacLi[11].addEventListener("click", function () {
+      chatMassagebox.style.display = "flex";
+      chatContactMassageDp.forEach(function (z) {
+        z.src = "Avatar/02.jpg";
+      });
+      chatContactMassageName.forEach(function (x) {
+        x.innerHTML = chatContactName[11].innerHTML;
+      });
+    });
+    break;
+  }
+  for (var b = 0; b <= chatContactDp.length; b++) {
+    console.log(chatContactDp[b]);
+  }
+
+  for (var c = 0; c <= chatContactName.length; c++) {
+    console.log(chatContactName[0].innerHTML);
+  }
+}
+chatMassageMaximum();
+
 // var offCanvasChatSearchInput = document.querySelector(
 //   ".chat-offcanvas-form-input"
 // );

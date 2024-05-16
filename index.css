@@ -1,8 +1,7 @@
 /* Font ===========================> */
 /* Font ===========================> */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Font ===========================> */
 /* Font ===========================> */
 
@@ -17,7 +16,7 @@
   -moz-user-select: none;
   -webkit-user-select: none;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html,
@@ -335,12 +334,14 @@ body {
 }
 .chat-offcanvas-close-btn,
 .chat-offcanvas-icon,
+.chat-offcanvas-massege-close-btn,
 #chatoffcanvasdropdownMenuButton1,
 #chatoffcanvaschatdropdown {
   font-size: 14px;
   background-color: transparent;
 }
 .chat-offcanvas-close-btn:hover,
+.chat-offcanvas-massege-close-btn:hover,
 .chat-offcanvas-icon:hover,
 #chatoffcanvasdropdownMenuButton1:hover,
 #chatoffcanvaschatdropdown:hover {
@@ -385,7 +386,8 @@ body {
 .chat-contact-li:nth-child(4)::before {
   display: none;
 }
-.chat-contact-name {
+.chat-contact-name,
+.chat-contact-massage-name {
   font-size: 14px;
 }
 .chat-contact-massage {
@@ -413,6 +415,7 @@ body {
 .chatMassageboxMaximum .chat-history {
   height: 0px;
 }
+.chat-contact-massage-dp,
 .chat-contact-massage-dp {
   width: 30px;
   height: 30px;
