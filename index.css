@@ -370,6 +370,9 @@ body {
   width: 50px;
   height: 50px;
 }
+.chat-contact-dp.status {
+  border: 2px solid #0f6fec;
+}
 .chat-contact-li:before {
   content: "";
   position: absolute;
@@ -409,7 +412,8 @@ body {
 }
 
 .chat-history {
-  overflow-y: scroll;
+  overflow-y: auto;
+
   height: 300px;
 }
 .chatMassageboxMaximum .chat-history {

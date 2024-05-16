@@ -28,6 +28,12 @@ var chatContactMassageName = document.querySelectorAll(
 var chatOffCanvasCloseBtn = document.querySelector(
   ".chat-offcanvas-massege-close-btn"
 );
+var chatMassageInput = document.querySelector(".chat-massage-input");
+var chatMassageBtnSend = document.querySelector(".chat-massage-btn-4");
+chatMassageBtnSend.addEventListener("click", function () {
+  chatMassageInput.value = "";
+});
+
 function chatMassageMaximum() {
   chatOffCanvasCloseBtn.addEventListener("click", function () {
     chatMassagebox.style.display = "none";
@@ -74,74 +80,75 @@ function chatMassageMaximum() {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
         z.src = "Avatar/05.jpg";
+        z.style.border = "2px solid #0f6fec";
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[4].innerHTML;
       });
     });
-    chatContacLi[5].addEventListener("click", function () {
-      chatMassagebox.style.display = "flex";
-      chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/02.jpg";
-      });
-      chatContactMassageName.forEach(function (x) {
-        x.innerHTML = chatContactName[5].innerHTML;
-      });
-    });
-    chatContacLi[6].addEventListener("click", function () {
-      chatMassagebox.style.display = "flex";
-      chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/02.jpg";
-      });
-      chatContactMassageName.forEach(function (x) {
-        x.innerHTML = chatContactName[6].innerHTML;
-      });
-    });
-    chatContacLi[7].addEventListener("click", function () {
-      chatMassagebox.style.display = "flex";
-      chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/02.jpg";
-      });
-      chatContactMassageName.forEach(function (x) {
-        x.innerHTML = chatContactName[7].innerHTML;
-      });
-    });
-    chatContacLi[8].addEventListener("click", function () {
-      chatMassagebox.style.display = "flex";
-      chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/02.jpg";
-      });
-      chatContactMassageName.forEach(function (x) {
-        x.innerHTML = chatContactName[8].innerHTML;
-      });
-    });
-    chatContacLi[9].addEventListener("click", function () {
-      chatMassagebox.style.display = "flex";
-      chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/02.jpg";
-      });
-      chatContactMassageName.forEach(function (x) {
-        x.innerHTML = chatContactName[9].innerHTML;
-      });
-    });
-    chatContacLi[10].addEventListener("click", function () {
-      chatMassagebox.style.display = "flex";
-      chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/02.jpg";
-      });
-      chatContactMassageName.forEach(function (x) {
-        x.innerHTML = chatContactName[10].innerHTML;
-      });
-    });
-    chatContacLi[11].addEventListener("click", function () {
-      chatMassagebox.style.display = "flex";
-      chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/02.jpg";
-      });
-      chatContactMassageName.forEach(function (x) {
-        x.innerHTML = chatContactName[11].innerHTML;
-      });
-    });
+    // chatContacLi[5].addEventListener("click", function () {
+    //   chatMassagebox.style.display = "flex";
+    //   chatContactMassageDp.forEach(function (z) {
+    //     z.src = "Avatar/02.jpg";
+    //   });
+    //   chatContactMassageName.forEach(function (x) {
+    //     x.innerHTML = chatContactName[5].innerHTML;
+    //   });
+    // });
+    // chatContacLi[6].addEventListener("click", function () {
+    //   chatMassagebox.style.display = "flex";
+    //   chatContactMassageDp.forEach(function (z) {
+    //     z.src = "Avatar/02.jpg";
+    //   });
+    //   chatContactMassageName.forEach(function (x) {
+    //     x.innerHTML = chatContactName[6].innerHTML;
+    //   });
+    // });
+    // chatContacLi[7].addEventListener("click", function () {
+    //   chatMassagebox.style.display = "flex";
+    //   chatContactMassageDp.forEach(function (z) {
+    //     z.src = "Avatar/02.jpg";
+    //   });
+    //   chatContactMassageName.forEach(function (x) {
+    //     x.innerHTML = chatContactName[7].innerHTML;
+    //   });
+    // });
+    // chatContacLi[8].addEventListener("click", function () {
+    //   chatMassagebox.style.display = "flex";
+    //   chatContactMassageDp.forEach(function (z) {
+    //     z.src = "Avatar/02.jpg";
+    //   });
+    //   chatContactMassageName.forEach(function (x) {
+    //     x.innerHTML = chatContactName[8].innerHTML;
+    //   });
+    // });
+    // chatContacLi[9].addEventListener("click", function () {
+    //   chatMassagebox.style.display = "flex";
+    //   chatContactMassageDp.forEach(function (z) {
+    //     z.src = "Avatar/02.jpg";
+    //   });
+    //   chatContactMassageName.forEach(function (x) {
+    //     x.innerHTML = chatContactName[9].innerHTML;
+    //   });
+    // });
+    // chatContacLi[10].addEventListener("click", function () {
+    //   chatMassagebox.style.display = "flex";
+    //   chatContactMassageDp.forEach(function (z) {
+    //     z.src = "Avatar/02.jpg";
+    //   });
+    //   chatContactMassageName.forEach(function (x) {
+    //     x.innerHTML = chatContactName[10].innerHTML;
+    //   });
+    // });
+    // chatContacLi[11].addEventListener("click", function () {
+    //   chatMassagebox.style.display = "flex";
+    //   chatContactMassageDp.forEach(function (z) {
+    //     z.src = "Avatar/02.jpg";
+    //   });
+    //   chatContactMassageName.forEach(function (x) {
+    //     x.innerHTML = chatContactName[11].innerHTML;
+    //   });
+    // });
     break;
   }
   for (var b = 0; b <= chatContactDp.length; b++) {
