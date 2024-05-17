@@ -117,6 +117,13 @@ img {
 
 /* NavbarCenterDrodowns ===========================> */
 /* NavbarCenterDrodowns ===========================> */
+
+.nav-link {
+  font-weight: 900;
+}
+.nav-link.active {
+  color: #0f6fec !important;
+}
 .dropdown-toggle::after {
   display: none;
 }
