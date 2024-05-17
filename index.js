@@ -31,19 +31,40 @@ var chatOffCanvasCloseBtn = document.querySelector(
 var chatMassageInput = document.querySelector(".chat-massage-input");
 var chatMassageBtnSend = document.querySelector(".chat-massage-send-btn");
 
-var massegeText = document.querySelector(".massege-text.me").innerHTML;
+var massegeText = document.querySelector(".massege-text.me");
 var massagesTextTime = document.querySelector(".massages-text-time.me");
 var chatHistory = document.querySelector(".chat-history");
-chatMassageBtnSend.addEventListener("click", function () {
-  chatHistory.innerHTML = `<span class="massege-text me bg-primary text-light py-2 px-3 rounded-2">${chatMassageInput.value}</span>
 
+function chatMassageInputMassgese() {
+  chatMassageBtnSend.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (chatMassageInput.value !== "") {
+      var newMassageElement = document.createElement("div");
+      newMassageElement.classList.add("massage", "me");
+      newMassageElement.innerHTML = ` <div
+  class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center"
+>
+  <div
+    class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2"
+  >
+    <div
+      class="d-flex flex-column justify-content-center align-items-end w-100 gap-2"
+    >
+      <span
+        class="massege-text me bg-primary text-light py-2 px-3 rounded-2"
+      >
+      ${chatMassageInput.value}
+      </span><span class="chat-massages-time me">5:35 PM <i class="bi bi-check-lg"></i></span></div></div></div>`;
+      chatHistory.appendChild(newMassageElement);
+      localStorage.setItem(chatHistory,JSON.stringify())
+      chatMassageInput.value = "";
+    } else {
+      console.log("iut");
+    }
+  });
+}
 
- 
-
-<span class="chat-massages-time"> 12:16 PM </span>`;
-
-  chatMassageInput.value = "";
-});
+chatMassageInputMassgese();
 
 function chatMassageMaximum() {
   chatOffCanvasCloseBtn.addEventListener("click", function () {
