@@ -34,31 +34,32 @@ var massegeText = document.querySelector(".massege-text.me");
 var massagesTextTime = document.querySelector(".massages-text-time.me");
 var chatHistory = document.querySelector(".chat-history");
 
-function chatMassageBoxMove() {
-  chatMassagebox.addEventListener("mousedown", function (e) {
-    chatMassagebox.classList.add("dragging");
-  });
-  document.addEventListener("mousemove", function (e) {
-    if (chatMassagebox.classList.contains("dragging")) {
-      chatMassagebox.style.top = e.clientY + "px";
-      chatMassagebox.style.left = e.clientX + "px";
-    }
-  });
-  document.addEventListener("mouseup", function () {
-    chatMassagebox.classList.remove("dragging");
-  });
-}
-chatMassageBoxMove();
+// function chatMassageBoxMove() {
+//   chatMassagebox.addEventListener("mousedown", function (e) {
+//     chatMassagebox.classList.add("dragging");
+//   });
+//   document.addEventListener("mousemove", function (e) {
+//     if (chatMassagebox.classList.contains("dragging")) {
+//       chatMassagebox.style.top = e.clientY + "px";
+//       chatMassagebox.style.left = e.clientX + "px";
+//     }
+//   });
+//   document.addEventListener("mouseup", function () {
+//     chatMassagebox.classList.remove("dragging");
+//   });
+// }
+// chatMassageBoxMove();
 function chatScrollToBottom() {
   chatHistory.scrollTop = chatHistory.scrollHeight;
 }
 chatScrollToBottom();
 function chatMassageInputMassgese() {
   var chatMassageDate = new Date();
-  chatMassageTime = chatMassageDate.toLocaleTimeString([], {
+
+  chatMassageDate = chatMassageDate.toLocaleTimeString([], {
     hour12: true,
-    hour: "numeric",
-    minute: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
   });
 
   chatMassageBtnSend.addEventListener("click", function (e) {
@@ -79,11 +80,11 @@ function chatMassageInputMassgese() {
         class="massege-text me bg-primary text-light py-2 px-3 rounded-2"
       >
       ${chatMassageInput.value}
-      </span><span class="chat-massages-time me">${chatMassageTime} <i class="bi bi-check-lg"></i></span></div></div></div>`;
+      </span><span class="chat-massages-time me">${chatMassageDate} <i class="bi bi-check-lg"></i></span></div></div></div>`;
       chatHistory.appendChild(newMassageElement);
       localStorage.setItem(
         "chat",
-        JSON.stringify(chatMassageInput.value, chatMassageTime)
+        JSON.stringify(chatMassageInput.value, chatMassageDate)
       );
       chatMassageInput.value = "";
       chatScrollToBottom();
@@ -227,7 +228,6 @@ function chatMassageMaximum() {
     break;
   }
   for (var b = 0; b <= chatContactDp.length; b++) {}
-
   for (var c = 0; c <= chatContactName.length; c++) {}
   for (var d = 0; d < chatcontactmassage.length; d++) {}
 
@@ -271,3 +271,26 @@ chatMassageMaximum();
 //   });
 // }
 // offCanvasChatSearch();
+
+var navbarNotificationClear = document.querySelector(
+  ".navbar-notification-clear"
+);
+var dropdownItemNotification = document.querySelectorAll(
+  ".dropdown-item.notification"
+);
+var navbarNotificationNew = document.querySelector(".navbar-notification-new");
+var header = document.querySelector("header");
+navbarNotificationClear.addEventListener("click", function () {
+  dropdownItemNotification.forEach(function (f) {
+    f.style.display = "none";
+    navbarNotificationNew.innerHTML = "0";
+  });
+});
+// var rootColor = document.querySelector(":root");
+
+// var darkModeBtn = document.querySelector(".dark-mode-btn");
+// darkModeBtn.addEventListener("click", function () {
+//   document.body.style.backgroundColor = "#191a1f";
+//   document.body.style.color = "#fff";
+//   header.style.backgroundColor = "#0f0f10";
+// });
