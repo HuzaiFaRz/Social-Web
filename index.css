@@ -527,6 +527,7 @@ img {
 /* Page-Main ===========================> */
 .home-column-1 {
   height: 100vh !important;
+  display: flex;
 }
 .home-profile-banner {
   width: 100%;
@@ -546,7 +547,7 @@ img {
 .home-profile-name:hover {
   color: #0f6fec;
 }
-.home-profile-paragraph{
+.home-profile-paragraph {
   font-size: 15px;
 }
 .home-profile-skill,
@@ -591,6 +592,10 @@ img {
 }
 
 @media (max-width: 991px) {
+
+  /* .profile-offcanvas-open-btn {
+    display: flex;
+  } */
   .navbar-collapse,
   .navbar-nav-scroll {
     overflow-y: auto !important;

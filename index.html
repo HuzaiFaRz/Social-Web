@@ -1513,7 +1513,7 @@
     <main class="h-100 w-100">
       <!--Page Main -->
       <!--Page Main -->
-      <section class="page-home">
+      <section class="page-home mt-4">
         <div
           class="container home-container d-flex flex-wrap justify-content-center w-100 h-100"
         >
@@ -1521,11 +1521,21 @@
             class="row home-row d-flex flex-wrap justify-content-center w-100 h-100 gy-3"
           >
             <div
-              class="col-xl-3 col-lg-3 col-md-12 col-sm-12 home-column-1 d-flex flex-wrap justify-content-center align-items-start h-100 bg-warning"
+              class="col-xl-3 col-lg-6 col-md-12 col-sm-12 home-column-1 flex-wrap justify-content-center align-items-center h-100"
             >
               <div
-                class="home-profile bg-light d-flex flex-column justify-content-center align-items-center text-center"
+                class="home-profile d-flex flex-column justify-content-center align-items-center text-center w-100 h-100 bg-light"
               >
+                <button
+                  class="profile-offcanvas-open-btn df-flex d-lg- flex-row justify-content-center align-items-center gap-3 border-0"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample"
+                  aria-controls="offcanvasExample"
+                >
+                  <i class="btn btn-primary px-3 py-2 bi bi-sliders"></i>
+                  <span class="text-dark fw-bolder fs-6"> My profile</span>
+                </button>
+
                 <div class="position-relative w-100">
                   <img
                     src="Bg/01.jpg"
@@ -1544,7 +1554,7 @@
                   class="home-profile-name fw-bolder fs-5 text-decoration-none mt-2"
                   >Huzaifa</a
                 >
-                <small class="home-profile-skill"
+                <small class="home-profile-skill w-100 px-1"
                   >Web Developer at Webestica</small
                 >
                 <span class="home-profile-paragraph py-3 px-3"
@@ -1552,7 +1562,7 @@
                   source code.</span
                 >
                 <div
-                  class="home-profile-rank d-flex flex-row justify-content-center align-items-center gap-3 py-2"
+                  class="home-profile-rank d-flex flex-wrap justify-content-center align-items-center text-center gap-3 py-2"
                 >
                   <div
                     class="home-profile-rank post border-end d-flex flex-column justify-content-center align-items-center text-center px-3"
@@ -1575,12 +1585,12 @@
                 </div>
                 <div class="home-profile-links border-top mt-3 w-100">
                   <ul
-                    class="home-profile-links-ul list-unstyled d-flex flex-column justify-content-center align-items-start w-100 px-3 py-3"
+                    class="home-profile-links-ul list-unstyled d-flex flex-column justify-content-center align-items-start w-100 px-3 py-3 gap-4 w-100"
                   >
-                    <li class="">
+                    <li class="nav-item">
                       <a
                         href="#"
-                        class="text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
+                        class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
                       >
                         <img
                           src="Icons/home-outline-filled.svg"
@@ -1590,12 +1600,270 @@
                         Feed
                       </a>
                     </li>
+                    <li class="nav-item">
+                      <a
+                        href="#"
+                        class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
+                      >
+                        <img
+                          src="Icons/person-outline-filled.svg"
+                          alt="Link"
+                          class="home-profile-links-img"
+                        />
+                        Connections
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="#"
+                        class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
+                      >
+                        <img
+                          src="Icons/earth-outline-filled.svg"
+                          alt="Link"
+                          class="home-profile-links-img"
+                        />
+                        Latest News
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="#"
+                        class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
+                      >
+                        <img
+                          src="Icons/calendar-outline-filled.svg"
+                          alt="Link"
+                          class="home-profile-links-img"
+                        />
+                        Events
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="#"
+                        class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
+                      >
+                        <img
+                          src="Icons/chat-outline-filled.svg"
+                          alt="Link"
+                          class="home-profile-links-img"
+                        />
+                        Groups
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="#"
+                        class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
+                      >
+                        <img
+                          src="Icons/notification-outlined-filled.svg"
+                          alt="Link"
+                          class="home-profile-links-img"
+                        />
+                        Notifications
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="#"
+                        class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
+                      >
+                        <img
+                          src="Icons/cog-outline-filled.svg"
+                          alt="Link"
+                          class="home-profile-links-img"
+                        />
+                        Settings
+                      </a>
+                    </li>
+                    <li class="nav-item w-100">
+                      <a
+                        href="profile.html"
+                        class="nav-link text-decoration-none fw-bolder text-center text-primary py-2 border-top border-bottom w-100"
+                      >
+                        View Profile
+                      </a>
+                    </li>
                   </ul>
+                </div>
+              </div>
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasExample"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body profile-offcanvas-body">
+                  <div
+                    class="home-profile d-flex flex-column justify-content-center align-items-center text-center w-100 h-100 bg-light"
+                  >
+                    <div class="position-relative w-100">
+                      <img
+                        src="Bg/01.jpg"
+                        alt="Banner"
+                        class="home-profile-banner"
+                      />
+                      <img
+                        src="Avatar/01.jpg"
+                        alt="Profile"
+                        class="home-profile-img border-3 border-light rounded-3"
+                      />
+                    </div>
+
+                    <a
+                      href="#"
+                      class="home-profile-name fw-bolder fs-5 text-decoration-none mt-2"
+                      >Huzaifa</a
+                    >
+                    <small class="home-profile-skill w-100 px-1"
+                      >Web Developer at Webestica</small
+                    >
+                    <span class="home-profile-paragraph py-3 px-3"
+                      >I'd love to change the world, but they won’t give me the
+                      source code.</span
+                    >
+                    <div
+                      class="home-profile-rank d-flex flex-wrap justify-content-center align-items-center text-center gap-3 py-2"
+                    >
+                      <div
+                        class="home-profile-rank post border-end d-flex flex-column justify-content-center align-items-center text-center px-3"
+                      >
+                        <b class="fw-bolder">256</b>
+                        <small>Post</small>
+                      </div>
+                      <div
+                        class="home-profile-rank followers d-flex flex-column justify-content-center align-items-center text-center"
+                      >
+                        <b class="fw-bolder">2.5K</b>
+                        <small>Followers</small>
+                      </div>
+                      <div
+                        class="home-profile-rank following border-start d-flex flex-column justify-content-center align-items-center text-center px-3"
+                      >
+                        <b class="fw-bolder">365</b>
+                        <small>Following</small>
+                      </div>
+                    </div>
+                    <div class="home-profile-links border-top mt-3 w-100">
+                      <ul
+                        class="home-profile-links-ul list-unstyled d-flex flex-column justify-content-center align-items-start w-100 px-3 py-3 gap-4 w-100"
+                      >
+                        <li class="nav-item">
+                          <a
+                            href="#"
+                            class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
+                          >
+                            <img
+                              src="Icons/home-outline-filled.svg"
+                              alt="Link"
+                              class="home-profile-links-img"
+                            />
+                            Feed
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            href="#"
+                            class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
+                          >
+                            <img
+                              src="Icons/person-outline-filled.svg"
+                              alt="Link"
+                              class="home-profile-links-img"
+                            />
+                            Connections
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            href="#"
+                            class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
+                          >
+                            <img
+                              src="Icons/earth-outline-filled.svg"
+                              alt="Link"
+                              class="home-profile-links-img"
+                            />
+                            Latest News
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            href="#"
+                            class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
+                          >
+                            <img
+                              src="Icons/calendar-outline-filled.svg"
+                              alt="Link"
+                              class="home-profile-links-img"
+                            />
+                            Events
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            href="#"
+                            class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
+                          >
+                            <img
+                              src="Icons/chat-outline-filled.svg"
+                              alt="Link"
+                              class="home-profile-links-img"
+                            />
+                            Groups
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            href="#"
+                            class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
+                          >
+                            <img
+                              src="Icons/notification-outlined-filled.svg"
+                              alt="Link"
+                              class="home-profile-links-img"
+                            />
+                            Notifications
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            href="#"
+                            class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
+                          >
+                            <img
+                              src="Icons/cog-outline-filled.svg"
+                              alt="Link"
+                              class="home-profile-links-img"
+                            />
+                            Settings
+                          </a>
+                        </li>
+                        <li class="nav-item w-100">
+                          <a
+                            href="profile.html"
+                            class="nav-link text-decoration-none fw-bolder text-center text-primary py-2 border-top border-bottom w-100"
+                          >
+                            View Profile
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-xl-6 col-lg-6 col-md-12 col-lg-12">
+            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis,
               porro. Enim debitis, aliquam repellendus consectetur, facere odio
               optio modi non officia aut nulla! Ipsam, repudiandae temporibus
@@ -1620,34 +1888,74 @@
               nam voluptates eligendi quasi. Eligendi, quas. Dolorum asperiores
               explicabo porro iste nihil voluptates corrupti laborum earum!
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis,
-              porro. Enim debitis, aliquam repellendus consectetur, facere odio
-              optio modi non officia aut nulla! Ipsam, repudiandae temporibus
-              neque labore maxime, quaerat quae omnis autem, necessitatibus
-              natus ut perferendis. Et suscipit praesentium hic odit ratione
-              illo totam facilis quas cumque magnam earum accusantium nesciunt
-              veritatis, laborum perspiciatis obcaecati quos molestiae id esse
-              vero. Ducimus sit earum unde molestias doloribus maiores rerum aut
-              sapiente ratione officiis provident quae repellat doloremque,
-              exercitationem beatae, perferendis corrupti, magnam enim quo qui?
-              Et laudantium modi omnis id, natus eius reprehenderit qui deleniti
-              molestias? Illo provident est autem temporibus hic quaerat, saepe
-              itaque ab soluta, nobis inventore, quas obcaecati quia. Hic maxime
-              quam numquam dolore officiis ullam, quisquam nobis odit incidunt
-              consequatur iusto eveniet debitis ipsam accusantium placeat in
-              fugit voluptates ipsum atque recusandae? Delectus temporibus
-              dolorum voluptas ab, rem sed. Veritatis illum sequi nemo rem,
-              cupiditate sint libero dolorum iste itaque quidem deleniti dolore
-              eligendi fuga nesciunt deserunt, sapiente ipsa! Magni vel itaque
-              exercitationem dolore non labore deleniti illo, quod quaerat
-              tempora est soluta repellendus odit esse optio neque porro aliquam
-              nam voluptates eligendi quasi. Eligendi, quas. Dolorum asperiores
-              explicabo porro iste nihil voluptates corrupti laborum earum!
+
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 bg-warning">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              sequi corporis tempore obcaecati sit expedita facilis ex et quo
+              magnam, similique, quia molestiae error earum quisquam
+              voluptatibus nobis voluptatem voluptatum cum placeat saepe facere.
+              Mollitia, cum illum omnis inventore quibusdam eum magni minus, nam
+              voluptates porro non eius distinctio maiores dolorem esse ab
+              asperiores suscipit expedita similique aliquid. Dolores et ut
+              eligendi eos nesciunt ipsa laudantium dolorem magnam explicabo
+              quibusdam aliquid quo, illo beatae porro tenetur repellat quam?
+              Vel aliquid quia ullam debitis in eum labore nesciunt quidem,
+              dolorem similique exercitationem asperiores voluptates inventore
+              repudiandae laboriosam corrupti quod animi nostrum aut qui.
+              Explicabo laudantium autem corrupti ipsum enim dolor alias nemo
+              sed. Ducimus similique temporibus praesentium impedit quis
+              laboriosam voluptatibus placeat, expedita atque autem nemo quia
+              nam consequatur, doloribus, molestiae quisquam. Rem aut maxime
+              iure sapiente amet odio cum adipisci dicta. Possimus laborum,
+              voluptate illo corrupti odio in dolores officiis tenetur
+              laudantium nisi ipsa eius obcaecati, repellat alias maxime
+              inventore. Ea vel voluptas veniam inventore id quidem autem velit
+              eaque nulla a, obcaecati dolores numquam nobis dignissimos tempora
+              temporibus illum recusandae aliquid repellendus ratione unde.
+              Minus vero exercitationem tempore dolorem fugit recusandae
+              corrupti et voluptas culpa illo itaque vel, facere dignissimos
+              voluptates perspiciatis illum perferendis at? Itaque atque quidem
+              consequuntur repellendus et ut, corporis officia, explicabo nam
+              neque doloremque maiores minus illum. Aliquam numquam ducimus
+              aspernatur dolorem officiis laborum expedita suscipit ea nobis
+              asperiores, amet eaque quisquam molestiae vitae consequatur.
+              Dolore corporis aliquam pariatur fugiat nisi mollitia blanditiis
+              ut esse molestias. Corporis omnis sint, beatae alias dolor
+              veritatis! Dolorum, beatae nostrum ex culpa inventore porro
+              voluptas incidunt facere voluptate molestiae eum laudantium esse
+              atque eos? Nisi ea sed fugiat illum tempora mollitia a blanditiis
+              laborum necessitatibus molestias sit suscipit, excepturi obcaecati
+              nesciunt hic reiciendis earum laboriosam et distinctio!
+              Repudiandae commodi quo esse, rerum corrupti fugit maxime deserunt
+              tenetur ipsum laboriosam fuga. Necessitatibus ducimus corporis,
+              aspernatur inventore minima quod, impedit odio, nam fugiat eos ad
+              eius ut in maxime doloremque earum? Veritatis praesentium a
+              laudantium aliquam atque nostrum! Ex explicabo dignissimos fugiat
+              nisi. Nesciunt iusto neque id, ut accusantium repudiandae veniam
+              sed consectetur ducimus nostrum molestias reiciendis voluptatem
+              libero, quo iste soluta ratione adipisci doloribus eaque illum
+              voluptatum? Aperiam consectetur voluptatum soluta quo dolorum illo
+              vero aliquid exercitationem, fuga doloribus provident, molestiae
+              non libero temporibus quidem suscipit, labore veniam nam voluptas.
+              Ipsam, provident assumenda hic libero sit debitis minus magnam,
+              fuga accusantium nostrum necessitatibus dolor nobis et quia
+              placeat architecto recusandae aspernatur quibusdam alias porro
+              repellat sequi mollitia soluta molestias! Cupiditate, dolores aut
+              possimus provident et facilis voluptates sapiente vel eos, ut
+              laborum, officiis aliquam assumenda aliquid porro quaerat numquam
+              suscipit veritatis placeat saepe ipsum iusto quasi fugit est. Quia
+              ratione nemo error autem temporibus doloremque iusto voluptatum
+              eum, aspernatur maiores consequatur minus distinctio sed expedita
+              repellendus tempora labore neque sapiente voluptas praesentium
+              veniam inventore fuga numquam? Distinctio, aperiam et
+              reprehenderit repellendus dolorum autem ea delectus accusamus a
+              veritatis impedit repudiandae fugit dicta labore architecto illo
+              obcaecati temporibus totam iusto quas.
             </div>
           </div>
         </div>
       </section>
+
       <!--Page Main -->
       <!--Page Main -->
     </main>
