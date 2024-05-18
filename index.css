@@ -33,7 +33,9 @@
   --btn-bg-color-2: #a1a1a8;
   --notification: #d6293e;
   --notification-2: #0f6fec;
+  --btn-3: #14191e;
   --btn-2: #a1a1a8;
+  --btn-5: #c5c6cc1a;
   --offcanvas-bg: #191a1f;
   --cloud: rgb(12, 188, 135);
 }
@@ -517,14 +519,14 @@ input::-webkit-search-cancel-button {
   height: 300px;
 }
 
-.chat-massages-time{
+.chat-massages-time {
   color: var(--btn-bg-color-2);
 }
-.massege-text{
+.massege-text {
   background-color: var(--btn-bg);
   color: var(--dropdown-item);
 }
-.massages-text-time{
+.massages-text-time {
   color: var(--btn-bg-color-2);
 }
 .chatMassageboxMaximum .chat-history {
@@ -543,6 +545,8 @@ input::-webkit-search-cancel-button {
   font-size: 13px;
 }
 .chat-massage-input {
+  background-color: var(--btn-bg);
+  color: var(--btn-bg-color-2);
   border: 1px solid transparent;
   outline: none;
 }
@@ -553,46 +557,39 @@ input::-webkit-search-cancel-button {
   transition: all 0.3s linear;
   width: 40px;
   height: 40px;
-  color: var(--notification);
   font-weight: 900;
   font-size: 30px;
 }
 .chat-massage-btn-1:hover {
   transition: all 0.3s linear;
-  background-color: var(--notification);
-  color: #ffffffff;
+  background-color: var(--notification) !important;
+  color: var(--btn-bg-color) !important;
 }
-.chat-massage-input,
-.chat-massage-send-btn,
-.chat-massage-btn-1,
-.chat-massage-btn-2,
-.chat-massage-btn-3 {
-  z-index: 99999999999999999999999999999999;
-}
+
 .chat-massage-btn-2 {
   transition: all 0.3s linear;
   width: 40px;
   height: 40px;
-  color: black;
+  background-color: var(--btn-5);
+  color: var(--dropdown-item);
   font-weight: 900;
 }
 .chat-massage-btn-2:hover {
   transition: all 0.3s linear;
-  background-color: black;
-  color: #ffffffff;
+  background-color: var(--header-color);
+  color: var(--btn-bg-color);
 }
 .chat-massage-btn-3 {
   transition: all 0.3s linear;
   width: 40px;
   height: 40px;
   font-size: 16px;
-  color: #0cbc87;
   font-weight: 900;
 }
 .chat-massage-btn-3:hover {
   transition: all 0.3s linear;
-  background-color: #0cbc87;
-  color: #ffffffff;
+  background-color: var(--cloud) !important;
+  color: var(--btn-bg-color) !important;
 }
 /* Chat Box ===========================> */
 /* Chat Box ===========================> */
@@ -602,9 +599,13 @@ input::-webkit-search-cancel-button {
 
 /* Page-Main ===========================> */
 /* Page-Main ===========================> */
+.page-home{
+  margin-top:1.5rem ; 
+}
 .home-column-1 {
   height: 100% !important;
   display: flex;
+  background-color: #141519;;
 }
 .home-profile {
   display: flex;
@@ -622,24 +623,28 @@ input::-webkit-search-cancel-button {
   transform: translate(-50%, 0%);
 }
 .home-profile-name {
-  color: black;
+  color: var(--btn-bg-color);
 }
 .home-profile-name:hover {
   color: var(--active-color);
 }
 .home-profile-paragraph {
   font-size: 15px;
+  color: var(--btn-bg-color-2);
 }
 .home-profile-skill,
 .home-profile-paragraph,
 .home-profile-rank > small {
-  color: #676a79;
+  color: var(--btn-bg-color-2);
 }
 .home-profile-rank > b {
   font-size: 15px;
 }
+.home-profile-rank > small {
+  color: var(--btn-2);
+}
 .home-profile-links-ul > li > a {
-  color: black;
+  color: var(--btn-bg-color);
   letter-spacing: -0.8px;
 }
 .home-profile-links-ul > li > a:hover {
@@ -672,9 +677,15 @@ input::-webkit-search-cancel-button {
   .navbar-center {
     justify-content: space-evenly;
   }
+  .page-home{
+    margin-top: 4rem ; 
+  }
 }
 
 @media (max-width: 991px) {
+  .page-home{
+    margin-top: 1rem ; 
+  }
   .home-profile {
     display: none;
   }
