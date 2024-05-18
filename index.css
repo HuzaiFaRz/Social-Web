@@ -50,6 +50,7 @@ img {
 /* Header ===========================> */
 /* Header ===========================> */
 
+.top-content,
 .header {
   height: 60px;
   background-color: #ffffffff;
@@ -120,6 +121,7 @@ img {
 
 .nav-link {
   font-weight: 900;
+  letter-spacing: -1px;
 }
 .nav-link.active {
   color: #0f6fec !important;
@@ -339,6 +341,7 @@ img {
 
 /* OffCanvas ===========================> */
 /* OffCanvas ===========================> */
+
 .chat-offcanvas-open-btn {
   position: fixed;
   bottom: 3%;
@@ -427,6 +430,9 @@ img {
   font-size: 12px;
 }
 
+/* Chat Box ===========================> */
+/* Chat Box ===========================> */
+
 .chat-Massage-chat-box {
   display: none;
   flex-direction: column;
@@ -511,11 +517,57 @@ img {
   background-color: #0cbc87;
   color: #ffffffff;
 }
+/* Chat Box ===========================> */
+/* Chat Box ===========================> */
+
 /* OffCanvas ===========================> */
 /* OffCanvas ===========================> */
 
 /* Page-Main ===========================> */
 /* Page-Main ===========================> */
+.home-column-1 {
+  height: 100vh !important;
+}
+.home-profile-banner {
+  width: 100%;
+  height: 100px;
+}
+.home-profile-img {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.home-profile-name {
+  color: black;
+}
+.home-profile-name:hover {
+  color: #0f6fec;
+}
+.home-profile-paragraph{
+  font-size: 15px;
+}
+.home-profile-skill,
+.home-profile-paragraph,
+.home-profile-rank > small {
+  color: #676a79;
+}
+.home-profile-rank > b {
+  font-size: 15px;
+}
+.home-profile-links-ul > li > a {
+  color: black;
+  letter-spacing: -0.8px;
+}
+.home-profile-links-ul > li > a:hover {
+  color: #0f6fec;
+}
+.home-profile-links-img {
+  width: 20px;
+  height: 20px;
+}
 
 /* Page-Main ===========================> */
 /* Page-Main ===========================> */
@@ -605,6 +657,9 @@ img {
   #navbar-dropdown-right {
     left: 50%;
     transform: translate(-78%, 0%);
+  }
+  #navbar-dropdown-profile-btn {
+    font-size: 13px;
   }
   .chat-dropdown-menu {
     width: 200px !important;

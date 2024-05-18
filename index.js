@@ -106,7 +106,7 @@ function chatMassageMaximum() {
     chatContacLi[0].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/01.jpg";
+        z.src = "Avatar/07.jpg";
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[0].innerHTML;
@@ -167,7 +167,7 @@ function chatMassageMaximum() {
     chatContacLi[6].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.src="Avatar/group-img.avif"
+        z.src = "Avatar/group-img.avif";
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[6].innerHTML;
