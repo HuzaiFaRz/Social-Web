@@ -36,6 +36,7 @@
   --btn-3: #14191e;
   --btn-2: #a1a1a8;
   --btn-5: #c5c6cc1a;
+  --btn-transparent: rgba(15, 111, 236, 0.1);
   --offcanvas-bg: #191a1f;
   --cloud: rgb(12, 188, 135);
 }
@@ -146,10 +147,15 @@ input::-webkit-search-cancel-button {
 
 .nav-link {
   font-weight: 900;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
+  font-size: 15px;
   color: var(--nav-link-color);
 }
-.nav-link:focus,
+
+.nav-link.show {
+  color: var(--active-color) !important;
+}
+.nav-link:hover,
 .nav-link.active {
   color: var(--active-color) !important;
 }
@@ -162,7 +168,7 @@ input::-webkit-search-cancel-button {
 }
 
 .dropdown-menu {
-  width: 50px;
+  width: 250px;
   box-shadow: 0px 20px 30px rgba(83, 88, 93, 0.1),
     0px 0px 30px rgba(83, 88, 93, 0.2);
   background-color: var(--header-color);
@@ -172,6 +178,7 @@ input::-webkit-search-cancel-button {
   letter-spacing: 0.5px;
   color: var(--dropdown-item);
   font-weight: 800;
+  font-size: 15px;
   background-color: transparent;
 }
 .dropdown-item-cloud-icon {
@@ -599,13 +606,13 @@ input::-webkit-search-cancel-button {
 
 /* Page-Main ===========================> */
 /* Page-Main ===========================> */
-.page-home{
-  margin-top:1.5rem ; 
+.page-home {
+  margin-top: 1.5rem;
 }
 .home-column-1 {
   height: 100% !important;
   display: flex;
-  background-color: #141519;;
+  background-color: #141519;
 }
 .home-profile {
   display: flex;
@@ -658,12 +665,63 @@ input::-webkit-search-cancel-button {
   display: none;
 }
 
+.home-people-follow,
+.home-news {
+  background-color: var(--btn-3);
+}
+.home-people-follow > span,
+.home-news > span {
+  font-weight: 900;
+  font-size: 18px;
+}
+.people-follow-img {
+  width: 40px;
+  height: 40px;
+}
+.people-follow-name {
+  font-size: 14px;
+}
+.news-time,
+.people-follow-profession {
+  color: var(--btn-2);
+  font-size: 13px;
+}
+.people-follow-plus {
+  background-color: var(--btn-transparent);
+  color: var(--active-color);
+  width: 40px;
+  height: 40px;
+}
+.people-follow-view-btn {
+  background-color: var(--btn-transparent);
+  color: var(--active-color);
+}
+.people-follow-plus:hover,
+.people-follow-view-btn:hover {
+  background-color: var(--active-color);
+  color: var(--btn-bg-color);
+}
+.news-text {
+  font-size: 14px;
+  color: var(--btn-bg-color);
+}
+.news-view-btn {
+  font-size: 13px;
+  color: var(--dropdown-item);
+}
+.news-view-btn:hover {
+  text-decoration: underline !important;
+}
 /* Page-Main ===========================> */
 /* Page-Main ===========================> */
 
 /* MediaQuiries ===========================> */
 /* MediaQuiries ===========================> */
-
+@media (max-width: 1300px) {
+  #navbar-dropdown-right {
+    height: 550px;
+  }
+}
 @media (max-width: 1200px) {
   .navbar-end {
     width: 100%;
@@ -677,14 +735,19 @@ input::-webkit-search-cancel-button {
   .navbar-center {
     justify-content: space-evenly;
   }
-  .page-home{
-    margin-top: 4rem ; 
+  .page-home {
+    margin-top: 4rem;
   }
 }
 
+@media (max-width: 1199px) {
+  .home-profile-banner {
+    width: 400px;
+  }
+}
 @media (max-width: 991px) {
-  .page-home{
-    margin-top: 1rem ; 
+  .page-home {
+    margin-top: 1rem;
   }
   .home-profile {
     display: none;
@@ -706,11 +769,12 @@ input::-webkit-search-cancel-button {
   .navbar-nav-scroll {
     overflow-y: auto !important;
   }
+
   #navbar-dropdown-right,
   #navbar-dropdown-right-2 {
     position: absolute;
-    transform: translate(-86%);
-    overflow-y: auto !important;
+
+    transform: translate(-86%, 0);
   }
   .navbar-menu-lines-Button {
     display: flex;
@@ -767,7 +831,7 @@ input::-webkit-search-cancel-button {
 @media (max-width: 600px) {
   #navbar-dropdown-right {
     left: 50%;
-    transform: translate(-78%, 0%);
+    transform: translate(-78%);
   }
   #navbar-dropdown-profile-btn {
     font-size: 13px;

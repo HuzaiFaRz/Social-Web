@@ -278,14 +278,17 @@ var navbarNotificationClear = document.querySelector(
 var dropdownItemNotification = document.querySelectorAll(
   ".dropdown-item.notification"
 );
+var dropdownRight1 = document.querySelector("#navbar-dropdown-right");
 var navbarNotificationNew = document.querySelector(".navbar-notification-new");
 var header = document.querySelector("header");
 navbarNotificationClear.addEventListener("click", function () {
   dropdownItemNotification.forEach(function (f) {
     f.style.display = "none";
     navbarNotificationNew.innerHTML = "0";
+    dropdownRight1.style.height = "max-content";
   });
 });
+
 // var rootColor = document.querySelector(":root");
 
 // var darkModeBtn = document.querySelector(".dark-mode-btn");
