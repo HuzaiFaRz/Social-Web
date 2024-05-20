@@ -1,2123 +1,1383 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Social - Network, Community and Event Theme</title>
-    <link rel="shortcut icon" href="Logo/logo.svg" type="image/x-icon" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
-    <link rel="stylesheet" href="index.css" />
-  </head>
 
-  <body>
-    <!-- Header -->
-    <!-- Header -->
-    <div class="top-content">
-      <header
-        class="header fixed-top position-fixed top-0 start-0 end-0 w-100 d-flex flex-wrap justify-content-center align-items-center"
-        id="Header"
-      >
-        <!-- Navbar -->
-        <!-- Navbar -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social - Network, Community and Event Theme</title>
+  <link rel="shortcut icon" href="Logo/logo.svg" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
 
-        <nav
-          class="navbar navbar-expand-lg h-100 p-0 m-0 w-100 d-flex flex-wrap justify-content-center align-items-center"
-          id="Navbar"
-        >
-          <!-- NavbarContainer -->
-          <!-- NavbarContainer -->
-          <div
-            class="container-fluid h-100 w-100 p-0 d-flex flex-wrap align-items-center justify-content-center align-items-center"
-            id="NavbarContainer"
-          >
-            <!-- NavbarRow -->
-            <!-- NavbarRow -->
-            <div
-              class="row h-100 w-100 d-flex flex-wrap justify-content-start align-items-center position-relative"
-              id="NavbarRow"
-            >
-              <!-- NavbarStart -->
-              <!-- NavbarStart -->
-              <div
-                class="navbar-start h-100 d-flex flex-cloumn justify-content-center align-items-center"
-              >
-                <a class="navbar-brand" id="NavbarBrand" href="index.html">
-                  <img
-                    src="Logo/logo.svg"
-                    alt="Logo"
-                    class="navbar-brand-logo border-0"
-                    id="NavbarBrandLogo"
-                  />
-                </a>
-              </div>
+<body>
+  <!-- Header -->
+  <!-- Header -->
+  <div class="top-content">
+    <header
+      class="header fixed-top position-fixed top-0 start-0 end-0 w-100 d-flex flex-wrap justify-content-center align-items-center"
+      id="Header">
+      <!-- Navbar -->
+      <!-- Navbar -->
 
-              <!-- NavbarStart -->
-              <!-- NavbarStart -->
-
-              <!-- NavbarMenuLines -->
-              <!-- NavbarMenuLines -->
-              <div
-                class="menu-lines position-relative border-0"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span
-                  class="navbar-menu-line-1 position-absolute d-block rounded-5 opacity-1 start-0"
-                ></span>
-                <span
-                  class="navbar-menu-line-2 position-absolute d-block rounded-5 opacity-1 start-0"
-                ></span>
-                <span
-                  class="navbar-menu-line-3 position-absolute d-block rounded-5 opacity-1 start-0"
-                ></span>
-              </div>
-
-              <!-- NavbarMenuLines -->
-              <!-- NavbarMenuLines -->
-
-              <!-- NavbarCenter -->
-              <!-- NavbarCenter -->
-              <div
-                class="collapse navbar-collapse navbar-nav-scroll navbar-center p-0"
-                id="navbarSupportedContent"
-              >
-                <form class="navbar-form position-relative" role="search">
-                  <a
-                    href="index.html"
-                    class="bi bi-search navbar-search-icon position-absolute start-0 px-3 py-2"
-                    id="NavbarSearchIcon"
-                  ></a>
-                  <input
-                    class="form-control navbar-search-input ps-5 py-2"
-                    id="NavbarSearchInput"
-                    type="search"
-                    placeholder="Search..."
-                    aria-label="Search"
-                  />
-                </form>
-                <ul class="navbar-nav px-3">
-                  <li class="nav-item dropdown px-2 py-2">
-                    <a
-                      class="nav-link active dropdown-toggle fw-bold px-3"
-                      href="javascript:void(0)"
-                      role="button"
-                      id="navbardropdown1"
-                      data-bs-toggle="dropdown"
-                      data-bs-display="static"
-                      data-bs-auto-close="outside"
-                      data-bs-popper="static"
-                    >
-                      Demos
-                      <i
-                        class="bi bi-chevron-down navbar-dropdown-toggle-icon"
-                      ></i>
-                    </a>
-                    <ul
-                      class="dropdown-menu gap-2 px-2 py-2 border-0"
-                      aria-labelledby="navbardropdown1"
-                    >
-                      <li>
-                        <a class="dropdown-item active py-2 px-3 w-100" href="#"
-                          >Home Default</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Home Classic</a
-                        >
-                      </li>
-
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Home Post</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Home Video</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Home Event</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Landing Page</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >App Download</a
-                        >
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-                      <li>
-                        <a href="#" class="dropdown-item py-2 px-3 w-100">
-                          <i
-                            class="bi bi-cloud-arrow-down-fill dropdown-item-cloud-icon"
-                          ></i>
-                          &nbsp; Buy Social
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="nav-item dropdown px-2 py-2">
-                    <a
-                      class="nav-link dropdown-toggle fw-bold px-3"
-                      href="javascript:void(0)"
-                      role="button"
-                      id="navbardropdown2"
-                      data-bs-toggle="dropdown"
-                      data-bs-display="static"
-                      data-bs-auto-close="outside"
-                      data-bs-popper="static"
-                    >
-                      Pages
-                      <i
-                        class="bi bi-chevron-down navbar-dropdown-toggle-icon"
-                      ></i>
-                    </a>
-                    <ul
-                      class="dropdown-menu gap-2 px-2 py-2 border-0"
-                      aria-labelledby="navbardropdown2"
-                    >
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Album</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Celebration</a
-                        >
-                      </li>
-
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Messaging</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Profile</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Events</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Events 2</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Event Details</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Event Details 2</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Groups</a
-                        >
-                      </li>
-
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Group details</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Post videos</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Post videos details</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Post details</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Videos details</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Blog</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Blog details</a
-                        >
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Dropdown Level</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="nav-item dropdown px-2 py-2">
-                    <a
-                      class="nav-link dropdown-toggle fw-bold px-3"
-                      href="javascript:void(0)"
-                      role="button"
-                      id="navbardropdown3"
-                      data-bs-toggle="dropdown"
-                      data-bs-display="static"
-                      data-bs-auto-close="outside"
-                      data-bs-popper="static"
-                    >
-                      Account
-                      <i
-                        class="bi bi-chevron-down navbar-dropdown-toggle-icon"
-                      ></i>
-                    </a>
-                    <ul
-                      class="dropdown-menu gap-2 px-2 py-2 border-0"
-                      aria-labelledby="navbardropdown3"
-                    >
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Create a page</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Setting</a
-                        >
-                      </li>
-
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Notifications</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Help center</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Help details</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Authintication</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Error 404</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Offline</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-2 px-3 w-100" href="#"
-                          >Privacy & Terms</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item nav-item-end-link px-2 py-2">
-                    <a class="nav-link fw-bold px-3">My Network</a>
-                  </li>
-                </ul>
-              </div>
-
-              <!-- NavbarCenter -->
-              <!-- NavbarCenter -->
-
-              <!-- NavbarEnd -->
-              <!-- NavbarEnd -->
-              <div class="navbar-end h-100">
-                <ul class="navbar-end-ul list-unstyled h-100 w-100 gap-3">
-                  <li
-                    class="nav-item d-flex align-items-center justify-content-center h-100"
-                  >
-                    <a
-                      class="nav-link nav-link-icon bi bi-chat-left-text-fill d-flex flex-column justify-content-center align-items-center border border-dark border-opacity-10 rounded-1"
-                      href="#"
-                    >
-                    </a>
-                  </li>
-
-                  <li
-                    class="nav-item d-flex align-items-center justify-content-center h-100"
-                  >
-                    <a
-                      class="nav-link nav-link-icon bi bi-gear-fill d-flex flex-column justify-content-center align-items-center border border-dark border-opacity-10 rounded-1"
-                      href="#"
-                    >
-                    </a>
-                  </li>
-
-                  <li
-                    class="nav-item dropdown d-flex align-items-center justify-content-center h-100"
-                  >
-                    <a
-                      class="nav-link dropdown-toggle position-relative"
-                      href="javascript:void(0)"
-                      role="button"
-                      id="navbardropdown4"
-                      data-bs-toggle="dropdown"
-                      data-bs-display="static"
-                      data-bs-auto-close="outside"
-                      data-bs-popper="static"
-                    >
-                      <i
-                        class="nav-link nav-link-icon bi bi-bell-fill d-flex flex-column justify-content-center align-items-center border border-dark border-opacity-10 rounded-1"
-                      ></i>
-                    </a>
-                    <ul
-                      id="navbar-dropdown-right"
-                      class="dropdown-menu dropdown-menu-lg-end dropdown-menu-xxl-end dropdown-menu-xl-end border-0"
-                      aria-labelledby="navbardropdown4"
-                    >
-                      <li
-                        class="dropdown-item d-flex flex-row justify-content-between align-items-center"
-                      >
-                        <div
-                          class="d-flex flex-wrap align-items-center justify-content-evenly gap-3"
-                        >
-                          <span class="text-light"> Notifications </span>
-                          <span
-                            class="px-2 py-1 bg-danger bg-opacity-10 text-danger fw-bolder rounded-2 navbar-notification-new"
-                          >
-                            4 New
-                          </span>
-                        </div>
-                        <div>
-                          <a
-                            class="text-primary fw-bold text-decoration-none navbar-notification-clear"
-                            href="#"
-                          >
-                            Clear all
-                          </a>
-                        </div>
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-
-                      <li class="dropdown-item notification w-100 p-2">
-                        <div
-                          class="dropdown-notification w-100 py-3 px-3 d-flex flex-column justify-content-center align-items-start gap-3"
-                        >
-                          <div
-                            class="dropdown-notification-massege d-flex flex-nowrap justify-content-between align-items-center w-100"
-                          >
-                            <div
-                              class="position-relative d-flex gap-3 flex-wrap justify-content-center align-items-center"
-                            >
-                              <img
-                                src="Avatar/01.jpg"
-                                alt="Avatar"
-                                class="dropdown-notification-img rounded-circle"
-                              />
-
-                              <p class="fw-light mt-2">
-                                <span class="fw-bolder">Judy Nguyen</span>
-                                sent you
-                                <br />
-                                a friend request.
-                              </p>
-                            </div>
-
-                            <span class="text mb-4">Just Now</span>
-                          </div>
-
-                          <div
-                            class="dropdown-notification-btns d-flex gap-3 flex-row justify-content-center align-items-center"
-                          >
-                            <button
-                              class="btn btn-primary text-light px-3 py-2 border-0 rounded-1 fw-normal"
-                            >
-                              Accept
-                            </button>
-                            <button
-                              class="bg-danger bg-opacity-10 text-danger px-3 py-2 border-0 rounded-1 fw-bolder"
-                            >
-                              Delete
-                            </button>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li class="dropdown-item notification w-100 p-2">
-                        <div
-                          class="dropdown-notification w-100 py-3 px-3 d-flex flex-column justify-content-center align-items-start gap-3"
-                        >
-                          <div
-                            class="dropdown-notification-massege d-flex flex-nowrap justify-content-between align-items-center w-100"
-                          >
-                            <div
-                              class="position-relative d-flex gap-3 flex-row justify-content-center align-items-center"
-                            >
-                              <img
-                                src="Avatar/02.jpg"
-                                alt="Avatar"
-                                class="dropdown-notification-img rounded-circle"
-                              />
-
-                              <p class="fw-light mt-2">
-                                Wish
-                                <span class="fw-bolder">Amanda Reed</span>
-                                a<br />
-                                happy birthday (Nov 12)
-                              </p>
-                            </div>
-
-                            <span class="mb-4">2mint</span>
-                          </div>
-
-                          <div
-                            class="dropdown-notification-btns d-flex gap-3 flex-row justify-content-center align-items-center"
-                          >
-                            <button
-                              class="btn btn-light bg-opacity-10 text-dark px-3 py-2 rounded-1 fw-normal"
-                            >
-                              Say happy birthday 🎂
-                            </button>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li class="dropdown-item notification w-100 p-2">
-                        <div
-                          class="dropdown-notification w-100 py-3 px-3 d-flex flex-column justify-content-center align-items-start gap-3"
-                          id="dropdown-notification-end"
-                        >
-                          <div
-                            class="dropdown-notification-massege d-flex flex-nowrap justify-content-between align-items-center w-100"
-                          >
-                            <span
-                              class="position-relative d-flex gap-3 flex-row justify-content-center align-items-center"
-                            >
-                              <div
-                                class="bg-success text-white rounded-circle px-2 py-2 fs-6"
-                              >
-                                WB
-                              </div>
-
-                              <p class="fw-light mt-2">
-                                Webestica has 15 like <br />
-                                and 1 new activity
-                              </p>
-                            </span>
-
-                            <span class="mb-4">1hr</span>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li class="dropdown-item notification w-100 p-2">
-                        <div
-                          class="dropdown-notification w-100 py-3 px-3 d-flex flex-column justify-content-center align-items-start gap-3"
-                          id="dropdown-notification-end"
-                        >
-                          <div
-                            class="dropdown-notification-massege d-flex flex-nowrap justify-content-between align-items-center w-100"
-                          >
-                            <span
-                              class="position-relative d-flex gap-3 flex-row justify-content-center align-items-center"
-                            >
-                              <img
-                                src="Logo/12.svg"
-                                alt="Logo"
-                                class="dropdown-notification-img rounded-circle"
-                              />
-
-                              <p class="fw-light mt-2">
-                                <b class="fw-bold">Bootstrap in the news:</b>
-                                The
-                                <br />
-                                search giant’s parent <br />
-                                company, Alphabet, just<br />
-                                joined an exclusive <br />
-                                club of tech stocks.
-                              </p>
-                            </span>
-
-                            <span class="mb-4">1hr</span>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li
-                    class="nav-item dropdown d-flex align-items-center justify-content-center h-100"
-                  >
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="javascript:void(0)"
-                      role="button"
-                      id="navbardropdown5"
-                      data-bs-toggle="dropdown"
-                      data-bs-display="static"
-                      data-bs-auto-close="outside"
-                      data-bs-popper="static"
-                    >
-                      <img
-                        src="Avatar/01.jpg"
-                        alt="Profile"
-                        class="navbar-profile-img rounded-2 object-fit-cover"
-                      />
-                    </a>
-                    <ul
-                      id="navbar-dropdown-right-2"
-                      class="dropdown-menu dropdown-menu-lg-end dropdown-menu-xxl-end dropdown-menu-xl-end border-0"
-                      aria-labelledby="navbardropdown5"
-                    >
-                      <li
-                        class="dropdown-item d-flex flex-row justify-content-between align-items-center"
-                      >
-                        <div
-                          class="d-flex flex-wrap align-items-center justify-content-start"
-                        >
-                          <img
-                            src="Avatar/01.jpg"
-                            class="navbar-profile-img rounded-circle"
-                            alt=""
-                          />
-
-                          <div
-                            class="d-flex flex-column justify-content-center align-items-center gap-1 px-3"
-                          >
-                            <span class="fw-bold"> Huzaifa Raza</span>
-                            <span
-                              class="text-opacity-75"
-                              style="font-size: 13px"
-                            >
-                              Web Developer
-                            </span>
-                          </div>
-
-                          <a
-                            href="#"
-                            class="mt-3 bg-primary bg-opacity-10 py-2 w-100 rounded-2 text-decoration-none text-center"
-                            id="navbar-dropdown-profile-btn"
-                            >View Profile
-                          </a>
-                        </div>
-                      </li>
-
-                      <li class="mt-2">
-                        <a
-                          href="#"
-                          class="dropdown-item d-flex flex-row justify-content-start align-items-center gap-3"
-                        >
-                          <i class="bi-gear"></i>
-                          Setting & Privacy
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <a
-                          href="#"
-                          class="dropdown-item d-flex flex-row justify-content-start align-items-center gap-3"
-                        >
-                          <i class="bi-life-preserver"></i>
-                          Support
-                        </a>
-                      </li>
-
-                      <li class="mt-2">
-                        <a
-                          href="#"
-                          class="dropdown-item d-flex flex-row justify-content-start align-items-center gap-3"
-                        >
-                          <i class="bi-card-text"></i>
-                          Documentation
-                        </a>
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-                      <li class="mt-2 mb-2">
-                        <a
-                          href="#"
-                          class="dropdown-item d-flex flex-row justify-content-start align-items-center gap-3"
-                        >
-                          <i class="bi-power"></i>
-                          Sign Out
-                        </a>
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-                      <li
-                        class="px-1 py-2 d-flex flex-row align-items-center justify-content-center gap-2"
-                      >
-                        <span class="mode"> Mode: </span>
-
-                        <div
-                          class="d-flex flex-row justify-content-start align-items-center gap-3"
-                        >
-                          <button
-                            class="border-0 rounded-2 px-3 py-2 bi-sun-fill mode-btn light"
-                            title="Light"
-                          ></button>
-                          <button
-                            class="active border-0 rounded-2 px-3 py-2 bi-moon-fill mode-btn dark"
-                            title="Dark"
-                          ></button>
-                          <button
-                            class="border-0 rounded-2 px-3 py-2 bi bi-circle-half mode-btn auto"
-                            title="Auto"
-                          ></button>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-
-              <!-- NavbarEnd -->
-              <!-- NavbarEnd -->
-            </div>
-            <!-- NavbarRow -->
-            <!-- NavbarRow -->
-          </div>
-
-          <!-- NavbarContainer -->
-          <!-- NavbarContainer -->
-        </nav>
-
-        <!-- Navbar -->
-        <!-- Navbar -->
-      </header>
-    </div>
-    <!-- Header -->
-    <!-- Header -->
-
-    <!-- Offcanvas -->
-    <!-- Offcanvas -->
-
-    <button
-      class="bi bi-chat-left-text-fill rounded bg-primary text-white border-0 rounded-1 px-3 py-2 fs-6 chat-offcanvas-open-btn"
-      type="button"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasRight"
-      aria-controls="offcanvasRight"
-    ></button>
-
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-      data-bs-scroll="true"
-      data-bs-backdrop="false"
-      tabindex="-1"
-    >
-      <div
-        class="offcanvas-header d-flex flex-wrap justify-content-between align-items-center"
-      >
-        <h5 class="offcanvasRightLabel chat-offcanvas-h5">Messaging</h5>
-
+      <nav
+        class="navbar navbar-expand-lg h-100 p-0 m-0 w-100 d-flex flex-wrap justify-content-center align-items-center"
+        id="Navbar">
+        <!-- NavbarContainer -->
+        <!-- NavbarContainer -->
         <div
-          class="chat-offcanvas-icons d-flex flex-row justify-content-center align-items-center gap-2"
-        >
-          <i class="bi bi-pencil-square px-2 py-2 chat-offcanvas-icon"></i>
-          <div class="dropdown">
-            <i
-              class="bi bi-three-dots px-2 py-2"
-              id="chatoffcanvasdropdownMenuButton1"
-              role="button"
-              data-bs-toggle="dropdown"
-              data-bs-display="static"
-            ></i>
-            <ul
-              class="dropdown-menu dropdown-menu-end"
-              aria-labelledby="chatoffcanvasdropdownMenuButton1"
-            >
-              <li
-                class="d-flex flex-row justify-content-center align-items-center px-3"
-              >
-                <i class="bi bi-check-square-fill text-light"></i>
-                <a class="dropdown-item py-2 px-3 fs-6 fw-bolder w-100" href="#"
-                  >Mark all as read</a
-                >
-              </li>
-              <li
-                class="d-flex flex-row justify-content-center align-items-center px-3"
-              >
-                <i class="bi bi-gear-fill text-light"></i>
-                <a class="dropdown-item py-2 px-3 fs-6 fw-bolder w-100" href="#"
-                  >Chat setting</a
-                >
-              </li>
-              <li
-                class="d-flex flex-row justify-content-center align-items-center px-3"
-              >
-                <i class="bi bi-bell-fill text-light"></i>
-                <a class="dropdown-item py-2 px-3 fs-6 fw-bolder w-100" href="#"
-                  >Disable notification</a
-                >
-              </li>
-              <li
-                class="d-flex flex-row justify-content-center align-items-center px-3"
-              >
-                <i class="bi bi-volume-up-fill text-light"></i>
-                <a class="dropdown-item py-2 px-3 fs-6 fw-bolder w-100" href="#"
-                  >Massage sounds</a
-                >
-              </li>
-              <li
-                class="d-flex flex-row justify-content-center align-items-center px-3"
-              >
-                <i class="bi bi-slash-circle-fill text-light"></i>
-                <a class="dropdown-item py-2 px-3 fs-6 fw-bolder w-100" href="#"
-                  >Block setting</a
-                >
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li
-                class="d-flex flex-row justify-content-center align-items-center px-3"
-              >
-                <i class="bi bi-people-fill text-light"></i>
-                <a class="dropdown-item py-2 px-3 fs-6 fw-bolder w-100" href="#"
-                  >Create a group chat</a
-                >
-              </li>
-            </ul>
-          </div>
-          <button
-            class="bi bi-x-lg chat-offcanvas-close-btn border-0 px-2 py-2"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-      </div>
-      <div class="offcanvas-body chat-offcanvas-body p-0">
-        <form
-          class="chat-offcanvas-form position-relative w-100 px-2"
-          role="search"
-        >
-          <i
-            class="bi bi-search chat-offcanvas-form-icon position-absolute start-0 px-4 py-2"
-          ></i>
-
-          <input
-            type="search"
-            class="form-control ps-5 py-2 me-2 chat-offcanvas-form-input"
-            placeholder="Search..."
-          />
-        </form>
-        <ul
-          class="chat-offcanvas-ul list-unstyled d-flex flex-column justify-content-center align-items-center gap-2 mt-3 w-100 py-2 px-2"
-        >
-          <li
-            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
-          >
-            <img
-              src="Avatar/07.jpg"
-              alt=""
-              class="chat-contact-dp rounded-circle"
-            />
-            <div
-              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
-            >
-              <div
-                class="d-flex flex-column justify-content-center align-items-start"
-              >
-                <div class="fw-bolder text-light chat-contact-name">
-                  Frances Guerrero
-                </div>
-                <span class="fw-light text-light chat-contact-massage">
-                  Frances sent a photo.
-                </span>
-              </div>
-
-              <div>
-                <p class="text-nowrap chat-contact-massage-time text-light">
-                  Just now
-                </p>
-              </div>
+          class="container-fluid h-100 w-100 p-0 d-flex flex-wrap align-items-center justify-content-center align-items-center"
+          id="NavbarContainer">
+          <!-- NavbarRow -->
+          <!-- NavbarRow -->
+          <div class="row h-100 w-100 d-flex flex-wrap justify-content-start align-items-center position-relative"
+            id="NavbarRow">
+            <!-- NavbarStart -->
+            <!-- NavbarStart -->
+            <div class="navbar-start h-100 d-flex flex-cloumn justify-content-center align-items-center">
+              <a class="navbar-brand" id="NavbarBrand" href="index.html">
+                <img src="Logo/logo.svg" alt="Logo" class="navbar-brand-logo border-0" id="NavbarBrandLogo" />
+              </a>
             </div>
-          </li>
 
-          <li
-            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
-            data-bs-dismiss="offcanvas"
-          >
-            <img
-              src="Avatar/02.jpg"
-              alt=""
-              class="chat-contact-dp rounded-circle"
-            />
-            <div
-              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
-            >
-              <div
-                class="d-flex flex-column justify-content-center align-items-start"
-              >
-                <div class="fw-bolder text-light chat-contact-name">
-                  Lori Ferguson
-                </div>
-                <span class="fw-light text-light chat-contact-massage">
-                  You missed a call form Carolyn🤙
-                </span>
-              </div>
+            <!-- NavbarStart -->
+            <!-- NavbarStart -->
 
-              <div>
-                <p class="text-nowrap chat-contact-massage-time text-light">
-                  1 Mint
-                </p>
-              </div>
+            <!-- NavbarMenuLines -->
+            <!-- NavbarMenuLines -->
+            <div class="menu-lines position-relative border-0" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-menu-line-1 position-absolute d-block rounded-5 opacity-1 start-0"></span>
+              <span class="navbar-menu-line-2 position-absolute d-block rounded-5 opacity-1 start-0"></span>
+              <span class="navbar-menu-line-3 position-absolute d-block rounded-5 opacity-1 start-0"></span>
             </div>
-          </li>
 
-          <li
-            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
-            data-bs-dismiss="offcanvas"
-          >
-            <img
-              src="Avatar/placeholder.jpg"
-              alt=""
-              class="chat-contact-dp rounded-circle"
-            />
-            <div
-              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
-            >
-              <div
-                class="d-flex flex-column justify-content-center align-items-start"
-              >
-                <div class="fw-bolder text-light chat-contact-name">
-                  Samuel Bishop
-                </div>
-                <span class="fw-light text-light chat-contact-massage">
-                  Day sweetness why cordially 😊
-                </span>
-              </div>
+            <!-- NavbarMenuLines -->
+            <!-- NavbarMenuLines -->
 
-              <div>
-                <p class="text-nowrap chat-contact-massage-time text-light">
-                  2 Mint
-                </p>
-              </div>
-            </div>
-          </li>
-
-          <li
-            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
-            data-bs-dismiss="offcanvas"
-          >
-            <img
-              src="Avatar/04.jpg"
-              alt=""
-              class="chat-contact-dp rounded-circle"
-            />
-            <div
-              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
-            >
-              <div
-                class="d-flex flex-column justify-content-center align-items-start"
-              >
-                <div class="fw-bolder text-light chat-contact-name">
-                  Dennis Barrett
-                </div>
-                <span class="fw-light text-light chat-contact-massage">
-                  Happy birthday🎂
-                </span>
-              </div>
-
-              <div>
-                <p class="text-nowrap chat-contact-massage-time text-light">
-                  10 Mint
-                </p>
-              </div>
-            </div>
-          </li>
-
-          <li
-            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
-            data-bs-dismiss="offcanvas"
-          >
-            <img
-              src="Avatar/05.jpg"
-              alt=""
-              class="chat-contact-dp status rounded-circle"
-            />
-            <div
-              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
-            >
-              <div
-                class="d-flex flex-column justify-content-center align-items-start"
-              >
-                <div class="fw-bolder text-light chat-contact-name">
-                  Judy Nguyen
-                </div>
-                <span class="fw-light text-light chat-contact-massage">
-                  Thank you!
-                </span>
-              </div>
-
-              <div>
-                <p class="text-nowrap chat-contact-massage-time text-light">
-                  2 Hrs
-                </p>
-              </div>
-            </div>
-          </li>
-
-          <li
-            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
-            data-bs-dismiss="offcanvas"
-          >
-            <img
-              src="Avatar/06.jpg"
-              alt=""
-              class="chat-contact-dp rounded-circle"
-            />
-            <div
-              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
-            >
-              <div
-                class="d-flex flex-column justify-content-center align-items-start"
-              >
-                <div class="fw-bolder text-light chat-contact-name">
-                  Carolyn Ortiz
-                </div>
-                <span class="fw-light text-light chat-contact-massage">
-                  Greetings from Webestica.
-                </span>
-              </div>
-
-              <div>
-                <p class="text-nowrap chat-contact-massage-time text-light">
-                  1 day
-                </p>
-              </div>
-            </div>
-          </li>
-
-          <li
-            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
-            data-bs-dismiss="offcanvas"
-          >
-            <div class="d-flex flex-column gap-2 chat-contact-img-group-main">
-              <div class="chat-contact-img-group gap-2">
-                <img src="Avatar/06.jpg" alt="Avatar" class="rounded-circle" />
-                <img src="Avatar/07.jpg" alt="Avatar" class="rounded-circle" />
-              </div>
-              <div class="chat-contact-img-group gap-2">
-                <img src="Avatar/08.jpg" alt="Avatar" class="rounded-circle" />
-                <img src="Avatar/09.jpg" alt="Avatar" class="rounded-circle" />
-              </div>
-            </div>
-            <div
-              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
-            >
-              <div
-                class="d-flex flex-column justify-content-center align-items-start"
-              >
-                <div class="fw-bolder text-light chat-contact-name">
-                  Frances, Lori, Amanda, <br />
-                  Lawson
-                </div>
-                <span class="fw-light text-light chat-contact-massage">
-                  Btw are you looking for job change?
-                </span>
-              </div>
-
-              <div>
-                <p class="text-nowrap chat-contact-massage-time text-light">
-                  4 day
-                </p>
-              </div>
-            </div>
-          </li>
-
-          <li
-            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
-            data-bs-dismiss="offcanvas"
-          >
-            <img
-              src="Avatar/08.jpg"
-              alt=""
-              class="chat-contact-dp rounded-circle"
-            />
-            <div
-              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
-            >
-              <div
-                class="d-flex flex-column justify-content-center align-items-start"
-              >
-                <div class="fw-bolder text-light chat-contact-name">
-                  Bryan Knight
-                </div>
-                <span class="fw-light text-light chat-contact-massage">
-                  if you are available to discuss🙄
-                </span>
-              </div>
-
-              <div>
-                <p class="text-nowrap chat-contact-massage-time text-light">
-                  6 day
-                </p>
-              </div>
-            </div>
-          </li>
-
-          <li
-            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
-            data-bs-dismiss="offcanvas"
-          >
-            <img
-              src="Avatar/09.jpg"
-              alt=""
-              class="chat-contact-dp rounded-circle"
-            />
-            <div
-              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
-            >
-              <div
-                class="d-flex flex-column justify-content-center align-items-start"
-              >
-                <div class="fw-bolder text-light chat-contact-name">
-                  Louis Crawford
-                </div>
-                <span class="fw-light text-light chat-contact-massage">
-                  🙌Congrats on your work anniversary!
-                </span>
-              </div>
-
-              <div>
-                <p class="text-nowrap chat-contact-massage-time text-light">
-                  1 day
-                </p>
-              </div>
-            </div>
-          </li>
-
-          <li
-            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
-            data-bs-dismiss="offcanvas"
-          >
-            <img
-              src="Avatar/10.jpg"
-              alt=""
-              class="chat-contact-dp rounded-circle"
-            />
-            <div
-              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
-            >
-              <div
-                class="d-flex flex-column justify-content-center align-items-start"
-              >
-                <div class="fw-bolder text-light chat-contact-name">
-                  Jacqueline Miller
-                </div>
-                <span class="fw-light text-light chat-contact-massage">
-                  No sorry, Thanks.
-                </span>
-              </div>
-
-              <div>
-                <p class="text-nowrap chat-contact-massage-time text-light">
-                  15, may
-                </p>
-              </div>
-            </div>
-          </li>
-
-          <li
-            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
-            data-bs-dismiss="offcanvas"
-          >
-            <img
-              src="Avatar/11.jpg"
-              alt=""
-              class="chat-contact-dp rounded-circle"
-            />
-            <div
-              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
-            >
-              <div
-                class="d-flex flex-column justify-content-center align-items-start"
-              >
-                <div class="fw-bolder text-light chat-contact-name">
-                  Amanda Reed
-                </div>
-                <span class="fw-light text-light chat-contact-massage">
-                  Interested can share CV at.
-                </span>
-              </div>
-
-              <div>
-                <p class="text-nowrap chat-contact-massage-time text-light">
-                  18 may
-                </p>
-              </div>
-            </div>
-          </li>
-
-          <li
-            class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
-            data-bs-dismiss="offcanvas"
-          >
-            <img
-              src="Avatar/12.jpg"
-              alt=""
-              class="chat-contact-dp rounded-circle"
-            />
-            <div
-              class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center"
-            >
-              <div
-                class="d-flex flex-column justify-content-center align-items-start"
-              >
-                <div class="fw-bolder text-light chat-contact-name">
-                  Larry Lawson
-                </div>
-                <span class="fw-light text-light chat-contact-massage">
-                  Hope you're doing well and Safe.
-                </span>
-              </div>
-
-              <div>
-                <p class="text-nowrap chat-contact-massage-time text-light">
-                  20, may
-                </p>
-              </div>
-            </div>
-          </li>
-          <li
-            class="d-flex flex-row justify-content-start align-items-center px-2 py-1 w-100"
-          >
-            <button class="btn btn-primary w-100">See all in messaging</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Offcanvas -->
-    <!-- Offcanvas -->
-
-    <!-- Chat Box -->
-    <!-- Chat Box -->
-
-    <div class="chat-Massage-chat-box border-0 position-fixed p-0">
-      <div class="chat-header border-bottom py-2 px-2 w-100">
-        <div
-          class="d-flex flex-row justify-content-between w-100 align-items-center gap-1"
-        >
-          <img
-            src="Avatar/01.jpg"
-            class="chat-contact-massage-dp rounded-circle me-2"
-            alt="Dp"
-          />
-          <div
-            class="d-flex flex-wrap justify-content-start align-items-center"
-          >
-            <span class="fw-bolder chat-contact-massage-name text-light w-100"
-              >Frances Guerrero</span
-            >
-            <span class="fw-light text-light chat-contact-massage">
-              🟢 Online
-            </span>
-          </div>
-
-          <div class="dropdown">
-            <i
-              class="bi bi-three-dots-vertical px-2 py-2"
-              id="chatoffcanvaschatdropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              data-bs-display="static"
-            ></i>
-            <ul
-              class="chat-dropdown-menu dropdown-menu dropdown-menu-end"
-              aria-labelledby="chatoffcanvaschatdropdown"
-            >
-              <li
-                class="d-flex flex-row justify-content-center align-items-center px-3"
-              >
-                <i class="bi bi-camera-video chat-dropdown-item-icon"></i>
-                <a class="dropdown-item py-2 px-3 fw-normal w-100" href="#"
-                  >Video Call</a
-                >
-              </li>
-              <li
-                class="d-flex flex-row justify-content-center align-items-center px-3"
-              >
-                <i class="bi bi-telephone chat-dropdown-item-icon"></i>
-                <a class="dropdown-item py-2 px-3 fw-normal w-100" href="#"
-                  >Voice Call</a
-                >
-              </li>
-              <li
-                class="d-flex flex-row justify-content-center align-items-center px-3"
-              >
-                <i class="bi bi-trash chat-dropdown-item-icon"></i>
-                <a class="dropdown-item py-2 px-3 fw-normal w-100" href="#"
-                  >Delete</a
-                >
-              </li>
-              <li
-                class="d-flex flex-row justify-content-center align-items-center px-3"
-              >
-                <i class="bi bi-chat-square-text chat-dropdown-item-icon"></i>
-                <a class="dropdown-item py-2 px-3 fw-normal w-100" href="#"
-                  >Mark as Unread</a
-                >
-              </li>
-              <li
-                class="d-flex flex-row justify-content-center align-items-center px-3"
-              >
-                <i class="bi bi-volume-down chat-dropdown-item-icon"></i>
-                <a class="dropdown-item py-2 px-3 fw-normal w-100" href="#"
-                  >Muted</a
-                >
-              </li>
-              <li
-                class="d-flex flex-row justify-content-center align-items-center px-3"
-              >
-                <i class="bi bi-archive chat-dropdown-item-icon"></i>
-                <a class="dropdown-item py-2 px-3 fw-normal w-100" href="#"
-                  >Archive</a
-                >
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li
-                class="d-flex flex-row justify-content-center align-items-center px-3"
-              >
-                <i class="bi bi-flag chat-dropdown-item-icon"></i>
-                <a class="dropdown-item py-2 px-3 fw-normal w-100" href="#"
-                  >Report</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <i
-            class="bi bi-dash-lg px-2 py-2 chat-offcanvas-icon chat-offcanvas-icon-minimiz"
-          ></i>
-
-          <button
-            class="bi bi-x-lg chat-offcanvas-massege-close-btn border-0 px-2 py-2"
-            type="button"
-          ></button>
-        </div>
-      </div>
-
-      <div class="chat-body w-100">
-        <div class="chat-history w-100">
-          <div
-            class="chat-massages-time w-100 text-center text-opacity-75 mt-3"
-          >
-            Jul 16, 2022, 06:15 am
-          </div>
-          <div
-            class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center"
-          >
-            <div
-              class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2"
-            >
-              <img
-                src="Avatar/01.jpg "
-                alt="Dp"
-                class="chat-contact-massage-dp rounded-circle"
-              />
-              <div
-                class="d-flex flex-column justify-content-center align-items-start gap-2"
-              >
-                <span class="massege-text py-2 px-3 rounded-2">
-                  Applauded no discovery😊
-                </span>
-                <span class="massages-text-time"> 6:15 AM </span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center"
-          >
-            <div
-              class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2"
-            >
-              <div
-                class="d-flex flex-column justify-content-center align-items-end w-100 gap-2"
-              >
-                <span
-                  class="massege-text me bg-primary text-light py-2 px-3 rounded-2"
-                >
-                  With pleasure
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center"
-          >
-            <div
-              class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2"
-            >
-              <img
-                src="Avatar/01.jpg "
-                alt="Dp"
-                class="chat-contact-massage-dp rounded-circle"
-              />
-              <div
-                class="d-flex flex-column justify-content-center align-items-start gap-2"
-              >
-                <span class="massege-text py-2 px-3 rounded-2">
-                  Please find the attached
-                </span>
-                <span class="chat-massages-time"> 12:16 PM </span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center"
-          >
-            <div
-              class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2"
-            >
-              <img
-                src="Avatar/01.jpg "
-                alt="Dp"
-                class="chat-contact-massage-dp rounded-circle"
-              />
-              <div
-                class="d-flex flex-column justify-content-center align-items-start gap-2"
-              >
-                <span class="massege-text py-2 px-3 rounded-2">
-                  How promotion excellent curiosity😮
-                </span>
-                <span class="chat-massages-time">3:22 PM </span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center"
-          >
-            <div
-              class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2"
-            >
-              <div
-                class="d-flex flex-column justify-content-center align-items-end w-100 gap-2"
-              >
-                <span
-                  class="massege-text me bg-primary text-light py-2 px-3 rounded-2"
-                >
-                  And sir dare view.
-                </span>
-                <span class="chat-massages-time me"
-                  >5:35 PM <i class="bi bi-check-lg"></i>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="chat-massages-time w-100 text-center">2 New Messages</div>
-
-          <div
-            class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center"
-          >
-            <div
-              class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2"
-            >
-              <img
-                src="Avatar/01.jpg "
-                alt="Dp"
-                class="chat-contact-massage-dp rounded-circle"
-              />
-              <div
-                class="d-flex flex-column justify-content-center align-items-start gap-2"
-              >
-                <span class="massege-text new-massege py-2 px-3 rounded-2">
-                </span>
-                <span class="chat-massages-time"> </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-100 bg-dark bg-opacity-10 px-2 py-2">
-          <textarea
-            name=""
-            id=""
-            class="chat-massage-input w-100 ps-2 py-2 rounded-2"
-            placeholder="Type a Massage"
-          ></textarea>
-
-          <div
-            class="chat-massage-btns d-flex flex-row justify-content-between align-items-center"
-          >
-            <div
-              class="d-flex flex-row justify-content-start align-items-center py-2 gap-2"
-            >
-              <button
-                class="border-0 rounded-2 chat-massage-btn-1 d-flex justify-content-center align-items-end bg-danger bg-opacity-10 text-danger"
-              >
-                ☺
-              </button>
-              <button
-                class="border-0 rounded-2 chat-massage-btn-2 d-flex justify-content-center align-items-center bi bi-paperclip"
-              ></button>
-              <button
-                class="border-0 rounded-2 chat-massage-btn-3 d-flex justify-content-center align-items-center bg-success bg-opacity-10 text-success"
-              >
-                GIF
-              </button>
-            </div>
-            <button
-              class="bg-primary text-light chat-massage-send-btn px-3 py-1 border-0 rounded-2 fs-6 disabled"
-              aria-disabled="true"
-            >
-              Send
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Chat Box -->
-    <!-- Chat Box -->
-
-    <!-- Main -->
-    <!-- Main -->
-    <main class="h-100 w-100">
-      <!--Page Main -->
-      <!--Page Main -->
-      <section class="page-home">
-        <div
-          class="container home-container d-flex flex-wrap justify-content-center w-100 h-100"
-        >
-          <div
-            class="row home-row d-flex flex-wrap justify-content-center w-100 h-100 gy-3"
-          >
-            <div
-              class="col-xl-3 col-lg-4 col-md-12 col-sm-12 home-column-1 border border-light border-opacity-10 rounded-2 flex-wrap justify-content-start align-items-center h-100 py-2"
-            >
-              <div
-                class="profile-offcanvas-open-btn flex-row justify-content-start align-items-center gap-3 border-0 py-3 px-3 w-100"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample"
-              >
-                <i class="btn btn-primary px-3 py-2 bi bi-sliders"></i>
-                <span class="text-light fw-bolder fs-6"> My profile</span>
-              </div>
-              <div
-                class="home-profile flex-column justify-content-start align-items-center text-center w-100 h-100"
-              >
-                <div class="position-relative w-100">
-                  <img
-                    src="Bg/01.jpg"
-                    alt="Banner"
-                    class="home-profile-banner"
-                  />
-                  <img
-                    src="Avatar/01.jpg"
-                    alt="Profile"
-                    class="home-profile-img border-3 border-light rounded-3"
-                  />
-                </div>
-
-                <a
-                  href="#"
-                  class="home-profile-name fw-bolder fs-5 text-decoration-none mt-2"
-                  >Huzaifa</a
-                >
-                <small class="home-profile-skill w-100 px-1"
-                  >Web Developer at Webestica</small
-                >
-                <span class="home-profile-paragraph py-3 px-3"
-                  >I'd love to change the world, but they won’t give me the
-                  source code.</span
-                >
-                <div
-                  class="home-profile-rank d-flex flex-wrap justify-content-center align-items-center text-center gap-3 py-2"
-                >
-                  <div
-                    class="home-profile-rank post border-end d-flex flex-column justify-content-center align-items-center text-center px-3"
-                  >
-                    <b class="fw-bolder text-light">256</b>
-                    <small>Post</small>
-                  </div>
-                  <div
-                    class="home-profile-rank followers d-flex flex-column justify-content-center align-items-center text-center"
-                  >
-                    <b class="fw-bolder text-light">2.5K</b>
-                    <small>Followers</small>
-                  </div>
-                  <div
-                    class="home-profile-rank following border-start d-flex flex-column justify-content-center align-items-center text-center px-3"
-                  >
-                    <b class="fw-bolder text-light">365</b>
-                    <small>Following</small>
-                  </div>
-                </div>
-                <div class="home-profile-links border-top mt-3 w-100">
-                  <ul
-                    class="home-profile-links-ul list-unstyled d-flex flex-column justify-content-center align-items-start w-100 px-3 py-3 gap-4 w-100"
-                  >
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
-                      >
-                        <img
-                          src="Icons/home-outline-filled.svg"
-                          alt="Link"
-                          class="home-profile-links-img"
-                        />
-                        Feed
-                      </a>
+            <!-- NavbarCenter -->
+            <!-- NavbarCenter -->
+            <div class="collapse navbar-collapse navbar-nav-scroll navbar-center p-0" id="navbarSupportedContent">
+              <form class="navbar-form position-relative" role="search">
+                <a href="index.html" class="bi bi-search navbar-search-icon position-absolute start-0 px-3 py-2"
+                  id="NavbarSearchIcon"></a>
+                <input class="form-control navbar-search-input ps-5 py-2" id="NavbarSearchInput" type="search"
+                  placeholder="Search..." aria-label="Search" />
+              </form>
+              <ul class="navbar-nav px-3">
+                <li class="nav-item dropdown px-2 py-2">
+                  <a class="nav-link active dropdown-toggle fw-bold px-3" href="javascript:void(0)" role="button"
+                    id="navbardropdown1" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside"
+                    data-bs-popper="static">
+                    Demos
+                    <i class="bi bi-chevron-down navbar-dropdown-toggle-icon"></i>
+                  </a>
+                  <ul class="dropdown-menu gap-2 px-2 py-2 border-0" aria-labelledby="navbardropdown1">
+                    <li>
+                      <a class="dropdown-item active py-2 px-3 w-100" href="#">Home Default</a>
                     </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
-                      >
-                        <img
-                          src="Icons/person-outline-filled.svg"
-                          alt="Link"
-                          class="home-profile-links-img"
-                        />
-                        Connections
-                      </a>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Home Classic</a>
                     </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
-                      >
-                        <img
-                          src="Icons/earth-outline-filled.svg"
-                          alt="Link"
-                          class="home-profile-links-img"
-                        />
-                        Latest News
-                      </a>
+
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Home Post</a>
                     </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
-                      >
-                        <img
-                          src="Icons/calendar-outline-filled.svg"
-                          alt="Link"
-                          class="home-profile-links-img"
-                        />
-                        Events
-                      </a>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Home Video</a>
                     </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
-                      >
-                        <img
-                          src="Icons/chat-outline-filled.svg"
-                          alt="Link"
-                          class="home-profile-links-img"
-                        />
-                        Groups
-                      </a>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Home Event</a>
                     </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
-                      >
-                        <img
-                          src="Icons/notification-outlined-filled.svg"
-                          alt="Link"
-                          class="home-profile-links-img"
-                        />
-                        Notifications
-                      </a>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Landing Page</a>
                     </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
-                      >
-                        <img
-                          src="Icons/cog-outline-filled.svg"
-                          alt="Link"
-                          class="home-profile-links-img"
-                        />
-                        Settings
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">App Download</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item py-2 px-3 w-100">
+                        <i class="bi bi-cloud-arrow-down-fill dropdown-item-cloud-icon"></i>
+                        &nbsp; Buy Social
                       </a>
                     </li>
                   </ul>
-                  <li
-                    class="w-100 d-flex flex-column justify-content-center align-items-center py-2 border-top border-opacity-10 border-light"
-                  >
-                    <a
-                      href="profile.html"
-                      class="text-decoration-none fw-bolder text-center text-primary w-100 py-2"
-                    >
-                      View Profile
-                    </a>
-                  </li>
-                </div>
-              </div>
-              <div
-                class="offcanvas offcanvas-start"
-                tabindex="-1"
-                id="offcanvasExample"
-              >
-                <div class="offcanvas-header d-flex justify-content-end">
-                  <div
-                    class="bi bi-x-lg text-light"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                  ></div>
-                </div>
-                <div class="offcanvas-body profile-offcanvas-body">
-                  <div
-                    class="home-profile d-flex flex-column justify-content-start align-items-center text-center w-100 h-100"
-                  >
-                    <div class="position-relative w-100">
-                      <img
-                        src="Bg/01.jpg"
-                        alt="Banner"
-                        class="home-profile-banner"
-                      />
-                      <img
-                        src="Avatar/01.jpg"
-                        alt="Profile"
-                        class="home-profile-img border-3 border-light rounded-3"
-                      />
-                    </div>
+                </li>
 
-                    <a
-                      href="#"
-                      class="home-profile-name fw-bolder fs-5 text-decoration-none mt-2"
-                      >Huzaifa</a
-                    >
-                    <small class="home-profile-skill w-100 px-1"
-                      >Web Developer at Webestica</small
-                    >
-                    <span class="home-profile-paragraph py-3 px-3"
-                      >I'd love to change the world, but they won’t give me the
-                      source code.</span
-                    >
-                    <div
-                      class="home-profile-rank d-flex flex-wrap justify-content-center align-items-center text-center gap-3 py-2"
-                    >
-                      <div
-                        class="home-profile-rank post border-end d-flex flex-column justify-content-center align-items-center text-center px-3"
-                      >
-                        <b class="fw-bolder text-light">256</b>
-                        <small>Post</small>
-                      </div>
-                      <div
-                        class="home-profile-rank followers d-flex flex-column justify-content-center align-items-center text-center"
-                      >
-                        <b class="fw-bolder text-light">2.5K</b>
-                        <small>Followers</small>
-                      </div>
-                      <div
-                        class="home-profile-rank following border-start d-flex flex-column justify-content-center align-items-center text-center px-3"
-                      >
-                        <b class="fw-bolder text-light">365</b>
-                        <small>Following</small>
-                      </div>
-                    </div>
-                    <div class="home-profile-links border-top mt-3 w-100">
-                      <ul
-                        class="home-profile-links-ul list-unstyled d-flex flex-column justify-content-center align-items-start w-100 px-3 py-3 gap-4 w-100"
-                      >
-                        <li class="nav-item">
-                          <a
-                            href="#"
-                            class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
-                          >
-                            <img
-                              src="Icons/home-outline-filled.svg"
-                              alt="Link"
-                              class="home-profile-links-img"
-                            />
-                            Feed
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            href="#"
-                            class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
-                          >
-                            <img
-                              src="Icons/person-outline-filled.svg"
-                              alt="Link"
-                              class="home-profile-links-img"
-                            />
-                            Connections
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            href="#"
-                            class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
-                          >
-                            <img
-                              src="Icons/earth-outline-filled.svg"
-                              alt="Link"
-                              class="home-profile-links-img"
-                            />
-                            Latest News
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            href="#"
-                            class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
-                          >
-                            <img
-                              src="Icons/calendar-outline-filled.svg"
-                              alt="Link"
-                              class="home-profile-links-img"
-                            />
-                            Events
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            href="#"
-                            class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
-                          >
-                            <img
-                              src="Icons/chat-outline-filled.svg"
-                              alt="Link"
-                              class="home-profile-links-img"
-                            />
-                            Groups
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            href="#"
-                            class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
-                          >
-                            <img
-                              src="Icons/notification-outlined-filled.svg"
-                              alt="Link"
-                              class="home-profile-links-img"
-                            />
-                            Notifications
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            href="#"
-                            class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2"
-                          >
-                            <img
-                              src="Icons/cog-outline-filled.svg"
-                              alt="Link"
-                              class="home-profile-links-img"
-                            />
-                            Settings
-                          </a>
-                        </li>
-                        <li class="nav-item w-100">
-                          <a
-                            href="profile.html"
-                            class="nav-link text-decoration-none fw-bolder text-center text-primary py-2 border-top border-bottom w-100"
-                          >
-                            View Profile
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <li class="nav-item dropdown px-2 py-2">
+                  <a class="nav-link dropdown-toggle fw-bold px-3" href="javascript:void(0)" role="button"
+                    id="navbardropdown2" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside"
+                    data-bs-popper="static">
+                    Pages
+                    <i class="bi bi-chevron-down navbar-dropdown-toggle-icon"></i>
+                  </a>
+                  <ul class="dropdown-menu gap-2 px-2 py-2 border-0" aria-labelledby="navbardropdown2">
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Album</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Celebration</a>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Messaging</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Profile</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Events</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Events 2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Event Details</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Event Details 2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Groups</a>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Group details</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Post videos</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Post videos details</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Post details</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Videos details</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Blog</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Blog details</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Dropdown Level</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown px-2 py-2">
+                  <a class="nav-link dropdown-toggle fw-bold px-3" href="javascript:void(0)" role="button"
+                    id="navbardropdown3" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside"
+                    data-bs-popper="static">
+                    Account
+                    <i class="bi bi-chevron-down navbar-dropdown-toggle-icon"></i>
+                  </a>
+                  <ul class="dropdown-menu gap-2 px-2 py-2 border-0" aria-labelledby="navbardropdown3">
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Create a page</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Setting</a>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Notifications</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Help center</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Help details</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Authintication</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Error 404</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Offline</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2 px-3 w-100" href="#">Privacy & Terms</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-end-link px-2 py-2">
+                  <a class="nav-link fw-bold px-3">My Network</a>
+                </li>
+              </ul>
             </div>
 
-            <div class="col-xl-6 col-lg-4 col-md-8 col-sm-12">
-              <div class="home-stories">
-                <label
-                  for="story-upload"
-                  class="story-upload-label d-flex flex-column justify-content-center align-items-center"
-                >
-                  <i
-                    class="bi bi-plus story-icon rounded-circle d-flex flex-column justify-content-center align-items-center"
-                  ></i>
-                  <h6 class="text-light fw-bold small">
-                    Post a <br />
-                    Story
-                  </h6>
-                  <input
-                    type="file"
-                    id="story-upload"
-                    accept=".png ,.mp4,.jpg"
-                  />
-                </label>
-                <div class="recent-upload-stories"></div>
-              </div>
+            <!-- NavbarCenter -->
+            <!-- NavbarCenter -->
+
+            <!-- NavbarEnd -->
+            <!-- NavbarEnd -->
+            <div class="navbar-end h-100">
+              <ul class="navbar-end-ul list-unstyled h-100 w-100 gap-3">
+                <li class="nav-item d-flex align-items-center justify-content-center h-100">
+                  <a class="nav-link nav-link-icon bi bi-chat-left-text-fill d-flex flex-column justify-content-center align-items-center border border-dark border-opacity-10 rounded-1"
+                    href="#">
+                  </a>
+                </li>
+
+                <li class="nav-item d-flex align-items-center justify-content-center h-100">
+                  <a class="nav-link nav-link-icon bi bi-gear-fill d-flex flex-column justify-content-center align-items-center border border-dark border-opacity-10 rounded-1"
+                    href="#">
+                  </a>
+                </li>
+
+                <li class="nav-item dropdown d-flex align-items-center justify-content-center h-100">
+                  <a class="nav-link dropdown-toggle position-relative" href="javascript:void(0)" role="button"
+                    id="navbardropdown4" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside"
+                    data-bs-popper="static">
+                    <i
+                      class="nav-link nav-link-icon bi bi-bell-fill d-flex flex-column justify-content-center align-items-center border border-dark border-opacity-10 rounded-1"></i>
+                  </a>
+                  <ul id="navbar-dropdown-right"
+                    class="dropdown-menu dropdown-menu-lg-end dropdown-menu-xxl-end dropdown-menu-xl-end border-0"
+                    aria-labelledby="navbardropdown4">
+                    <li class="dropdown-item d-flex flex-row justify-content-between align-items-center">
+                      <div class="d-flex flex-wrap align-items-center justify-content-evenly gap-3">
+                        <span class="text-light"> Notifications </span>
+                        <span
+                          class="px-2 py-1 bg-danger bg-opacity-10 text-danger fw-bolder rounded-2 navbar-notification-new">
+                          4 New
+                        </span>
+                      </div>
+                      <div>
+                        <a class="text-primary fw-bold text-decoration-none navbar-notification-clear" href="#">
+                          Clear all
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+
+                    <li class="dropdown-item notification w-100 p-2">
+                      <div
+                        class="dropdown-notification w-100 py-3 px-3 d-flex flex-column justify-content-center align-items-start gap-3">
+                        <div
+                          class="dropdown-notification-massege d-flex flex-nowrap justify-content-between align-items-center w-100">
+                          <div
+                            class="position-relative d-flex gap-3 flex-wrap justify-content-center align-items-center">
+                            <img src="Avatar/01.jpg" alt="Avatar" class="dropdown-notification-img rounded-circle" />
+
+                            <p class="fw-light mt-2">
+                              <span class="fw-bolder">Judy Nguyen</span>
+                              sent you
+                              <br />
+                              a friend request.
+                            </p>
+                          </div>
+
+                          <span class="text mb-4">Just Now</span>
+                        </div>
+
+                        <div
+                          class="dropdown-notification-btns d-flex gap-3 flex-row justify-content-center align-items-center">
+                          <button class="btn btn-primary text-light px-3 py-2 border-0 rounded-1 fw-normal">
+                            Accept
+                          </button>
+                          <button class="bg-danger bg-opacity-10 text-danger px-3 py-2 border-0 rounded-1 fw-bolder">
+                            Delete
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="dropdown-item notification w-100 p-2">
+                      <div
+                        class="dropdown-notification w-100 py-3 px-3 d-flex flex-column justify-content-center align-items-start gap-3">
+                        <div
+                          class="dropdown-notification-massege d-flex flex-nowrap justify-content-between align-items-center w-100">
+                          <div
+                            class="position-relative d-flex gap-3 flex-row justify-content-center align-items-center">
+                            <img src="Avatar/02.jpg" alt="Avatar" class="dropdown-notification-img rounded-circle" />
+
+                            <p class="fw-light mt-2">
+                              Wish
+                              <span class="fw-bolder">Amanda Reed</span>
+                              a<br />
+                              happy birthday (Nov 12)
+                            </p>
+                          </div>
+
+                          <span class="mb-4">2mint</span>
+                        </div>
+
+                        <div
+                          class="dropdown-notification-btns d-flex gap-3 flex-row justify-content-center align-items-center">
+                          <button class="btn btn-light bg-opacity-10 text-dark px-3 py-2 rounded-1 fw-normal">
+                            Say happy birthday 🎂
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="dropdown-item notification w-100 p-2">
+                      <div
+                        class="dropdown-notification w-100 py-3 px-3 d-flex flex-column justify-content-center align-items-start gap-3"
+                        id="dropdown-notification-end">
+                        <div
+                          class="dropdown-notification-massege d-flex flex-nowrap justify-content-between align-items-center w-100">
+                          <span
+                            class="position-relative d-flex gap-3 flex-row justify-content-center align-items-center">
+                            <div class="bg-success text-white rounded-circle px-2 py-2 fs-6">
+                              WB
+                            </div>
+
+                            <p class="fw-light mt-2">
+                              Webestica has 15 like <br />
+                              and 1 new activity
+                            </p>
+                          </span>
+
+                          <span class="mb-4">1hr</span>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="dropdown-item notification w-100 p-2">
+                      <div
+                        class="dropdown-notification w-100 py-3 px-3 d-flex flex-column justify-content-center align-items-start gap-3"
+                        id="dropdown-notification-end">
+                        <div
+                          class="dropdown-notification-massege d-flex flex-nowrap justify-content-between align-items-center w-100">
+                          <span
+                            class="position-relative d-flex gap-3 flex-row justify-content-center align-items-center">
+                            <img src="Logo/12.svg" alt="Logo" class="dropdown-notification-img rounded-circle" />
+
+                            <p class="fw-light mt-2">
+                              <b class="fw-bold">Bootstrap in the news:</b>
+                              The
+                              <br />
+                              search giant’s parent <br />
+                              company, Alphabet, just<br />
+                              joined an exclusive <br />
+                              club of tech stocks.
+                            </p>
+                          </span>
+
+                          <span class="mb-4">1hr</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown d-flex align-items-center justify-content-center h-100">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" id="navbardropdown5"
+                    data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside"
+                    data-bs-popper="static">
+                    <img src="Avatar/01.jpg" alt="Profile" class="navbar-profile-img rounded-2 object-fit-cover" />
+                  </a>
+                  <ul id="navbar-dropdown-right-2"
+                    class="dropdown-menu dropdown-menu-lg-end dropdown-menu-xxl-end dropdown-menu-xl-end border-0"
+                    aria-labelledby="navbardropdown5">
+                    <li class="dropdown-item d-flex flex-row justify-content-between align-items-center">
+                      <div class="d-flex flex-wrap align-items-center justify-content-start">
+                        <img src="Avatar/01.jpg" class="navbar-profile-img rounded-circle" alt="" />
+
+                        <div class="d-flex flex-column justify-content-center align-items-center gap-1 px-3">
+                          <span class="fw-bold"> Huzaifa Raza</span>
+                          <span class="text-opacity-75" style="font-size: 13px">
+                            Web Developer
+                          </span>
+                        </div>
+
+                        <a href="#"
+                          class="mt-3 bg-primary bg-opacity-10 py-2 w-100 rounded-2 text-decoration-none text-center"
+                          id="navbar-dropdown-profile-btn">View Profile
+                        </a>
+                      </div>
+                    </li>
+
+                    <li class="mt-2">
+                      <a href="#" class="dropdown-item d-flex flex-row justify-content-start align-items-center gap-3">
+                        <i class="bi-gear"></i>
+                        Setting & Privacy
+                      </a>
+                    </li>
+                    <li class="mt-2">
+                      <a href="#" class="dropdown-item d-flex flex-row justify-content-start align-items-center gap-3">
+                        <i class="bi-life-preserver"></i>
+                        Support
+                      </a>
+                    </li>
+
+                    <li class="mt-2">
+                      <a href="#" class="dropdown-item d-flex flex-row justify-content-start align-items-center gap-3">
+                        <i class="bi-card-text"></i>
+                        Documentation
+                      </a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li class="mt-2 mb-2">
+                      <a href="#" class="dropdown-item d-flex flex-row justify-content-start align-items-center gap-3">
+                        <i class="bi-power"></i>
+                        Sign Out
+                      </a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li class="px-1 py-2 d-flex flex-row align-items-center justify-content-center gap-2">
+                      <span class="mode"> Mode: </span>
+
+                      <div class="d-flex flex-row justify-content-start align-items-center gap-3">
+                        <button class="border-0 rounded-2 px-3 py-2 bi-sun-fill mode-btn light" title="Light"></button>
+                        <button class="active border-0 rounded-2 px-3 py-2 bi-moon-fill mode-btn dark"
+                          title="Dark"></button>
+                        <button class="border-0 rounded-2 px-3 py-2 bi bi-circle-half mode-btn auto"
+                          title="Auto"></button>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
 
-            <div
-              class="col-xl-3 col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-start align-items-start gap-4"
-            >
-              <div
-                class="home-people-follow px-3 py-3 w-100 d-flex flex-column justify-content-center gap-1"
-              >
-                <span class="text-light fw-bolder py-2">Who to follow</span>
-                <div
-                  class="people-follow d-flex flex-row justify-content-between align-items-center py-2"
-                >
-                  <div
-                    class="d-flex flex-row gap-2 justify-content-center align-items-center"
-                  >
-                    <img
-                      src="Avatar/04.jpg"
-                      alt="People"
-                      class="people-follow-img rounded-circle"
-                    />
-                    <div
-                      class="d-flex flex-column justify-content-center align-items-start gap-1"
-                    >
-                      <span class="people-follow-name fw-bolder text-light">
-                        Judy Nguyen</span
-                      >
-                      <small class="people-follow-profession"
-                        >News anchor</small
-                      >
-                    </div>
-                  </div>
+            <!-- NavbarEnd -->
+            <!-- NavbarEnd -->
+          </div>
+          <!-- NavbarRow -->
+          <!-- NavbarRow -->
+        </div>
 
-                  <div
-                    class="people-follow-plus d-flex flex-row justify-content-center align-items-center bi bi-plus rounded-circle fs-3 fw-bolder"
-                  ></div>
-                </div>
-                <div
-                  class="people-follow d-flex flex-row justify-content-between align-items-center py-2"
-                >
-                  <div
-                    class="d-flex flex-row gap-2 justify-content-center align-items-center"
-                  >
-                    <img
-                      src="Avatar/05.jpg"
-                      alt="People"
-                      class="people-follow-img rounded-circle border border-3 border-primary"
-                    />
-                    <div
-                      class="d-flex flex-column justify-content-center align-items-start gap-1"
-                    >
-                      <span class="people-follow-name fw-bolder text-light">
-                        Amanda Reed</span
-                      >
-                      <small class="people-follow-profession"
-                        >Web Developer</small
-                      >
-                    </div>
-                  </div>
+        <!-- NavbarContainer -->
+        <!-- NavbarContainer -->
+      </nav>
 
-                  <div
-                    class="people-follow-plus d-flex flex-row justify-content-center align-items-center bi bi-plus rounded-circle fs-3 fw-bolder"
-                  ></div>
-                </div>
-                <div
-                  class="people-follow d-flex flex-row justify-content-between align-items-center py-2"
-                >
-                  <div
-                    class="d-flex flex-row gap-2 justify-content-center align-items-center"
-                  >
-                    <img
-                      src="Avatar/11.jpg"
-                      alt="People"
-                      class="people-follow-img rounded-circle"
-                    />
-                    <div
-                      class="d-flex flex-column justify-content-center align-items-start gap-1"
-                    >
-                      <span class="people-follow-name fw-bolder text-light">
-                        Billy Vasquez</span
-                      >
-                      <small class="people-follow-profession"
-                        >News anchor
-                      </small>
-                    </div>
-                  </div>
+      <!-- Navbar -->
+      <!-- Navbar -->
+    </header>
+  </div>
+  <!-- Header -->
+  <!-- Header -->
 
-                  <div
-                    class="people-follow-plus d-flex flex-row justify-content-center align-items-center bi bi-person-check bg-primary text-white rounded-circle fs-5 fw-bolder"
-                  ></div>
-                </div>
-                <div
-                  class="people-follow d-flex flex-row justify-content-between align-items-center py-2"
-                >
-                  <div
-                    class="d-flex flex-row gap-2 justify-content-center align-items-center"
-                  >
-                    <img
-                      src="Avatar/01.jpg"
-                      alt="People"
-                      class="people-follow-img rounded-circle"
-                    />
-                    <div
-                      class="d-flex flex-column justify-content-center align-items-start gap-1"
-                    >
-                      <span class="people-follow-name fw-bolder text-light">
-                        Lori Ferguson</span
-                      >
-                      <small class="people-follow-profession"
-                        >Web Developer at Webestica
-                      </small>
-                    </div>
-                  </div>
+  <!-- Offcanvas -->
+  <!-- Offcanvas -->
 
-                  <div
-                    class="people-follow-plus d-flex flex-row justify-content-center align-items-center bi bi-plus rounded-circle fs-3 fw-bolder"
-                  ></div>
-                </div>
-                <div
-                  class="people-follow d-flex flex-row justify-content-between align-items-center py-2"
-                >
-                  <div
-                    class="d-flex flex-row gap-2 justify-content-center align-items-center"
-                  >
-                    <img
-                      src="Avatar/placeholder.jpg"
-                      alt="People"
-                      class="people-follow-img rounded-circle"
-                    />
-                    <div
-                      class="d-flex flex-column justify-content-center align-items-start gap-1"
-                    >
-                      <span class="people-follow-name fw-bolder text-light">
-                        Carolyn Ortiz</span
-                      >
-                      <small class="people-follow-profession">
-                        News anchor</small
-                      >
-                    </div>
-                  </div>
+  <button
+    class="bi bi-chat-left-text-fill rounded bg-primary text-white border-0 rounded-1 px-3 py-2 fs-6 chat-offcanvas-open-btn"
+    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></button>
 
-                  <div
-                    class="people-follow-plus d-flex flex-row justify-content-center align-items-center bi bi-plus rounded-circle fs-3 fw-bolder"
-                  ></div>
-                </div>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+    data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1">
+    <div class="offcanvas-header d-flex flex-wrap justify-content-between align-items-center">
+      <h5 class="offcanvasRightLabel chat-offcanvas-h5">Messaging</h5>
 
-                <a
-                  href="#"
-                  class="people-follow-view-btn py-2 text-decoration-none text-center w-100"
-                  >View More</a
-                >
+      <div class="chat-offcanvas-icons d-flex flex-row justify-content-center align-items-center gap-2">
+        <i class="bi bi-pencil-square px-2 py-2 chat-offcanvas-icon"></i>
+        <div class="dropdown">
+          <i class="bi bi-three-dots px-2 py-2" id="chatoffcanvasdropdownMenuButton1" role="button"
+            data-bs-toggle="dropdown" data-bs-display="static"></i>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="chatoffcanvasdropdownMenuButton1">
+            <li class="d-flex flex-row justify-content-center align-items-center px-3">
+              <i class="bi bi-check-square-fill text-light"></i>
+              <a class="dropdown-item py-2 px-3 fs-6 fw-bolder w-100" href="#">Mark all as read</a>
+            </li>
+            <li class="d-flex flex-row justify-content-center align-items-center px-3">
+              <i class="bi bi-gear-fill text-light"></i>
+              <a class="dropdown-item py-2 px-3 fs-6 fw-bolder w-100" href="#">Chat setting</a>
+            </li>
+            <li class="d-flex flex-row justify-content-center align-items-center px-3">
+              <i class="bi bi-bell-fill text-light"></i>
+              <a class="dropdown-item py-2 px-3 fs-6 fw-bolder w-100" href="#">Disable notification</a>
+            </li>
+            <li class="d-flex flex-row justify-content-center align-items-center px-3">
+              <i class="bi bi-volume-up-fill text-light"></i>
+              <a class="dropdown-item py-2 px-3 fs-6 fw-bolder w-100" href="#">Massage sounds</a>
+            </li>
+            <li class="d-flex flex-row justify-content-center align-items-center px-3">
+              <i class="bi bi-slash-circle-fill text-light"></i>
+              <a class="dropdown-item py-2 px-3 fs-6 fw-bolder w-100" href="#">Block setting</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li class="d-flex flex-row justify-content-center align-items-center px-3">
+              <i class="bi bi-people-fill text-light"></i>
+              <a class="dropdown-item py-2 px-3 fs-6 fw-bolder w-100" href="#">Create a group chat</a>
+            </li>
+          </ul>
+        </div>
+        <button class="bi bi-x-lg chat-offcanvas-close-btn border-0 px-2 py-2" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="offcanvas-body chat-offcanvas-body p-0">
+      <form class="chat-offcanvas-form position-relative w-100 px-2" role="search">
+        <i class="bi bi-search chat-offcanvas-form-icon position-absolute start-0 px-4 py-2"></i>
+
+        <input type="search" class="form-control ps-5 py-2 me-2 chat-offcanvas-form-input" placeholder="Search..." />
+      </form>
+      <ul
+        class="chat-offcanvas-ul list-unstyled d-flex flex-column justify-content-center align-items-center gap-2 mt-3 w-100 py-2 px-2">
+        <li
+          class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100">
+          <img src="Avatar/07.jpg" alt="" class="chat-contact-dp rounded-circle" />
+          <div class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <div class="fw-bolder text-light chat-contact-name">
+                Frances Guerrero
               </div>
-              <div
-                class="home-news px-3 py-3 w-100 d-flex flex-column justify-content-center gap-1"
-              >
-                <span class="text-light fw-bolder py-2">Today’s news</span>
-                <div
-                  class="news d-flex flex-column justify-content-center align-items-start"
-                >
-                  <span class="news-text fw-bolder py-2"
-                    >Ten questions you should answer truthfully</span
-                  >
-                  <small class="news-time">2hr</small>
-                </div>
-                <div
-                  class="news d-flex flex-column justify-content-center align-items-start"
-                >
-                  <span class="news-text fw-bolder py-2"
-                    >Five unbelievable facts about money</span
-                  >
-                  <small class="news-time">3hr</small>
-                </div>
-                <div
-                  class="news d-flex flex-column justify-content-center align-items-start"
-                >
-                  <span class="news-text fw-bolder py-2"
-                    >Best Pinterest Boards for learning about business</span
-                  >
-                  <small class="news-time">4hr</small>
-                </div>
-                <div
-                  class="news d-flex flex-column justify-content-center align-items-start"
-                >
-                  <span class="news-text fw-bolder py-2"
-                    >Skills that you can learn from business</span
-                  >
-                  <small class="news-time">6hr</small>
-                </div>
-                <a
-                  href="#"
-                  class="news-view-btn py-2 text-decoration-none text-center w-100"
-                >
-                  View all latest news
-                </a>
+              <span class="fw-light text-light chat-contact-massage">
+                Frances sent a photo.
+              </span>
+            </div>
+
+            <div>
+              <p class="text-nowrap chat-contact-massage-time text-light">
+                Just now
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          data-bs-dismiss="offcanvas">
+          <img src="Avatar/02.jpg" alt="" class="chat-contact-dp rounded-circle" />
+          <div class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <div class="fw-bolder text-light chat-contact-name">
+                Lori Ferguson
               </div>
+              <span class="fw-light text-light chat-contact-massage">
+                You missed a call form Carolyn🤙
+              </span>
+            </div>
+
+            <div>
+              <p class="text-nowrap chat-contact-massage-time text-light">
+                1 Mint
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          data-bs-dismiss="offcanvas">
+          <img src="Avatar/placeholder.jpg" alt="" class="chat-contact-dp rounded-circle" />
+          <div class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <div class="fw-bolder text-light chat-contact-name">
+                Samuel Bishop
+              </div>
+              <span class="fw-light text-light chat-contact-massage">
+                Day sweetness why cordially 😊
+              </span>
+            </div>
+
+            <div>
+              <p class="text-nowrap chat-contact-massage-time text-light">
+                2 Mint
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          data-bs-dismiss="offcanvas">
+          <img src="Avatar/04.jpg" alt="" class="chat-contact-dp rounded-circle" />
+          <div class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <div class="fw-bolder text-light chat-contact-name">
+                Dennis Barrett
+              </div>
+              <span class="fw-light text-light chat-contact-massage">
+                Happy birthday🎂
+              </span>
+            </div>
+
+            <div>
+              <p class="text-nowrap chat-contact-massage-time text-light">
+                10 Mint
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          data-bs-dismiss="offcanvas">
+          <img src="Avatar/05.jpg" alt="" class="chat-contact-dp status rounded-circle" />
+          <div class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <div class="fw-bolder text-light chat-contact-name">
+                Judy Nguyen
+              </div>
+              <span class="fw-light text-light chat-contact-massage">
+                Thank you!
+              </span>
+            </div>
+
+            <div>
+              <p class="text-nowrap chat-contact-massage-time text-light">
+                2 Hrs
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          data-bs-dismiss="offcanvas">
+          <img src="Avatar/06.jpg" alt="" class="chat-contact-dp rounded-circle" />
+          <div class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <div class="fw-bolder text-light chat-contact-name">
+                Carolyn Ortiz
+              </div>
+              <span class="fw-light text-light chat-contact-massage">
+                Greetings from Webestica.
+              </span>
+            </div>
+
+            <div>
+              <p class="text-nowrap chat-contact-massage-time text-light">
+                1 day
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          data-bs-dismiss="offcanvas">
+          <div class="d-flex flex-column gap-2 chat-contact-img-group-main">
+            <div class="chat-contact-img-group gap-2">
+              <img src="Avatar/06.jpg" alt="Avatar" class="rounded-circle" />
+              <img src="Avatar/07.jpg" alt="Avatar" class="rounded-circle" />
+            </div>
+            <div class="chat-contact-img-group gap-2">
+              <img src="Avatar/08.jpg" alt="Avatar" class="rounded-circle" />
+              <img src="Avatar/09.jpg" alt="Avatar" class="rounded-circle" />
+            </div>
+          </div>
+          <div class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <div class="fw-bolder text-light chat-contact-name">
+                Frances, Lori, Amanda, <br />
+                Lawson
+              </div>
+              <span class="fw-light text-light chat-contact-massage">
+                Btw are you looking for job change?
+              </span>
+            </div>
+
+            <div>
+              <p class="text-nowrap chat-contact-massage-time text-light">
+                4 day
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          data-bs-dismiss="offcanvas">
+          <img src="Avatar/08.jpg" alt="" class="chat-contact-dp rounded-circle" />
+          <div class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <div class="fw-bolder text-light chat-contact-name">
+                Bryan Knight
+              </div>
+              <span class="fw-light text-light chat-contact-massage">
+                if you are available to discuss🙄
+              </span>
+            </div>
+
+            <div>
+              <p class="text-nowrap chat-contact-massage-time text-light">
+                6 day
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          data-bs-dismiss="offcanvas">
+          <img src="Avatar/09.jpg" alt="" class="chat-contact-dp rounded-circle" />
+          <div class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <div class="fw-bolder text-light chat-contact-name">
+                Louis Crawford
+              </div>
+              <span class="fw-light text-light chat-contact-massage">
+                🙌Congrats on your work anniversary!
+              </span>
+            </div>
+
+            <div>
+              <p class="text-nowrap chat-contact-massage-time text-light">
+                1 day
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          data-bs-dismiss="offcanvas">
+          <img src="Avatar/10.jpg" alt="" class="chat-contact-dp rounded-circle" />
+          <div class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <div class="fw-bolder text-light chat-contact-name">
+                Jacqueline Miller
+              </div>
+              <span class="fw-light text-light chat-contact-massage">
+                No sorry, Thanks.
+              </span>
+            </div>
+
+            <div>
+              <p class="text-nowrap chat-contact-massage-time text-light">
+                15, may
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          data-bs-dismiss="offcanvas">
+          <img src="Avatar/11.jpg" alt="" class="chat-contact-dp rounded-circle" />
+          <div class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <div class="fw-bolder text-light chat-contact-name">
+                Amanda Reed
+              </div>
+              <span class="fw-light text-light chat-contact-massage">
+                Interested can share CV at.
+              </span>
+            </div>
+
+            <div>
+              <p class="text-nowrap chat-contact-massage-time text-light">
+                18 may
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="chat-contact-li bg-info bg-opacity-25 rounded-3 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-3 w-100"
+          data-bs-dismiss="offcanvas">
+          <img src="Avatar/12.jpg" alt="" class="chat-contact-dp rounded-circle" />
+          <div class="chat-contact-description d-flex flex-row justify-content-between w-75 align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <div class="fw-bolder text-light chat-contact-name">
+                Larry Lawson
+              </div>
+              <span class="fw-light text-light chat-contact-massage">
+                Hope you're doing well and Safe.
+              </span>
+            </div>
+
+            <div>
+              <p class="text-nowrap chat-contact-massage-time text-light">
+                20, may
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="d-flex flex-row justify-content-start align-items-center px-2 py-1 w-100">
+          <button class="btn btn-primary w-100">See all in messaging</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Offcanvas -->
+  <!-- Offcanvas -->
+
+  <!-- Chat Box -->
+  <!-- Chat Box -->
+
+  <div class="chat-Massage-chat-box border-0 position-fixed p-0">
+    <div class="chat-header border-bottom py-2 px-2 w-100">
+      <div class="d-flex flex-row justify-content-between w-100 align-items-center gap-1">
+        <img src="Avatar/01.jpg" class="chat-contact-massage-dp rounded-circle me-2" alt="Dp" />
+        <div class="d-flex flex-wrap justify-content-start align-items-center">
+          <span class="fw-bolder chat-contact-massage-name text-light w-100">Frances Guerrero</span>
+          <span class="fw-light text-light chat-contact-massage">
+            🟢 Online
+          </span>
+        </div>
+
+        <div class="dropdown">
+          <i class="bi bi-three-dots-vertical px-2 py-2" id="chatoffcanvaschatdropdown" role="button"
+            data-bs-toggle="dropdown" data-bs-display="static"></i>
+          <ul class="chat-dropdown-menu dropdown-menu dropdown-menu-end" aria-labelledby="chatoffcanvaschatdropdown">
+            <li class="d-flex flex-row justify-content-center align-items-center px-3">
+              <i class="bi bi-camera-video chat-dropdown-item-icon"></i>
+              <a class="dropdown-item py-2 px-3 fw-normal w-100" href="#">Video Call</a>
+            </li>
+            <li class="d-flex flex-row justify-content-center align-items-center px-3">
+              <i class="bi bi-telephone chat-dropdown-item-icon"></i>
+              <a class="dropdown-item py-2 px-3 fw-normal w-100" href="#">Voice Call</a>
+            </li>
+            <li class="d-flex flex-row justify-content-center align-items-center px-3">
+              <i class="bi bi-trash chat-dropdown-item-icon"></i>
+              <a class="dropdown-item py-2 px-3 fw-normal w-100" href="#">Delete</a>
+            </li>
+            <li class="d-flex flex-row justify-content-center align-items-center px-3">
+              <i class="bi bi-chat-square-text chat-dropdown-item-icon"></i>
+              <a class="dropdown-item py-2 px-3 fw-normal w-100" href="#">Mark as Unread</a>
+            </li>
+            <li class="d-flex flex-row justify-content-center align-items-center px-3">
+              <i class="bi bi-volume-down chat-dropdown-item-icon"></i>
+              <a class="dropdown-item py-2 px-3 fw-normal w-100" href="#">Muted</a>
+            </li>
+            <li class="d-flex flex-row justify-content-center align-items-center px-3">
+              <i class="bi bi-archive chat-dropdown-item-icon"></i>
+              <a class="dropdown-item py-2 px-3 fw-normal w-100" href="#">Archive</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li class="d-flex flex-row justify-content-center align-items-center px-3">
+              <i class="bi bi-flag chat-dropdown-item-icon"></i>
+              <a class="dropdown-item py-2 px-3 fw-normal w-100" href="#">Report</a>
+            </li>
+          </ul>
+        </div>
+
+        <i class="bi bi-dash-lg px-2 py-2 chat-offcanvas-icon chat-offcanvas-icon-minimiz"></i>
+
+        <button class="bi bi-x-lg chat-offcanvas-massege-close-btn border-0 px-2 py-2" type="button"></button>
+      </div>
+    </div>
+
+    <div class="chat-body w-100">
+      <div class="chat-history w-100">
+        <div class="chat-massages-time w-100 text-center text-opacity-75 mt-3">
+          Jul 16, 2022, 06:15 am
+        </div>
+        <div class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center">
+          <div class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2">
+            <img src="Avatar/01.jpg " alt="Dp" class="chat-contact-massage-dp rounded-circle" />
+            <div class="d-flex flex-column justify-content-center align-items-start gap-2">
+              <span class="massege-text py-2 px-3 rounded-2">
+                Applauded no discovery😊
+              </span>
+              <span class="massages-text-time"> 6:15 AM </span>
             </div>
           </div>
         </div>
-      </section>
 
-      <!--Page Main -->
-      <!--Page Main -->
-    </main>
+        <div class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center">
+          <div class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2">
+            <div class="d-flex flex-column justify-content-center align-items-end w-100 gap-2">
+              <span class="massege-text me bg-primary text-light py-2 px-3 rounded-2">
+                With pleasure
+              </span>
+            </div>
+          </div>
+        </div>
 
-    <!-- Main -->
-    <!-- Main -->
+        <div class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center">
+          <div class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2">
+            <img src="Avatar/01.jpg " alt="Dp" class="chat-contact-massage-dp rounded-circle" />
+            <div class="d-flex flex-column justify-content-center align-items-start gap-2">
+              <span class="massege-text py-2 px-3 rounded-2">
+                Please find the attached
+              </span>
+              <span class="chat-massages-time"> 12:16 PM </span>
+            </div>
+          </div>
+        </div>
 
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <div class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center">
+          <div class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2">
+            <img src="Avatar/01.jpg " alt="Dp" class="chat-contact-massage-dp rounded-circle" />
+            <div class="d-flex flex-column justify-content-center align-items-start gap-2">
+              <span class="massege-text py-2 px-3 rounded-2">
+                How promotion excellent curiosity😮
+              </span>
+              <span class="chat-massages-time">3:22 PM </span>
+            </div>
+          </div>
+        </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="index.js"></script>
-  </body>
+        <div class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center">
+          <div class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2">
+            <div class="d-flex flex-column justify-content-center align-items-end w-100 gap-2">
+              <span class="massege-text me bg-primary text-light py-2 px-3 rounded-2">
+                And sir dare view.
+              </span>
+              <span class="chat-massages-time me">5:35 PM <i class="bi bi-check-lg"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-massages-time w-100 text-center">2 New Messages</div>
+
+        <div class="chat-massages w-100 py-1 d-flex flex-column justify-content-center align-items-center">
+          <div class="massege w-100 d-flex flex-row justify-content-start align-items-center gap-3 px-2 py-2">
+            <img src="Avatar/01.jpg " alt="Dp" class="chat-contact-massage-dp rounded-circle" />
+            <div class="d-flex flex-column justify-content-center align-items-start gap-2">
+              <span class="massege-text new-massege py-2 px-3 rounded-2">
+              </span>
+              <span class="chat-massages-time"> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 bg-dark bg-opacity-10 px-2 py-2">
+        <textarea name="" id="" class="chat-massage-input w-100 ps-2 py-2 rounded-2"
+          placeholder="Type a Massage"></textarea>
+
+        <div class="chat-massage-btns d-flex flex-row justify-content-between align-items-center">
+          <div class="d-flex flex-row justify-content-start align-items-center py-2 gap-2">
+            <button
+              class="border-0 rounded-2 chat-massage-btn-1 d-flex justify-content-center align-items-end bg-danger bg-opacity-10 text-danger">
+              ☺
+            </button>
+            <button
+              class="border-0 rounded-2 chat-massage-btn-2 d-flex justify-content-center align-items-center bi bi-paperclip"></button>
+            <button
+              class="border-0 rounded-2 chat-massage-btn-3 d-flex justify-content-center align-items-center bg-success bg-opacity-10 text-success">
+              GIF
+            </button>
+          </div>
+          <button class="bg-primary text-light chat-massage-send-btn px-3 py-1 border-0 rounded-2 fs-6 disabled"
+            aria-disabled="true">
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chat Box -->
+  <!-- Chat Box -->
+
+  <!-- Main -->
+  <!-- Main -->
+  <main class="h-100 w-100">
+    <!--Page Main -->
+    <!--Page Main -->
+    <section class="page-home">
+      <div class="container home-container d-flex flex-wrap justify-content-center w-100 h-100">
+        <div class="row home-row d-flex flex-wrap justify-content-center w-100 h-100 gy-3">
+          <div
+            class="col-xl-3 col-lg-4 col-md-12 col-sm-12 home-column-1 border border-light border-opacity-10 rounded-2 flex-wrap justify-content-start align-items-center h-100 py-2">
+            <div
+              class="profile-offcanvas-open-btn flex-row justify-content-start align-items-center gap-3 border-0 py-3 px-3 w-100"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <i class="btn btn-primary px-3 py-2 bi bi-sliders"></i>
+              <span class="text-light fw-bolder fs-6"> My profile</span>
+            </div>
+            <div class="home-profile flex-column justify-content-start align-items-center text-center w-100 h-100">
+              <div class="position-relative w-100">
+                <img src="Bg/01.jpg" alt="Banner" class="home-profile-banner" />
+                <img src="Avatar/01.jpg" alt="Profile" class="home-profile-img border-3 border-light rounded-3" />
+              </div>
+
+              <a href="#" class="home-profile-name fw-bolder fs-5 text-decoration-none mt-2">Huzaifa</a>
+              <small class="home-profile-skill w-100 px-1">Web Developer at Webestica</small>
+              <span class="home-profile-paragraph py-3 px-3">I'd love to change the world, but they won’t give me the
+                source code.</span>
+              <div
+                class="home-profile-rank d-flex flex-wrap justify-content-center align-items-center text-center gap-3 py-2">
+                <div
+                  class="home-profile-rank post border-end d-flex flex-column justify-content-center align-items-center text-center px-3">
+                  <b class="fw-bolder text-light">256</b>
+                  <small>Post</small>
+                </div>
+                <div
+                  class="home-profile-rank followers d-flex flex-column justify-content-center align-items-center text-center">
+                  <b class="fw-bolder text-light">2.5K</b>
+                  <small>Followers</small>
+                </div>
+                <div
+                  class="home-profile-rank following border-start d-flex flex-column justify-content-center align-items-center text-center px-3">
+                  <b class="fw-bolder text-light">365</b>
+                  <small>Following</small>
+                </div>
+              </div>
+              <div class="home-profile-links border-top mt-3 w-100">
+                <ul
+                  class="home-profile-links-ul list-unstyled d-flex flex-column justify-content-center align-items-start w-100 px-3 py-3 gap-4 w-100">
+                  <li class="nav-item">
+                    <a href="#"
+                      class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2">
+                      <img src="Icons/home-outline-filled.svg" alt="Link" class="home-profile-links-img" />
+                      Feed
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"
+                      class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2">
+                      <img src="Icons/person-outline-filled.svg" alt="Link" class="home-profile-links-img" />
+                      Connections
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"
+                      class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2">
+                      <img src="Icons/earth-outline-filled.svg" alt="Link" class="home-profile-links-img" />
+                      Latest News
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"
+                      class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2">
+                      <img src="Icons/calendar-outline-filled.svg" alt="Link" class="home-profile-links-img" />
+                      Events
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"
+                      class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2">
+                      <img src="Icons/chat-outline-filled.svg" alt="Link" class="home-profile-links-img" />
+                      Groups
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"
+                      class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2">
+                      <img src="Icons/notification-outlined-filled.svg" alt="Link" class="home-profile-links-img" />
+                      Notifications
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"
+                      class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2">
+                      <img src="Icons/cog-outline-filled.svg" alt="Link" class="home-profile-links-img" />
+                      Settings
+                    </a>
+                  </li>
+                </ul>
+                <li
+                  class="w-100 d-flex flex-column justify-content-center align-items-center py-2 border-top border-opacity-10 border-light">
+                  <a href="profile.html" class="text-decoration-none fw-bolder text-center text-primary w-100 py-2">
+                    View Profile
+                  </a>
+                </li>
+              </div>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
+              <div class="offcanvas-header d-flex justify-content-end">
+                <div class="bi bi-x-lg text-light" data-bs-dismiss="offcanvas" aria-label="Close"></div>
+              </div>
+              <div class="offcanvas-body profile-offcanvas-body">
+                <div
+                  class="home-profile d-flex flex-column justify-content-start align-items-center text-center w-100 h-100">
+                  <div class="position-relative w-100">
+                    <img src="Bg/01.jpg" alt="Banner" class="home-profile-banner" />
+                    <img src="Avatar/01.jpg" alt="Profile" class="home-profile-img border-3 border-light rounded-3" />
+                  </div>
+
+                  <a href="#" class="home-profile-name fw-bolder fs-5 text-decoration-none mt-2">Huzaifa</a>
+                  <small class="home-profile-skill w-100 px-1">Web Developer at Webestica</small>
+                  <span class="home-profile-paragraph py-3 px-3">I'd love to change the world, but they won’t give me
+                    the
+                    source code.</span>
+                  <div
+                    class="home-profile-rank d-flex flex-wrap justify-content-center align-items-center text-center gap-3 py-2">
+                    <div
+                      class="home-profile-rank post border-end d-flex flex-column justify-content-center align-items-center text-center px-3">
+                      <b class="fw-bolder text-light">256</b>
+                      <small>Post</small>
+                    </div>
+                    <div
+                      class="home-profile-rank followers d-flex flex-column justify-content-center align-items-center text-center">
+                      <b class="fw-bolder text-light">2.5K</b>
+                      <small>Followers</small>
+                    </div>
+                    <div
+                      class="home-profile-rank following border-start d-flex flex-column justify-content-center align-items-center text-center px-3">
+                      <b class="fw-bolder text-light">365</b>
+                      <small>Following</small>
+                    </div>
+                  </div>
+                  <div class="home-profile-links border-top mt-3 w-100">
+                    <ul
+                      class="home-profile-links-ul list-unstyled d-flex flex-column justify-content-center align-items-start w-100 px-3 py-3 gap-4 w-100">
+                      <li class="nav-item">
+                        <a href="#"
+                          class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2">
+                          <img src="Icons/home-outline-filled.svg" alt="Link" class="home-profile-links-img" />
+                          Feed
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#"
+                          class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2">
+                          <img src="Icons/person-outline-filled.svg" alt="Link" class="home-profile-links-img" />
+                          Connections
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#"
+                          class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2">
+                          <img src="Icons/earth-outline-filled.svg" alt="Link" class="home-profile-links-img" />
+                          Latest News
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#"
+                          class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2">
+                          <img src="Icons/calendar-outline-filled.svg" alt="Link" class="home-profile-links-img" />
+                          Events
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#"
+                          class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2">
+                          <img src="Icons/chat-outline-filled.svg" alt="Link" class="home-profile-links-img" />
+                          Groups
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#"
+                          class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2">
+                          <img src="Icons/notification-outlined-filled.svg" alt="Link" class="home-profile-links-img" />
+                          Notifications
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#"
+                          class="nav-link text-decoration-none fw-bolder d-flex flex-row justify-content-start align-items-center gap-2">
+                          <img src="Icons/cog-outline-filled.svg" alt="Link" class="home-profile-links-img" />
+                          Settings
+                        </a>
+                      </li>
+                      <li class="nav-item w-100">
+                        <a href="profile.html"
+                          class="nav-link text-decoration-none fw-bolder text-center text-primary py-2 border-top border-bottom w-100">
+                          View Profile
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-4 col-md-8 col-sm-12 d-flex flex-column justify-content-start">
+            <div class="home-stories d-flex flex-nowrap justify-content-center align-items-center gap-2">
+              <label for="story-upload"
+                class="story-upload-label d-flex flex-column justify-content-center align-items-center gap-2">
+                <i
+                  class="bi bi-plus story-icon rounded-circle d-flex flex-column justify-content-center align-items-center"></i>
+                <h6 class="text-light fw-bold post-story">
+                  Post a <br />
+                  Story
+                </h6>
+                <input type="file" id="story-upload" accept=".png ,.mp4,.jpg" />
+              </label>
+
+              <div class="story-slider d-flex flex justify-content-start align-items-center gap-2">
+
+
+
+                <div
+                  class="story-slider-cell py-2 px-2 d-flex flex-wrap justify-content-center align-items-center position-relative">
+                  <img class="story-slider-img rounded-2" src="Post/Post_Album_1/02.jpg" />
+                  <span class="story-name">Judy Nguyen</span>
+                </div>
+                <div
+                  class="story-slider-cell py-2 px-2 d-flex flex-wrap justify-content-center align-items-center position-relative">
+                  <img class="story-slider-img rounded-2" src="Post/Post_Album_1/03.jpg" />
+                  <span class="story-name">Billy Vasquez</span>
+                </div>
+
+
+
+
+                <div
+                  class="story d-flex flex-column justify-content-center align-items-center w-100 h-100 position-fixed start-0 end-0 bottom-0 top-0">
+
+                  <div
+                    class="story-header d-flex flex-wrap justify-content-between align-items-center px-3 py-3 w-100 gap-3 position-relative">
+                    <div class="story-story-information d-flex align-items-center justify-content-center gap-2">
+                      <img src="" class="story-story-profile rounded-circle">
+                      <div class="d-flex flex-column justify-content-center align-items-start">
+                        <span class="story-story-name text-light fw-bolder"></span>
+                        <span class="story-story-time text-light fw-normal"></span>
+                      </div>
+                    </div>
+                    <div class="story-time ">
+                      <div class="story-time-lenght"></div>
+                    </div>
+                    <i class="bi bi-x-lg story-close-btn px-3"></i>
+                  </div>
+
+
+
+
+
+
+
+                  <div class="story-body d-flex justify-content-center align-items-center">
+                    <img src="Post/Story/01.jpg" class="story-img" />
+                  </div>
+
+
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+
+
+          <div
+            class="col-xl-3 col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-start align-items-start gap-4">
+            <div class="home-people-follow px-3 py-3 w-100 d-flex flex-column justify-content-center gap-1">
+              <span class="text-light fw-bolder py-2">Who to follow</span>
+              <div class="people-follow d-flex flex-row justify-content-between align-items-center py-2">
+                <div class="d-flex flex-row gap-2 justify-content-center align-items-center">
+                  <img src="Avatar/04.jpg" alt="People" class="people-follow-img rounded-circle" />
+                  <div class="d-flex flex-column justify-content-center align-items-start gap-1">
+                    <span class="people-follow-name fw-bolder text-light">
+                      Judy Nguyen</span>
+                    <small class="people-follow-profession">News anchor</small>
+                  </div>
+                </div>
+
+                <div
+                  class="people-follow-plus d-flex flex-row justify-content-center align-items-center bi bi-plus rounded-circle fs-3 fw-bolder">
+                </div>
+              </div>
+              <div class="people-follow d-flex flex-row justify-content-between align-items-center py-2">
+                <div class="d-flex flex-row gap-2 justify-content-center align-items-center">
+                  <img src="Avatar/05.jpg" alt="People"
+                    class="people-follow-img rounded-circle border border-3 border-primary" />
+                  <div class="d-flex flex-column justify-content-center align-items-start gap-1">
+                    <span class="people-follow-name fw-bolder text-light">
+                      Amanda Reed</span>
+                    <small class="people-follow-profession">Web Developer</small>
+                  </div>
+                </div>
+
+                <div
+                  class="people-follow-plus d-flex flex-row justify-content-center align-items-center bi bi-plus rounded-circle fs-3 fw-bolder">
+                </div>
+              </div>
+              <div class="people-follow d-flex flex-row justify-content-between align-items-center py-2">
+                <div class="d-flex flex-row gap-2 justify-content-center align-items-center">
+                  <img src="Avatar/11.jpg" alt="People" class="people-follow-img rounded-circle" />
+                  <div class="d-flex flex-column justify-content-center align-items-start gap-1">
+                    <span class="people-follow-name fw-bolder text-light">
+                      Billy Vasquez</span>
+                    <small class="people-follow-profession">News anchor
+                    </small>
+                  </div>
+                </div>
+
+                <div
+                  class="people-follow-plus d-flex flex-row justify-content-center align-items-center bi bi-person-check bg-primary text-white rounded-circle fs-5 fw-bolder">
+                </div>
+              </div>
+              <div class="people-follow d-flex flex-row justify-content-between align-items-center py-2">
+                <div class="d-flex flex-row gap-2 justify-content-center align-items-center">
+                  <img src="Avatar/01.jpg" alt="People" class="people-follow-img rounded-circle" />
+                  <div class="d-flex flex-column justify-content-center align-items-start gap-1">
+                    <span class="people-follow-name fw-bolder text-light">
+                      Lori Ferguson</span>
+                    <small class="people-follow-profession">Web Developer at Webestica
+                    </small>
+                  </div>
+                </div>
+
+                <div
+                  class="people-follow-plus d-flex flex-row justify-content-center align-items-center bi bi-plus rounded-circle fs-3 fw-bolder">
+                </div>
+              </div>
+              <div class="people-follow d-flex flex-row justify-content-between align-items-center py-2">
+                <div class="d-flex flex-row gap-2 justify-content-center align-items-center">
+                  <img src="Avatar/placeholder.jpg" alt="People" class="people-follow-img rounded-circle" />
+                  <div class="d-flex flex-column justify-content-center align-items-start gap-1">
+                    <span class="people-follow-name fw-bolder text-light">
+                      Carolyn Ortiz</span>
+                    <small class="people-follow-profession">
+                      News anchor</small>
+                  </div>
+                </div>
+
+                <div
+                  class="people-follow-plus d-flex flex-row justify-content-center align-items-center bi bi-plus rounded-circle fs-3 fw-bolder">
+                </div>
+              </div>
+
+              <a href="#" class="people-follow-view-btn py-2 text-decoration-none text-center w-100">View More</a>
+            </div>
+            <div class="home-news px-3 py-3 w-100 d-flex flex-column justify-content-center gap-1">
+              <span class="text-light fw-bolder py-2">Today’s news</span>
+              <div class="news d-flex flex-column justify-content-center align-items-start">
+                <span class="news-text fw-bolder py-2">Ten questions you should answer truthfully</span>
+                <small class="news-time">2hr</small>
+              </div>
+              <div class="news d-flex flex-column justify-content-center align-items-start">
+                <span class="news-text fw-bolder py-2">Five unbelievable facts about money</span>
+                <small class="news-time">3hr</small>
+              </div>
+              <div class="news d-flex flex-column justify-content-center align-items-start">
+                <span class="news-text fw-bolder py-2">Best Pinterest Boards for learning about business</span>
+                <small class="news-time">4hr</small>
+              </div>
+              <div class="news d-flex flex-column justify-content-center align-items-start">
+                <span class="news-text fw-bolder py-2">Skills that you can learn from business</span>
+                <small class="news-time">6hr</small>
+              </div>
+              <a href="#" class="news-view-btn py-2 text-decoration-none text-center w-100">
+                View all latest news
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!--Page Main -->
+    <!--Page Main -->
+  </main>
+
+  <!-- Main -->
+  <!-- Main -->
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
