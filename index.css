@@ -714,6 +714,32 @@ navbar-center */
 .news-view-btn:hover {
   text-decoration: underline !important;
 }
+.story-upload-label {
+  width: 150px;
+  height: 150px;
+  background-color: var(--btn-3);
+  border: 1px solid var(--btn-bg);
+}
+#story-upload {
+  display: none;
+}
+.story-upload-label:hover .story-icon {
+  background-color: var(--input-color);
+}
+.story-icon {
+  width: 35px;
+  height: 35px;
+  background-color: var(--btn-bg);
+  color: var(--btn-bg-color);
+  border: 1px solid var(--btn-bg);
+  font-size: 22px;
+}
+
+input::-webkit-file-upload-button {
+  opacity: 0;
+  display: none;
+  appearance: none;
+}
 /* Page-Main ===========================> */
 /* Page-Main ===========================> */
 
@@ -742,11 +768,11 @@ navbar-center */
   }
 }
 
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
   .home-profile-banner {
     width: 400px;
   }
-}
+} */
 @media (max-width: 991px) {
   .page-home {
     margin-top: 1rem;
@@ -791,12 +817,12 @@ navbar-center */
     width: 100%;
     background-color: var(--header-color);
   }
-  .navbar-nav{
+  .navbar-nav {
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  .navbar-form{
+  .navbar-form {
     margin: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 0rem;
@@ -849,9 +875,6 @@ navbar-center */
   .chat-dropdown-item-icon {
     font-size: 13px;
   }
-  .chat-Massage-chat-box {
-    width: 100%;
-  }
 }
 @media (width: 344px) {
   #navbar-dropdown-right {
@@ -860,6 +883,10 @@ navbar-center */
   }
 }
 @media (max-width: 400px) {
+  .chat-Massage-chat-box {
+    width: 100%;
+  }
+
   .dropdown-notification-img {
     width: 30px;
     height: 30px;

@@ -97,7 +97,7 @@ function chatMassageInputMassgese() {
 chatMassageInputMassgese();
 var chatcontactmassage = document.querySelectorAll(".chat-contact-massage");
 var newMassege = document.querySelector(".new-massege");
-
+var chatMassageOffcanvas = document.querySelector(".offcanvas-end");
 function chatMassageMaximum() {
   chatOffCanvasCloseBtn.addEventListener("click", function () {
     chatMassagebox.style.display = "none";
@@ -236,6 +236,13 @@ function chatMassageMaximum() {
       chatScrollToBottom();
     });
   });
+  if (window.matchMedia("(max-width: 500px)").matches) {
+    chatContacLi.forEach(function (s) {
+      s.addEventListener("click", function () {
+        s.setAttribute("data-bs-dismiss", "offcanvas");
+      });
+    });
+  }
 }
 chatMassageMaximum();
 
