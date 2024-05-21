@@ -236,48 +236,18 @@ function chatMassageMaximum() {
       chatScrollToBottom();
     });
   });
-  if (window.matchMedia("(max-width: 500px)").matches) {
-    chatContacLi.forEach(function (s) {
-      s.addEventListener("click", function () {
+
+  chatContacLi.forEach(function (s) {
+    s.addEventListener("click", function () {
+      if (window.matchMedia("(max-width: 500px)").matches) {
         s.setAttribute("data-bs-dismiss", "offcanvas");
-      });
+      } else {
+        s.removeAttribute("data-bs-dismiss", "offcanvas");
+      }
     });
-  }
+  });
 }
 chatMassageMaximum();
-
-// var offCanvasChatSearchInput = document.querySelector(
-//   ".chat-offcanvas-form-input"
-// );
-// var offCanvasChatSearchIcon = document.querySelector(
-//   ".chat-offcanvas-form-icon"
-// );
-
-// var offCanvasChatContactName = document.querySelectorAll(".chat-contact-name");
-
-// function offCanvasChatSearch() {
-//   offCanvasChatSearchIcon.addEventListener("click", function (a) {
-//     a.preventDefault();
-//     var offCanvasChatSearchInputValue =
-//       offCanvasChatSearchInput.value.toUpperCase();
-//     console.log(offCanvasChatSearchInputValue);
-
-//     offCanvasChatSearchInput = offCanvasChatSearchInput.value;
-//     console.log(offCanvasChatSearchInput);
-//     offCanvasChatSearchInput.value = "";
-
-//     for (var i = 0; i < offCanvasChatContactName.length; i++) {
-//       if (
-//         offCanvasChatSearchInputValue === offCanvasChatContactName[i].innerHTML
-//       ) {
-//         console.log("value same");
-//       } else {
-//         console.log("not same");
-//       }
-//     }
-//   });
-// }
-// offCanvasChatSearch();
 
 var navbarNotificationClear = document.querySelector(
   ".navbar-notification-clear"
@@ -296,37 +266,6 @@ navbarNotificationClear.addEventListener("click", function () {
   });
 });
 
-// var rootColor = document.querySelector(":root");
-
-// var darkModeBtn = document.querySelector(".dark-mode-btn");
-// darkModeBtn.addEventListener("click", function () {
-//   document.body.style.backgroundColor = "#191a1f";
-//   document.body.style.color = "#fff";
-//   header.style.backgroundColor = "#0f0f10";
-// });
-
-// var storiesCell = document.querySelectorAll(".story-slider-cell");
-// var story = document.querySelector(".story");
-// var storyCloseBtn = document.querySelector(".story-close-btn");
-// function homeStories() {
-//   storiesCell.forEach(function (storyCellLenght, StoryCellIndex) {
-//     storyCellLenght.addEventListener("click", function () {
-//       // setInterval(function () {}, 5000);
-//       story.style.zIndex = "1000000";
-//       story.style.opacity = "1";
-//       story.style.visibility = "visible";
-//       story.style.transform = "rotate(0deg)";
-//       document.body.style.overflow="hidden"
-//     });
-//     // h.addEventListener("click", function () {});
-//   });
-//   storyCloseBtn.addEventListener("click", function () {
-//     story.style.zIndex = "0";
-//     story.style.opacity = "0";
-//     story.style.visibility = "hidden";
-//     story.style.transform = "rotate(-60deg)";
-//   });
-// }homeStories();
 var storiesCell = document.querySelectorAll(".story-slider-cell");
 var storySliderImg = document.querySelectorAll(".story-slider-img");
 var storyName = document.querySelectorAll(".story-name");
@@ -354,14 +293,90 @@ function homeStories() {
       storyStoryName.textContent = storyName[0].innerHTML;
       storyStoryImg.src = storySliderImg[0].src;
       storyStoryTime.textContent = "2 Hour ago";
+      document.body.style.overflow = "hidden";
+    });
+    storiesCell[1].addEventListener("click", function () {
+      story.style.zIndex = "10000";
+      story.style.opacity = "1";
+      story.style.visibility = "visible";
+      story.style.transform = "rotate(0deg)";
+      storyImg.src = "Post/Story/02.jpg";
+      storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
+      storyStoryName.textContent = storyName[1].innerHTML;
+      storyStoryImg.src = storySliderImg[1].src;
+      storyStoryTime.textContent = "4 Hour ago";
+      document.body.style.overflow = "hidden";
+    });
+
+    storiesCell[2].addEventListener("click", function () {
+      story.style.zIndex = "10000";
+      story.style.opacity = "1";
+      story.style.visibility = "visible";
+      story.style.transform = "rotate(0deg)";
+      storyImg.src = "Post/Story/03.jpg";
+      storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
+      storyStoryName.textContent = storyName[2].innerHTML;
+      storyStoryImg.src = storySliderImg[2].src;
+      storyStoryTime.textContent = "5 Hour ago";
+      document.body.style.overflow = "hidden";
+    });
+
+    storiesCell[3].addEventListener("click", function () {
+      story.style.zIndex = "10000";
+      story.style.opacity = "1";
+      story.style.visibility = "visible";
+      story.style.transform = "rotate(0deg)";
+      storyImg.src = "Post/Story/04.jpg";
+      storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
+      storyStoryName.textContent = storyName[3].innerHTML;
+      storyStoryImg.src = storySliderImg[3].src;
+      storyStoryTime.textContent = "6 Hour ago";
+      document.body.style.overflow = "hidden";
+    });
+    storiesCell[4].addEventListener("click", function () {
+      story.style.zIndex = "10000";
+      story.style.opacity = "1";
+      story.style.visibility = "visible";
+      story.style.transform = "rotate(0deg)";
+      storyImg.src = "Post/Story/05.jpg";
+      storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
+      storyStoryName.textContent = storyName[4].innerHTML;
+      storyStoryImg.src = storySliderImg[4].src;
+      storyStoryTime.textContent = "7 Hour ago";
+      document.body.style.overflow = "hidden";
+    });
+    storiesCell[5].addEventListener("click", function () {
+      story.style.zIndex = "10000";
+      story.style.opacity = "1";
+      story.style.visibility = "visible";
+      story.style.transform = "rotate(0deg)";
+      storyImg.src = "Post/Story/06.jpg";
+      storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
+      storyStoryName.textContent = storyName[5].innerHTML;
+      storyStoryImg.src = storySliderImg[5].src;
+      storyStoryTime.textContent = "8 Hour ago";
+      document.body.style.overflow = "hidden";
+    });
+    storiesCell[6].addEventListener("click", function () {
+      story.style.zIndex = "10000";
+      story.style.opacity = "1";
+      story.style.visibility = "visible";
+      story.style.transform = "rotate(0deg)";
+      storyImg.src = "Post/Story/07.jpg";
+      storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
+      storyStoryName.textContent = storyName[6].innerHTML;
+      storyStoryImg.src = storySliderImg[6].src;
+      storyStoryTime.textContent = "9 Hour ago";
+      document.body.style.overflow = "hidden";
     });
     setInterval(function () {
       story.style.zIndex = "0";
       story.style.opacity = "0";
       story.style.visibility = "hidden";
       story.style.transform = "rotate(-60deg)";
-    }, 6600);
-
+      storyTimeLenght.style.animation = null;
+      document.body.style.overflow = "auto";
+    }, 7000);
   }
 
   storyCloseBtn.addEventListener("click", function () {
@@ -369,6 +384,8 @@ function homeStories() {
     story.style.opacity = "0";
     story.style.visibility = "hidden";
     story.style.transform = "rotate(-60deg)";
+    storyTimeLenght.style.animation = null;
+    document.body.style.overflow = "auto";
   });
 }
 

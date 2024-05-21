@@ -65,12 +65,10 @@ img {
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
-  border-radius: 20px;
   background: var(--nav-link-color);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--input-color);
-  border-radius: 20px;
 }
 
 /* ScrollBar ===========================> */
@@ -750,8 +748,12 @@ input::-webkit-file-upload-button {
 }
 .story-slider {
   width: 100%;
-  height: 200px;
+  height: 170px;
   overflow-x: auto;
+}
+.story-slider-cell {
+  width: 120px;
+  height: 100%;
 }
 
 .story-slider-cell:before {
@@ -763,7 +765,7 @@ input::-webkit-file-upload-button {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 12px;
 }
 .story-slider-img {
@@ -771,17 +773,17 @@ input::-webkit-file-upload-button {
   height: 150px;
 }
 .story-name {
+  transition: all 0.3s linear;
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   color: var(--btn-bg-color);
   font-size: 12px;
 }
 
-
 .story {
   transition: all 0.3s linear;
   background: var(--header-color);
-  z-index:-11111;
+  z-index: -11111;
   opacity: 0;
   transform: rotate(60deg);
   visibility: hidden;
@@ -792,28 +794,34 @@ input::-webkit-file-upload-button {
   visibility: visible;
 }
 .story-header {
+  transition: all 0.3s linear;
   position: relative;
   height: 10%;
 }
 .story-body {
+  transition: all 0.3s linear;
   position: relative;
   width: 100%;
   height: 90%;
 }
 .story-img {
+  transition: all 0.3s linear;
   width: 600px;
   height: 100%;
 }
 
 .story-story-profile {
+  transition: all 0.3s linear;
   width: 40px;
   height: 40px;
 }
 
 .story-story-name {
+  transition: all 0.3s linear;
   font-size: 14px;
 }
 .story-story-time {
+  transition: all 0.3s linear;
   font-size: 13px;
 }
 
@@ -825,6 +833,7 @@ input::-webkit-file-upload-button {
 }
 
 .story-time-lenght {
+  transition: all 0.3s linear;
   position: absolute;
   width: 0;
   height: 100%;
