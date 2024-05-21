@@ -279,119 +279,58 @@ var storyStoryImg = document.querySelector(".story-story-profile");
 var storyStoryName = document.querySelector(".story-story-name");
 var storyStoryTime = document.querySelector(".story-story-time");
 
-// function homeStories() {
-//   for (var r = 0; r < storyName.length; r++) {}
-//   for (var b = 0; b < storySliderImg.length; b++) {}
-//   for (var o = 0; o < storiesCell.length; o++) {
-//     storiesCell[0].addEventListener("click", function () {
-//       story.style.zIndex = "10000";
-//       story.style.opacity = "1";
-//       story.style.visibility = "visible";
-//       story.style.transform = "rotate(0deg)";
-//       storyImg.src = "Post/Story/01.jpg";
-//       storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
-//       storyStoryName.textContent = storyName[0].innerHTML;
-//       storyStoryImg.src = storySliderImg[0].src;
-//       storyStoryTime.textContent = "2 Hour ago";
-//       document.body.style.overflow = "hidden";
-//     });
-//     storiesCell[1].addEventListener("click", function () {
-//       story.style.zIndex = "10000";
-//       story.style.opacity = "1";
-//       story.style.visibility = "visible";
-//       story.style.transform = "rotate(0deg)";
-//       storyImg.src = "Post/Story/02.jpg";
-//       storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
-//       storyStoryName.textContent = storyName[1].innerHTML;
-//       storyStoryImg.src = storySliderImg[1].src;
-//       storyStoryTime.textContent = "4 Hour ago";
-//       document.body.style.overflow = "hidden";
-//     });
+function homeStories() {
+  var homeStoryTimeCurrentInt = null;
+  function showStory(index) {
+    if (homeStoryTimeCurrentInt) {
+      clearInterval(homeStoryTimeCurrentInt);
+    }
+    story.style.transition = "all 0.3s linear";
+    story.style.zIndex = "1000000000";
+    story.style.opacity = "1";
+    story.style.visibility = "visible";
+    story.style.transform = "rotate(0deg)";
+    storyImg.src = `Post/Story/0${index + 1}.jpg`;
+    storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
+    storyStoryName.textContent = storyName[index].innerHTML;
+    storyStoryImg.src = storySliderImg[index].src;
+    storyStoryTime.textContent = `${(index + 2) * 2} Hour ago`;
+    document.body.style.overflow = "hidden";
+    homeStoryTimeCurrentInt = setInterval(function () {
+      hideStory();
+    }, 7000);
+  }
+  function hideStory() {
+    story.style.transition = "all 0.3s linear";
+    story.style.zIndex = "0";
+    story.style.opacity = "0";
+    story.style.visibility = "hidden";
+    story.style.transform = "rotate(-60deg)";
+    document.body.style.overflow = "auto";
+    storyTimeLenght.style.animation = null;
+    if (homeStoryTimeCurrentInt) {
+      clearInterval(homeStoryTimeCurrentInt);
+      homeStoryTimeCurrentInt = null;
+    }
+  }
 
-//     storiesCell[2].addEventListener("click", function () {
-//       story.style.zIndex = "10000";
-//       story.style.opacity = "1";
-//       story.style.visibility = "visible";
-//       story.style.transform = "rotate(0deg)";
-//       storyImg.src = "Post/Story/03.jpg";
-//       storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
-//       storyStoryName.textContent = storyName[2].innerHTML;
-//       storyStoryImg.src = storySliderImg[2].src;
-//       storyStoryTime.textContent = "5 Hour ago";
-//       document.body.style.overflow = "hidden";
-//     });
+  for (var o = 0; o < storiesCell.length; o++) {
+    storiesCell[o].addEventListener(
+      "click",
+      (function (index) {
+        return function () {
+          showStory(index);
+        };
+      })(o)
+    );
+  }
 
-//     storiesCell[3].addEventListener("click", function () {
-//       story.style.zIndex = "10000";
-//       story.style.opacity = "1";
-//       story.style.visibility = "visible";
-//       story.style.transform = "rotate(0deg)";
-//       storyImg.src = "Post/Story/04.jpg";
-//       storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
-//       storyStoryName.textContent = storyName[3].innerHTML;
-//       storyStoryImg.src = storySliderImg[3].src;
-//       storyStoryTime.textContent = "6 Hour ago";
-//       document.body.style.overflow = "hidden";
-//     });
-//     storiesCell[4].addEventListener("click", function () {
-//       story.style.zIndex = "10000";
-//       story.style.opacity = "1";
-//       story.style.visibility = "visible";
-//       story.style.transform = "rotate(0deg)";
-//       storyImg.src = "Post/Story/05.jpg";
-//       storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
-//       storyStoryName.textContent = storyName[4].innerHTML;
-//       storyStoryImg.src = storySliderImg[4].src;
-//       storyStoryTime.textContent = "7 Hour ago";
-//       document.body.style.overflow = "hidden";
-//     });
-//     storiesCell[5].addEventListener("click", function () {
-//       story.style.zIndex = "10000";
-//       story.style.opacity = "1";
-//       story.style.visibility = "visible";
-//       story.style.transform = "rotate(0deg)";
-//       storyImg.src = "Post/Story/06.jpg";
-//       storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
-//       storyStoryName.textContent = storyName[5].innerHTML;
-//       storyStoryImg.src = storySliderImg[5].src;
-//       storyStoryTime.textContent = "8 Hour ago";
-//       document.body.style.overflow = "hidden";
-//     });
-//     storiesCell[6].addEventListener("click", function () {
-//       story.style.zIndex = "10000";
-//       story.style.opacity = "1";
-//       story.style.visibility = "visible";
-//       story.style.transform = "rotate(0deg)";
-//       storyImg.src = "Post/Story/07.jpg";
-//       storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
-//       storyStoryName.textContent = storyName[6].innerHTML;
-//       storyStoryImg.src = storySliderImg[6].src;
-//       storyStoryTime.textContent = "9 Hour ago";
-//       document.body.style.overflow = "hidden";
-//     });
-//     setInterval(function () {
-//       story.style.zIndex = "0";
-//       story.style.opacity = "0";
-//       story.style.visibility = "hidden";
-//       story.style.transform = "rotate(-60deg)";
-//       storyTimeLenght.style.animation = null;
-//       document.body.style.overflow = "auto";
-//     }, 7000);
-//   }
+  storyCloseBtn.addEventListener("click", function () {
+    hideStory();
+  });
+}
 
-//   storyCloseBtn.addEventListener("click", function () {
-//     story.style.zIndex = "0";
-//     story.style.opacity = "0";
-//     story.style.visibility = "hidden";
-//     story.style.transform = "rotate(-60deg)";
-//     storyTimeLenght.style.animation = null;
-//     document.body.style.overflow = "auto";
-//   });
-// }
-
-// homeStories();
-
-
+homeStories();
 
 // function homeStories() {
 //   var currentInterval = null;
@@ -436,7 +375,7 @@ var storyStoryTime = document.querySelector(".story-story-time");
 //   }
 
 //   for (var o = 0; o < storiesCell.length; o++) {
-//     (function(index) {
+//     (function (index) {
 //       storiesCell[index].addEventListener("click", function () {
 //         showStory(index);
 //       });
