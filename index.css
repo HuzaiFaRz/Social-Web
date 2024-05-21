@@ -44,6 +44,7 @@ button:hover {
   --btn-transparent: rgba(15, 111, 236, 0.1);
   --offcanvas-bg: #191a1f;
   --cloud: rgb(12, 188, 135);
+  --btn-end-1: #141519;
 }
 
 html,
@@ -411,6 +412,9 @@ input::-webkit-search-cancel-button {
   position: fixed;
   bottom: 3%;
   right: 3%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
 }
 .chat-offcanvas-close-btn,
 .chat-offcanvas-icon,
@@ -510,6 +514,8 @@ input::-webkit-search-cancel-button {
 
 /* Chat Box ===========================> */
 /* Chat Box ===========================> */
+
+
 
 .chat-Massage-chat-box {
   display: none;
@@ -612,6 +618,10 @@ navbar-center */
 
 /* Page-Main ===========================> */
 /* Page-Main ===========================> */
+
+/* Home Page Column 1 */
+/* Home Page Column 1 */
+
 .page-home {
   margin-top: 1.5rem;
 }
@@ -671,6 +681,12 @@ navbar-center */
   display: none;
 }
 
+/* Home Page Column 1 */
+/* Home Page Column 1 */
+
+/* Home Page Column 3 */
+/* Home Page Column 3 */
+
 .home-people-follow,
 .home-news {
   background-color: var(--btn-3);
@@ -718,12 +734,28 @@ navbar-center */
 .news-view-btn:hover {
   text-decoration: underline !important;
 }
+
+/* Home Page Column 3 */
+/* Home Page Column 3 */
+
+/* Home Page Column 2 */
+/* Home Page Column 2 */
+
+/* Story Slider */
+/* Story Slider */
+
+.home-stories {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .story-upload-label {
   width: 150px;
   height: 150px;
   background-color: var(--btn-3);
   border: 1px solid var(--btn-bg);
 }
+
 #story-upload {
   display: none;
 }
@@ -752,6 +784,7 @@ input::-webkit-file-upload-button {
   overflow-x: auto;
 }
 .story-slider-cell {
+  position: relative !important;
   width: 120px;
   height: 100%;
   z-index: 1000;
@@ -779,6 +812,12 @@ input::-webkit-file-upload-button {
   color: var(--btn-bg-color);
   font-size: 12px;
 }
+
+/* Story Slider */
+/* Story Slider */
+
+/* Story */
+/* Story */
 
 .story {
   background: var(--header-color);
@@ -834,7 +873,6 @@ input::-webkit-file-upload-button {
   font-size: 22px;
   color: var(--btn-bg-color);
 }
-
 @keyframes storytimeani {
   0% {
     width: 0%;
@@ -857,6 +895,45 @@ input::-webkit-file-upload-button {
   }
 }
 
+/* Story */
+/* Story */
+.home-share-post {
+  width: 100%;
+  background-color: var(--btn-end-1);
+}
+.post-share-textarea:focus {
+  background-color: var(--offcanvas-bg);
+  outline: none !important;
+  /* color: var(--btn-bg-color) !important; */
+}
+.post-profile {
+  width: 35px;
+  height: 35px;
+}
+.post-share-textarea {
+  background-color: var(--offcanvas-bg);
+  color: var(--btn-bg-color) !important;
+  border: none !important;
+  font-size: 13px;
+}
+.post-share-textarea::placeholder {
+  font-size: 13px;
+  color: var(--btn-bg-color);
+}
+.home-share-dropdown-btn {
+  width: 30px;
+  height: 30px;
+  background-color: var(--btn-bg);
+  color: var(--btn-bg-color-2);
+  font-size: 15px;
+  border: none;
+}
+#home-share-dropdown-items {
+  font-size: 15px;
+}
+/* Home Page Column 2 */
+/* Home Page Column 2 */
+
 /* Page-Main ===========================> */
 /* Page-Main ===========================> */
 
@@ -867,7 +944,7 @@ input::-webkit-file-upload-button {
     height: 550px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .navbar-end {
     width: 100%;
     background-color: var(--header-color);
@@ -884,7 +961,11 @@ input::-webkit-file-upload-button {
     margin-top: 4rem;
   }
 }
-
+@media (max-width: 1200px) {
+  .home-profile-banner {
+    width: 500px;
+  }
+}
 @media (max-width: 1150px) {
   .story-time {
     width: 500px;
@@ -969,7 +1050,7 @@ input::-webkit-file-upload-button {
   .navbar-nav,
   .navbar-nav > .nav-item.dropdown,
   .navbar-nav > .nav-item-end-link,
-  .dropdown-menu,
+  #navbar-dropdown,
   .nav-link.dropdown-toggle {
     width: 100% !important;
   }
@@ -991,15 +1072,37 @@ input::-webkit-file-upload-button {
     justify-content: end;
     align-items: center;
   }
+
 }
+
 @media (max-width: 600px) {
+  .chat-offcanvas-open-btn{
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+  .chat-contact-massage-time {
+    margin-left: 20%;
+  }
+  .chat-contact-massage {
+    font-size: 14px;
+  }
   .story-img {
     width: 100%;
     vertical-align: middle;
     height: auto;
   }
-}
-@media (max-width: 600px) {
+  .home-stories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px !important;
+  }
+  .story-upload-label {
+    width: 120px;
+  }
+  .post-story {
+    font-size: 12px;
+  }
   #navbar-dropdown-right {
     left: 50%;
     transform: translate(-78%);
@@ -1017,13 +1120,12 @@ input::-webkit-file-upload-button {
     font-size: 13px;
   }
 }
-@media (width: 344px) {
-  #navbar-dropdown-right {
-    left: 50%;
-    transform: translate(-82%, 0%);
-  }
-}
+
 @media (max-width: 400px) {
+  .chat-contact-massage-time {
+    margin-left: 5%;
+  }
+
   .chat-Massage-chat-box {
     width: 100%;
   }
@@ -1059,5 +1161,11 @@ input::-webkit-file-upload-button {
   }
 }
 
+@media (width: 344px) {
+  #navbar-dropdown-right {
+    left: 50%;
+    transform: translate(-82%, 0%);
+  }
+}
 /* MediaQuiries ===========================> */
 /* MediaQuiries ===========================> */
