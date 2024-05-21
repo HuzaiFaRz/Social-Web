@@ -2128,22 +2128,20 @@
                   class="home-share-content d-flex flex-row justify-content-between align-items-center"
                 >
                   <div class="home-share-btns">
-                    <!-- Button trigger modal -->
-                    <button
-                      type="button"
-                      class="btn btn-primary"
-                      data-toggle="modal"
-                      data-target="#exampleModal"
+                    <div
+                      class="home-share-modal-btn-1 py-1 px-2 d-flex flex-row align-items-center justify-content-center gap-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
                     >
-                      Launch demo modal
-                    </button>
+                      <i class="bi bi-image-fill text-success"></i>
+                      <span>Photo</span>
+                    </div>
 
                     <!-- Modal -->
                     <div
                       class="modal fade"
                       id="exampleModal"
                       tabindex="-1"
-                      role="dialog"
                       aria-labelledby="exampleModalLabel"
                       aria-hidden="true"
                     >
@@ -2155,19 +2153,17 @@
                             </h5>
                             <button
                               type="button"
-                              class="close"
-                              data-dismiss="modal"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
                               aria-label="Close"
-                            >
-                              <span aria-hidden="true">&times;</span>
-                            </button>
+                            ></button>
                           </div>
                           <div class="modal-body">...</div>
                           <div class="modal-footer">
                             <button
                               type="button"
                               class="btn btn-secondary"
-                              data-dismiss="modal"
+                              data-bs-dismiss="modal"
                             >
                               Close
                             </button>

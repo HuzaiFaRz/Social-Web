@@ -931,6 +931,15 @@ input::-webkit-file-upload-button {
 #home-share-dropdown-items {
   font-size: 15px;
 }
+.home-share-modal-btn-1{
+  background-color: var(--btn-bg);
+  color: var(--btn-bg-color-2);
+ 
+}
+.home-share-modal-btn-1>span,
+  .home-share-modal-btn-1>i{
+   font-size: 13px;
+}
 /* Home Page Column 2 */
 /* Home Page Column 2 */
 
