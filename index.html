@@ -2127,17 +2127,42 @@
                 <div
                   class="home-share-content d-flex flex-row justify-content-between align-items-center"
                 >
-                  <div class="home-share-btns">
+                  <div
+                    class="home-share-btns d-flex flex-wrap justify-content-center align-items-center gap-2"
+                  >
                     <div
-                      class="home-share-modal-btn-1 py-1 px-2 d-flex flex-row align-items-center justify-content-center gap-3"
+                      class="home-share-modal-btn py-1 px-2 d-flex flex-row align-items-center justify-content-center gap-2"
                       data-bs-toggle="modal"
                       data-bs-target="#exampleModal"
                     >
                       <i class="bi bi-image-fill text-success"></i>
                       <span>Photo</span>
                     </div>
+                    <div
+                      class="home-share-modal-btn py-1 px-2 d-flex flex-row align-items-center justify-content-center gap-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <i class="bi bi-camera-reels text-primary"></i>
+                      <span>Video</span>
+                    </div>
+                    <div
+                      class="home-share-modal-btn py-1 px-2 d-flex flex-row align-items-center justify-content-center gap-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <i class="bi bi-calendar2 text-danger"></i>
+                      <span>Event</span>
+                    </div>
+                    <div
+                      class="home-share-modal-btn py-1 px-2 d-flex flex-row align-items-center justify-content-center gap-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <i class="bi bi-emoji-smile text-warning"></i>
+                      <span>Feeling/Activity</span>
+                    </div>
 
-                    <!-- Modal -->
                     <div
                       class="modal fade"
                       id="exampleModal"
@@ -2145,29 +2170,75 @@
                       aria-labelledby="exampleModalLabel"
                       aria-hidden="true"
                     >
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              Modal title
-                            </h5>
-                            <button
-                              type="button"
-                              class="btn-close"
+                      <div
+                        class="modal-dialog modal-dialog modal-dialog-centered"
+                        role="document"
+                      >
+                        <div class="modal-content rounded-2">
+                          <div
+                            class="modal-header d-flex justify-content-between align-items-center border-light border-opacity-10"
+                          >
+                            <span
+                              class="modal-title fs-6 fw-bolder text-light"
+                              id="exampleModalLabel"
+                            >
+                              Add post photo
+                            </span>
+                            <span
+                              class="bi bi-x-lg text-light"
                               data-bs-dismiss="modal"
                               aria-label="Close"
-                            ></button>
+                            ></span>
                           </div>
-                          <div class="modal-body">...</div>
-                          <div class="modal-footer">
+                          <div class="modal-body">
+                            <div
+                              class="d-flex flex-row justify-content-center align-items-start gap-3"
+                            >
+                              <img
+                                src="Avatar/03.jpg"
+                                alt=""
+                                class="post-profile rounded-circle"
+                              />
+                              <textarea
+                                type="text"
+                                class="modal-post-share-textarea d-flex align-items-start justify-content-start w-100 px-2 py-2 fs-4"
+                                placeholder="Share your thoughts..."
+                                style="
+                                  ::placeholder {
+                                    font-size: 120px;
+                                  }
+                                "
+                              ></textarea>
+                            </div>
+
+                            <div class="modal-file-upload w-100">
+                              <span class="w-100">Upload attachment</span>
+                              <label
+                                for="modal-file-input"
+                                class="modal-file-label w-100 d-flex flex-column justify-content-center align-items-center gap-1 border border-light border-1 rounded-2"
+                              >
+                                <i class="bi bi-images"></i>
+                                <span>Drag here or click to upload photo.</span>
+                                <input
+                                  type="file"
+                                  id="modal-file-input"
+                                  class="d-none"
+                                />
+                              </label>
+                            </div>
+                          </div>
+                          <div
+                            class="modal-footer border-light border-opacity-10"
+                          >
                             <button
-                              type="button"
-                              class="btn btn-secondary"
+                              class="bg-danger bg-opacity-10 text-danger border-0 px-2 py-2 rounded-2 modal-close-btn"
                               data-bs-dismiss="modal"
                             >
-                              Close
+                              Cancel
                             </button>
-                            <button type="button" class="btn btn-primary">
+                            <button
+                              class="bg-success bg-opacity-10 text-success border-0 px-2 py-2 rounded-2 modal-post-btn"
+                            >
                               Save changes
                             </button>
                           </div>
