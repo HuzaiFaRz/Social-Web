@@ -295,7 +295,7 @@
 // function homeStories() {
 //   var homeStoryTimeCurrentInt = null;
 //   function showStory(index) {
-    
+
 //     if (homeStoryTimeCurrentInt) {
 //       clearInterval(homeStoryTimeCurrentInt);
 //     }
@@ -365,7 +365,7 @@ for (var u = 0; u <= homeShareBtns.length; u++) {
       "Drag here or click to upload photo.";
     homeModalCancelBtn.textContent = "Cancel";
     homeModalCancelBtn.classList.remove("bi-camera-video-fill");
-    modalFooter.innerHTML = `<div class="d-flex flex-row justify-content-center align-items-center gap-2"><button class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn" data-bs-dismiss="modal">&nbsp; Cancel</button><button class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn">Post</button></div>
+    modalFooter.innerHTML = `<div class="d-flex flex-row justify-content-center align-items-center gap-2"><button class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn" data-bs-dismiss="modal"> Cancel</button><button class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn">Post</button></div>
       `;
   });
 
@@ -374,7 +374,25 @@ for (var u = 0; u <= homeShareBtns.length; u++) {
     fileDargIcon.classList.replace("bi-images", "bi-camera-reels");
     homeModalFileUploadContent.textContent =
       "Drag here or click to upload video.";
-    modalFooter.innerHTML = `<div class="d-flex flex-row justify-content-center align-items-center gap-2"><button class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn bi bi-camera-video-fill">&nbsp; Live video</button><button class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn">Post</button></div>
+    modalFooter.innerHTML = `<div class="d-flex flex-row justify-content-center align-items-center gap-2"><button class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn bi bi-camera-video-fill"> Live video</button><button class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn">Post</button></div>
       `;
   });
 }
+var customCallendar = document.querySelectorAll(".flatpickr");
+
+for (var g = 0; g <= customCallendar.length; g++) {
+  customCallendar[0].flatpickr({
+    dateFormat: "D-m-Y",
+  });
+  customCallendar[1].flatpickr({
+    dateFormat: "D-m-Y",
+    noCalendar: true,
+    enableTime: true,
+  });
+}
+
+//   {
+//   calendar: true,
+//   enableTime: false,
+//
+// });

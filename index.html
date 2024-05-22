@@ -15,7 +15,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css"
+      integrity="sha512-MQXduO8IQnJVq1qmySpN87QQkiR1bZHtorbJBD0tzy7/0U9+YIC93QWHeGTEoojMVHWWNkoCp8V6OzVSYrX0oQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="index.css" />
   </head>
 
@@ -2365,7 +2375,7 @@
                   </div>
 
                   <div
-                    class="modal fade show d-block"
+                    class="modal fade"
                     id="exampleModalLong"
                     tabindex="-1"
                     role="dialog"
@@ -2412,13 +2422,42 @@
                             ></textarea>
                           </div>
                           <div
-                            class="d-flex flex-wrap justify-content-center align-items-center gap-3"
+                            class="d-flex justify-content-center align-items-center gap-2 w-100 custom-calendar"
                           >
-                            <input
-                              type="number"
-                              class="form-control modal-input rounded-1 border border-light border-opacity-10"
-                              placeholder="1hr 23m"
-                            />
+                            <div
+                              class="d-flex flex-column justify-content-center align-items-start gap-1 w-100"
+                            >
+                              <span class="modal-span">Date</span>
+                              <input
+                                class="form-control flatpickr flatpickr-input active modal-date-input rounded-1 border border-light border-opacity-10"
+                                type="text"
+                                placeholder="Select Date"
+                                readonly="readonly"
+                              />
+                            </div>
+
+                            <div
+                              class="d-flex flex-column justify-content-center align-items-start gap-1 w-100"
+                            >
+                              <span class="modal-span">Time</span>
+                              <input
+                                class="form-control flatpickr flatpickr-input active modal-date-input rounded-1 border border-light border-opacity-10"
+                                type="text"
+                                placeholder="Select Date"
+                                readonly="readonly"
+                              />
+                            </div>
+
+                            <div
+                              class="d-flex flex-column justify-content-center align-items-start gap-1 w-100"
+                            >
+                              <span class="modal-span">Duration</span>
+                              <input
+                                type="number"
+                                class="form-control modal-input rounded-1 border border-light border-opacity-10"
+                                placeholder="1hr 23m"
+                              />
+                            </div>
                           </div>
 
                           <div
@@ -2444,73 +2483,103 @@
                           </div>
                           <div class="d-flex w-100 modal-avatar-content">
                             <ul
-                              class="list-unstyled modal-avatar d-flex  justify-content-center align-items-center w-100 position-relative"
+                              class="list-unstyled modal-avatar d-flex justify-content-center align-items-center w-100 position-relative"
                             >
-                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center">
+                              <li
+                                class="position-absolute d-flex flex-column justify-content-center align-items-center"
+                              >
                                 <img
                                   src="Avatar/01.jpg"
                                   alt="Avater"
                                   class="rounded-circle border border-light"
                                 />
                               </li>
-                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center">
+                              <li
+                                class="position-absolute d-flex flex-column justify-content-center align-items-center"
+                              >
                                 <img
                                   src="Avatar/02.jpg"
                                   alt="Avater"
                                   class="rounded-circle border border-light"
                                 />
                               </li>
-                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center">
+                              <li
+                                class="position-absolute d-flex flex-column justify-content-center align-items-center"
+                              >
                                 <img
                                   src="Avatar/03.jpg"
                                   alt="Avater"
                                   class="rounded-circle border border-light"
                                 />
                               </li>
-                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center">
+                              <li
+                                class="position-absolute d-flex flex-column justify-content-center align-items-center"
+                              >
                                 <img
                                   src="Avatar/04.jpg"
                                   alt="Avater"
                                   class="rounded-circle border border-light"
                                 />
                               </li>
-                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center">
+                              <li
+                                class="position-absolute d-flex flex-column justify-content-center align-items-center"
+                              >
                                 <img
                                   src="Avatar/05.jpg"
                                   alt="Avater"
                                   class="rounded-circle border border-light"
                                 />
                               </li>
-                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center">
+                              <li
+                                class="position-absolute d-flex flex-column justify-content-center align-items-center"
+                              >
                                 <img
                                   src="Avatar/06.jpg"
                                   alt="Avater"
                                   class="rounded-circle border border-light"
                                 />
                               </li>
-                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center">
+                              <li
+                                class="position-absolute d-flex flex-column justify-content-center align-items-center"
+                              >
                                 <img
                                   src="Avatar/07.jpg"
                                   alt="Avater"
                                   class="rounded-circle border border-light"
                                 />
                               </li>
-                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center" ><small> +50</small></li>
+                              <li
+                                class="position-absolute d-flex flex-column justify-content-center align-items-center"
+                              >
+                                <small> +50</small>
+                              </li>
                             </ul>
                           </div>
-                          
+
                           <div
                             class="d-flex flex-column justify-content-center align-items-start gap-1 w-100"
                           >
                             <span class="modal-span">Upload attachment</span>
-                            <input
-                              type="file"
-                              class="form-control modal-input rounded-1 border border-light border-opacity-10"
-                              placeholder="Guest email"
-                            />
+                            <label
+                              for="modal-input-file"
+                              class="modal-input-file-label rounded-1 border border-light w-100 text-center px-2 d-flex flex-column justify-content-center align-items-center gap-2"
+                            >
+                              <i class="bi bi-file-earmark-text display-3"></i>
+                              <p>
+                                Drop presentation and document here or click to
+                                upload.
+                              </p>
+                              <input
+                                type="file"
+                                class="form-control d-none"
+                                id="modal-input-file"
+                              />
+                            </label>
                           </div>
                         </div>
-                        <div class="modal-footer">
+                        <div
+                          class="modal-footer border-top border-light border-opacity-10"
+                        >
                           <div
                             class="d-flex flex-row justify-content-center align-items-center gap-2"
                           >
@@ -2781,8 +2850,13 @@
 
     <!-- Main -->
     <!-- Main -->
-
-    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"
+      integrity="sha512-K/oyQtMXpxI4+K0W7H25UopjM8pzq0yrVdFdG21Fh5dBe91I40pDd9A4lzNlHPHBIP2cwZuoxaUSX0GJSObvGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
