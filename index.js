@@ -34,21 +34,21 @@
 // var massagesTextTime = document.querySelector(".massages-text-time.me");
 // var chatHistory = document.querySelector(".chat-history");
 
-// // function chatMassageBoxMove() {
-// //   chatMassagebox.addEventListener("mousedown", function (e) {
-// //     chatMassagebox.classList.add("dragging");
-// //   });
-// //   document.addEventListener("mousemove", function (e) {
-// //     if (chatMassagebox.classList.contains("dragging")) {
-// //       chatMassagebox.style.top = e.clientY + "px";
-// //       chatMassagebox.style.left = e.clientX + "px";
-// //     }
-// //   });
-// //   document.addEventListener("mouseup", function () {
-// //     chatMassagebox.classList.remove("dragging");
-// //   });
-// // }
-// // chatMassageBoxMove();
+// function chatMassageBoxMove() {
+//   chatMassagebox.addEventListener("mousedown", function (e) {
+//     chatMassagebox.classList.add("dragging");
+//   });
+//   document.addEventListener("mousemove", function (e) {
+//     if (chatMassagebox.classList.contains("dragging")) {
+//       chatMassagebox.style.top = e.clientY + "px";
+//       chatMassagebox.style.left = e.clientX + "px";
+//     }
+//   });
+//   document.addEventListener("mouseup", function () {
+//     chatMassagebox.classList.remove("dragging");
+//   });
+// }
+// chatMassageBoxMove();
 // function chatScrollToBottom() {
 //   chatHistory.scrollTop = chatHistory.scrollHeight;
 // }
@@ -225,29 +225,42 @@
 //       });
 //       newMassege.innerHTML = chatcontactmassage[11].innerHTML;
 //     });
-//     break;
 //   }
 //   for (var b = 0; b <= chatContactDp.length; b++) {}
 //   for (var c = 0; c <= chatContactName.length; c++) {}
 //   for (var d = 0; d < chatcontactmassage.length; d++) {}
+// }
 
-//   chatContacLi.forEach(function (s) {
-//     s.addEventListener("click", function () {
-//       chatScrollToBottom();
-//     });
+// chatMassageMaximum();
+
+// chatContacLi.forEach(function (s) {
+//   s.addEventListener("click", function () {
+//     chatScrollToBottom();
 //   });
+// });
 
+// function updateChatContactAttributes() {
 //   chatContacLi.forEach(function (s) {
-//     s.addEventListener("click", function () {
-//       if (window.matchMedia("(max-width: 500px)").matches) {
-//         s.setAttribute("data-bs-dismiss", "offcanvas");
-//       } else {
-//         s.removeAttribute("data-bs-dismiss", "offcanvas");
-//       }
-//     });
+//     if (window.matchMedia("(max-width: 500px)").matches) {
+//       s.setAttribute("data-bs-dismiss", "offcanvas");
+//     } else {
+//       s.removeAttribute("data-bs-dismiss", "offcanvas");
+//     }
 //   });
 // }
-// chatMassageMaximum();
+// updateChatContactAttributes();
+
+// window.addEventListener("resize", updateChatContactAttributes);
+
+// chatContacLi.forEach(function (s) {
+//   s.addEventListener("click", function () {
+//     if (window.matchMedia("(max-width: 500px)").matches) {
+//       s.setAttribute("data-bs-dismiss", "offcanvas");
+//     } else {
+//       s.removeAttribute("data-bs-dismiss", "offcanvas");
+//     }
+//   });
+// });
 
 // var navbarNotificationClear = document.querySelector(
 //   ".navbar-notification-clear"
@@ -282,6 +295,7 @@
 // function homeStories() {
 //   var homeStoryTimeCurrentInt = null;
 //   function showStory(index) {
+    
 //     if (homeStoryTimeCurrentInt) {
 //       clearInterval(homeStoryTimeCurrentInt);
 //     }
@@ -360,8 +374,7 @@ for (var u = 0; u <= homeShareBtns.length; u++) {
     fileDargIcon.classList.replace("bi-images", "bi-camera-reels");
     homeModalFileUploadContent.textContent =
       "Drag here or click to upload video.";
-    modalFooter.innerHTML = `<div class="d-flex flex-row justify-content-center align-items-center gap-2"><button class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn bi bi-camera-video-fill" data-bs-dismiss="modal">&nbsp; Live video</button><button class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn">Post</button></div>
+    modalFooter.innerHTML = `<div class="d-flex flex-row justify-content-center align-items-center gap-2"><button class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn bi bi-camera-video-fill">&nbsp; Live video</button><button class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn">Post</button></div>
       `;
   });
-
 }

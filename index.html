@@ -817,11 +817,10 @@
 
     <div
       class="offcanvas offcanvas-end"
-      tabindex="-1"
       id="offcanvasRight"
       aria-labelledby="offcanvasRightLabel"
-      data-bs-scroll="true"
-      data-bs-backdrop="false"
+      data-bs-scroll="false"
+      data-bs-backdrop="true"
       tabindex="-1"
     >
       <div
@@ -1807,6 +1806,8 @@
               </div>
               <div
                 class="offcanvas offcanvas-start"
+                data-bs-scroll="false"
+                data-bs-backdrop="true"
                 tabindex="-1"
                 id="offcanvasExample"
               >
@@ -2128,7 +2129,7 @@
                   class="home-share-content d-flex flex-row justify-content-between align-items-center"
                 >
                   <div
-                    class="home-share-btns d-flex flex-wrap justify-content-center align-items-center gap-2"
+                    class="home-share-btns d-flex flex-wrap justify-content-center align-items-center gap-4"
                   >
                     <div
                       class="home-share-modal-btn py-1 px-2 d-flex flex-row align-items-center justify-content-center gap-2"
@@ -2148,6 +2149,8 @@
                     </div>
                     <div
                       class="home-share-modal-btn-event py-1 px-2 d-flex flex-row align-items-center justify-content-center gap-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModalLong"
                     >
                       <i class="bi bi-calendar2 text-danger"></i>
                       <span>Event</span>
@@ -2161,8 +2164,88 @@
                       <span>Feeling/Activity</span>
                     </div>
                   </div>
+                  <div
+                    class="modal fade"
+                    id="exampleModal1"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog modal-dialog-centered"
+                      role="document"
+                    >
+                      <div class="modal-content rounded-2">
+                        <div
+                          class="modal-header d-flex justify-content-between align-items-center border-light border-opacity-10"
+                        >
+                          <span
+                            class="modal-title fs-6 fw-bolder text-light"
+                            id="exampleModalLabel"
+                          >
+                          </span>
+                          <span
+                            class="bi bi-x-lg text-light"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></span>
+                        </div>
+                        <div class="modal-body">
+                          <div
+                            class="d-flex flex-row justify-content-center align-items-start gap-3"
+                          >
+                            <img
+                              src="Avatar/03.jpg"
+                              alt=""
+                              class="post-profile rounded-circle"
+                            />
+                            <textarea
+                              type="text"
+                              class="modal-post-share-textarea d-flex align-items-start justify-content-start w-100 px-2 py-2 fs-4"
+                              placeholder="Share your thoughts..."
+                            ></textarea>
+                          </div>
 
-                 <div
+                          <div class="modal-file-upload w-100">
+                            <span class="w-100">Upload attachment</span>
+                            <label
+                              for="modal-file-input"
+                              class="modal-file-label w-100 d-flex flex-column justify-content-center align-items-center gap-1 border border-light border-1 rounded-2"
+                            >
+                              <i
+                                class="file-darg-icon bi bi-images display-3"
+                              ></i>
+                              <span class="file-drag-para"></span>
+                              <input
+                                type="file"
+                                id="modal-file-input"
+                                class="d-none"
+                              />
+                            </label>
+                          </div>
+                        </div>
+                        <div
+                          class="modal-footer border-light border-opacity-10 d-flex flex-nowrap justify-content-end align-items-center"
+                        >
+                          <div
+                            class="d-flex flex-row justify-content-center align-items-center gap-2"
+                          >
+                            <button
+                              class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn"
+                              data-bs-dismiss="modal"
+                            >
+                              &nbsp; Cancel</button
+                            ><button
+                              class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn"
+                            >
+                              Post
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
                     class="modal fade"
                     id="exampleModal2"
                     tabindex="-1"
@@ -2181,6 +2264,7 @@
                             class="modal-title-2 fs-6 fw-bolder text-light"
                             id="exampleModalLabel"
                           >
+                            Create post
                           </span>
                           <span
                             class="bi bi-x-lg text-light"
@@ -2259,12 +2343,16 @@
                               <option value="3">Only me</option>
                             </select>
                           </div>
-                       
 
                           <div
                             class="d-flex flex-row justify-content-center align-items-center gap-2"
                           >
-                          <button class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn-2 bi bi-camera-video-fill" data-bs-dismiss="modal">&nbsp; Live video</button>
+                            <button
+                              class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn-2 bi bi-camera-video-fill"
+                              data-bs-dismiss="modal"
+                            >
+                              &nbsp; Live video
+                            </button>
                             <button
                               class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn"
                             >
@@ -2277,24 +2365,23 @@
                   </div>
 
                   <div
-                    class="modal fade"
-                    id="exampleModal1"
+                    class="modal fade show d-block"
+                    id="exampleModalLong"
                     tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
+                    role="dialog"
+                    aria-labelledby="exampleModalLongTitle"
                     aria-hidden="true"
                   >
-                    <div
-                      class="modal-dialog modal-dialog modal-dialog-centered"
-                      role="document"
-                    >
-                      <div class="modal-content rounded-2">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
                         <div
-                          class="modal-header d-flex justify-content-between align-items-center border-light border-opacity-10"
+                          class="modal-header border-light border-opacity-10 d-flex flex-row justify-content-between align-items-center"
                         >
                           <span
-                            class="modal-title fs-6 fw-bolder text-light"
+                            class="modal-title-2 fs-6 fw-bolder text-light"
                             id="exampleModalLabel"
                           >
+                            Create event
                           </span>
                           <span
                             class="bi bi-x-lg text-light"
@@ -2302,52 +2389,141 @@
                             aria-label="Close"
                           ></span>
                         </div>
-                        <div class="modal-body">
+                        <div
+                          class="modal-body d-flex flex-column justify-content-center align-items-center gap-3 w-100"
+                        >
                           <div
-                            class="d-flex flex-row justify-content-center align-items-start gap-3"
+                            class="d-flex flex-column justify-content-center align-items-start gap-1 w-100"
                           >
-                            <img
-                              src="Avatar/03.jpg"
-                              alt=""
-                              class="post-profile rounded-circle"
-                            />
-                            <textarea
+                            <span class="modal-span">Title</span>
+                            <input
                               type="text"
-                              class="modal-post-share-textarea d-flex align-items-start justify-content-start w-100 px-2 py-2 fs-4"
-                              placeholder="Share your thoughts..."
+                              class="form-control modal-input rounded-1 border border-light border-opacity-10"
+                              placeholder="Event Name here"
+                            />
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-start gap-1 w-100"
+                          >
+                            <span class="modal-span">Description</span>
+                            <textarea
+                              class="form-control modal-input rounded-1 border border-light border-opacity-10"
+                              placeholder="Ex: topics, schedule, etc."
                             ></textarea>
                           </div>
+                          <div
+                            class="d-flex flex-wrap justify-content-center align-items-center gap-3"
+                          >
+                            <input
+                              type="number"
+                              class="form-control modal-input rounded-1 border border-light border-opacity-10"
+                              placeholder="1hr 23m"
+                            />
+                          </div>
 
-                          <div class="modal-file-upload w-100">
-                            <span class="w-100">Upload attachment</span>
-                            <label
-                              for="modal-file-input"
-                              class="modal-file-label w-100 d-flex flex-column justify-content-center align-items-center gap-1 border border-light border-1 rounded-2"
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-start gap-1 w-100"
+                          >
+                            <span class="modal-span">Location</span>
+                            <input
+                              type="text"
+                              class="form-control modal-input rounded-1 border border-light border-opacity-10"
+                              placeholder="Logansport, IN 46947"
+                            />
+                          </div>
+
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-start gap-1 w-100"
+                          >
+                            <span class="modal-span">Add guests</span>
+                            <input
+                              type="text"
+                              class="form-control modal-input rounded-1 border border-light border-opacity-10"
+                              placeholder="Guest email"
+                            />
+                          </div>
+                          <div class="d-flex w-100 modal-avatar-content">
+                            <ul
+                              class="list-unstyled modal-avatar d-flex  justify-content-center align-items-center w-100 position-relative"
                             >
-                              <i class="file-darg-icon bi bi-images"></i>
-                              <span class="file-drag-para"></span>
-                              <input
-                                type="file"
-                                id="modal-file-input"
-                                class="d-none"
-                              />
-                            </label>
+                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center">
+                                <img
+                                  src="Avatar/01.jpg"
+                                  alt="Avater"
+                                  class="rounded-circle border border-light"
+                                />
+                              </li>
+                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center">
+                                <img
+                                  src="Avatar/02.jpg"
+                                  alt="Avater"
+                                  class="rounded-circle border border-light"
+                                />
+                              </li>
+                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center">
+                                <img
+                                  src="Avatar/03.jpg"
+                                  alt="Avater"
+                                  class="rounded-circle border border-light"
+                                />
+                              </li>
+                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center">
+                                <img
+                                  src="Avatar/04.jpg"
+                                  alt="Avater"
+                                  class="rounded-circle border border-light"
+                                />
+                              </li>
+                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center">
+                                <img
+                                  src="Avatar/05.jpg"
+                                  alt="Avater"
+                                  class="rounded-circle border border-light"
+                                />
+                              </li>
+                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center">
+                                <img
+                                  src="Avatar/06.jpg"
+                                  alt="Avater"
+                                  class="rounded-circle border border-light"
+                                />
+                              </li>
+                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center">
+                                <img
+                                  src="Avatar/07.jpg"
+                                  alt="Avater"
+                                  class="rounded-circle border border-light"
+                                />
+                              </li>
+                              <li class="position-absolute d-flex flex-column justify-content-center align-items-center" ><small> +50</small></li>
+                            </ul>
+                          </div>
+                          
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-start gap-1 w-100"
+                          >
+                            <span class="modal-span">Upload attachment</span>
+                            <input
+                              type="file"
+                              class="form-control modal-input rounded-1 border border-light border-opacity-10"
+                              placeholder="Guest email"
+                            />
                           </div>
                         </div>
-                        <div
-                          class="modal-footer border-light border-opacity-10 d-flex flex-nowrap justify-content-end align-items-center"
-                        >
+                        <div class="modal-footer">
                           <div
                             class="d-flex flex-row justify-content-center align-items-center gap-2"
                           >
                             <button
-                              class="bg-danger bg-opacity-10 text-danger border-0 px-2 py-2 rounded-2 modal-close-btn"
+                              class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn-2"
                               data-bs-dismiss="modal"
-                            ></button>
+                            >
+                              Cancel
+                            </button>
                             <button
                               class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn"
                             >
-                              Post
+                              Create Now
                             </button>
                           </div>
                         </div>

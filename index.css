@@ -416,6 +416,7 @@ input::-webkit-search-cancel-button {
   width: 40px;
   height: 40px;
   font-size: 18px;
+  z-index: 9999;
 }
 .chat-offcanvas-close-btn,
 .chat-offcanvas-icon,
@@ -983,7 +984,6 @@ input::-webkit-file-upload-button {
   border-style: dashed !important;
 }
 .modal-file-label > i {
-  font-size: 50px;
   color: var(--btn-bg-color-2);
 }
 .modal-file-upload > span,
@@ -1007,6 +1007,69 @@ input::-webkit-file-upload-button {
 }
 .event-select > option {
   font-size: 15px;
+}
+
+.modal-span {
+  color: var(--btn-bg-color-2);
+}
+.modal-input,
+.modal-input::placeholder {
+  background-color: var(--main-color);
+  color: var(--btn-bg-color-2);
+}
+.modal-span,
+.modal-input::placeholder {
+  font-size: 13px;
+}
+.modal-input:focus {
+  background-color: var(--main-color);
+  color: var(--btn-bg-color-2);
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+.modal-avatar-content{
+  height: 60px;
+}
+.modal-avatar > ul{
+  height: 100%;
+}
+.modal-avatar > li{
+  height: 100%;
+}
+.modal-avatar > li > img {
+  width: 35px;
+  height: 35px;
+}
+.modal-avatar > li:nth-child(1) {
+  left: 0%;
+}
+.modal-avatar > li:nth-child(2) {
+  left: 5%;
+}
+.modal-avatar > li:nth-child(3) {
+  left: 10%;
+}
+.modal-avatar > li:nth-child(4) {
+  left: 15%;
+}
+.modal-avatar > li:nth-child(5) {
+  left: 20%;
+}
+.modal-avatar > li:nth-child(6) {
+  left: 25%;
+}
+
+.modal-avatar > li:nth-child(7) {
+  left: 30%;
+}
+.modal-avatar > li:nth-child(8) {
+  left: 40%;
+}
+
+.modal-avatar > li > small {
+  color: var(--btn-bg-color-2);
 }
 
 /* Home Page Column 2 */
@@ -1196,6 +1259,96 @@ input::-webkit-file-upload-button {
   .chat-dropdown-item-icon {
     font-size: 13px;
   }
+
+  .post-profile {
+    width: 30px;
+    height: 30px;
+  }
+  .post-share-textarea,
+  .modal-post-share-textarea,
+  .modal-post-share-textarea-2 {
+    font-size: 12px;
+  }
+  .modal-post-share-textarea-2 {
+    height: 80px !important;
+  }
+  .post-share-textarea::placeholder {
+    font-size: 12px;
+  }
+  .home-share-dropdown-btn {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+
+  #home-share-dropdown-items {
+    font-size: 13px;
+  }
+
+  .home-share-modal-btn > span,
+  .home-share-modal-btn-event > span,
+  .home-share-modal-btn-feeling > span,
+  .home-share-modal-btn > i,
+  .home-share-modal-btn-feeling > i,
+  .home-share-modal-btn-event > i {
+    font-size: 12px;
+  }
+
+  .modal-close-btn,
+  .modal-post-btn,
+  .modal-close-btn-2 {
+    font-size: 12px;
+  }
+
+  .modal-post-share-textarea::placeholder,
+  .modal-post-share-textarea-2::placeholder {
+    font-size: 15px;
+  }
+  .modal-file-label {
+    height: 240px;
+    border-style: dashed !important;
+  }
+
+  .modal-file-upload > span,
+  .modal-file-label > span {
+    font-size: 12px;
+  }
+
+  .modal-feeling-btns > i {
+    width: 35px;
+    height: 35px;
+    font-size: 13px;
+  }
+
+  .event-select > option {
+    font-size: 13px;
+  }
+  .modal-avatar > li:nth-child(1) {
+    left: 0%;
+  }
+  .modal-avatar > li:nth-child(2) {
+    left: 8%;
+  }
+  .modal-avatar > li:nth-child(3) {
+    left: 14%;
+  }
+  .modal-avatar > li:nth-child(4) {
+    left: 20%;
+  }
+  .modal-avatar > li:nth-child(5) {
+    left: 26%;
+  }
+  .modal-avatar > li:nth-child(6) {
+    left: 32%;
+  }
+  
+  .modal-avatar > li:nth-child(7) {
+    left: 38%;
+  }
+  .modal-avatar > li:nth-child(8) {
+    left: 50%;
+  }
+  
 }
 
 @media (max-width: 400px) {
@@ -1235,6 +1388,31 @@ input::-webkit-file-upload-button {
     background-color: transparent;
     width: 30px;
     height: 30px;
+  }
+  .modal-avatar > li:nth-child(1) {
+    left: 0%;
+  }
+  .modal-avatar > li:nth-child(2) {
+    left: 10%;
+  }
+  .modal-avatar > li:nth-child(3) {
+    left: 20%;
+  }
+  .modal-avatar > li:nth-child(4) {
+    left: 30%;
+  }
+  .modal-avatar > li:nth-child(5) {
+    left: 40%;
+  }
+  .modal-avatar > li:nth-child(6) {
+    left: 50%;
+  }
+  
+  .modal-avatar > li:nth-child(7) {
+    left: 60%;
+  }
+  .modal-avatar > li:nth-child(8) {
+    left: 75%;
   }
 }
 
