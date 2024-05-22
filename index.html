@@ -2133,7 +2133,7 @@
                     <div
                       class="home-share-modal-btn py-1 px-2 d-flex flex-row align-items-center justify-content-center gap-2"
                       data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
+                      data-bs-target="#exampleModal1"
                     >
                       <i class="bi bi-image-fill text-success"></i>
                       <span>Photo</span>
@@ -2141,109 +2141,219 @@
                     <div
                       class="home-share-modal-btn py-1 px-2 d-flex flex-row align-items-center justify-content-center gap-2"
                       data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
+                      data-bs-target="#exampleModal1"
                     >
                       <i class="bi bi-camera-reels text-primary"></i>
                       <span>Video</span>
                     </div>
                     <div
-                      class="home-share-modal-btn py-1 px-2 d-flex flex-row align-items-center justify-content-center gap-2"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
+                      class="home-share-modal-btn-event py-1 px-2 d-flex flex-row align-items-center justify-content-center gap-2"
                     >
                       <i class="bi bi-calendar2 text-danger"></i>
                       <span>Event</span>
                     </div>
                     <div
-                      class="home-share-modal-btn py-1 px-2 d-flex flex-row align-items-center justify-content-center gap-2"
+                      class="home-share-modal-btn-feeling py-1 px-2 d-flex flex-row align-items-center justify-content-center gap-2"
                       data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
+                      data-bs-target="#exampleModal2"
                     >
                       <i class="bi bi-emoji-smile text-warning"></i>
                       <span>Feeling/Activity</span>
                     </div>
-
-                    
                   </div>
-<div
-                      class="modal fade"
-                      id="exampleModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div
-                        class="modal-dialog modal-dialog modal-dialog-centered"
-                        role="document"
-                      >
-                        <div class="modal-content rounded-2">
-                          <div
-                            class="modal-header d-flex justify-content-between align-items-center border-light border-opacity-10"
-                          >
-                            <span
-                              class="modal-title fs-6 fw-bolder text-light"
-                              id="exampleModalLabel"
-                            >
-                              Add post photo
-                            </span>
-                            <span
-                              class="bi bi-x-lg text-light"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></span>
-                          </div>
-                          <div class="modal-body">
-                            <div
-                              class="d-flex flex-row justify-content-center align-items-start gap-3"
-                            >
-                              <img
-                                src="Avatar/03.jpg"
-                                alt=""
-                                class="post-profile rounded-circle"
-                              />
-                              <textarea
-                                type="text"
-                                class="modal-post-share-textarea d-flex align-items-start justify-content-start w-100 px-2 py-2 fs-4"
-                                placeholder="Share your thoughts..."
-                            
-                              ></textarea>
-                            </div>
 
-                            <div class="modal-file-upload w-100">
-                              <span class="w-100">Upload attachment</span>
-                              <label
-                                for="modal-file-input"
-                                class="modal-file-label w-100 d-flex flex-column justify-content-center align-items-center gap-1 border border-light border-1 rounded-2"
-                              >
-                                <i class="bi bi-images"></i>
-                                <span class="file-drag-para">Drag here or click to upload photo.</span>
-                                <input
-                                  type="file"
-                                  id="modal-file-input"
-                                  class="d-none"
-                                />
-                              </label>
-                            </div>
-                          </div>
-                          <div
-                            class="modal-footer border-light border-opacity-10"
+                 <div
+                    class="modal fade"
+                    id="exampleModal2"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog modal-dialog-centered"
+                      role="document"
+                    >
+                      <div class="modal-content rounded-2">
+                        <div
+                          class="modal-header d-flex justify-content-between align-items-center border-light border-opacity-10"
+                        >
+                          <span
+                            class="modal-title-2 fs-6 fw-bolder text-light"
+                            id="exampleModalLabel"
                           >
-                            <button
-                              class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn"
-                              data-bs-dismiss="modal"
+                          </span>
+                          <span
+                            class="bi bi-x-lg text-light"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></span>
+                        </div>
+                        <div class="modal-body">
+                          <div
+                            class="d-flex flex-row justify-content-center align-items-start gap-3"
+                          >
+                            <img
+                              src="Avatar/03.jpg"
+                              alt=""
+                              class="post-profile rounded-circle"
+                            />
+                            <textarea
+                              type="text"
+                              class="modal-post-share-textarea-2 d-flex align-items-start justify-content-start w-100 px-2 py-2 fs-4"
+                              placeholder="Share your thoughts..."
+                            ></textarea>
+                          </div>
+
+                          <div
+                            class="modal-feeling-btns d-flex flex-row justify-content-start align-items-center gap-2"
+                          >
+                            <i
+                              class="bi bi-image-fill rounded-circle d-flex flex-column justify-content-center align-items-center bg-success bg-opacity-10 text-success"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              data-bs-title="Photo"
+                            ></i>
+                            <i
+                              class="bi bi-camera-reels-fill rounded-circle d-flex flex-column justify-content-center align-items-center bg-primary bg-opacity-10 text-primary"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              data-bs-title="Photo"
+                            ></i>
+                            <i
+                              class="bi bi-calendar2 rounded-circle d-flex flex-column justify-content-center align-items-center bg-danger bg-opacity-10 text-danger"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              data-bs-title="Photo"
+                            ></i>
+                            <i
+                              class="bi bi-emoji-smile-fill rounded-circle d-flex flex-column justify-content-center align-items-center bg-warning bg-opacity-10 text-warning"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              data-bs-title="Photo"
+                            ></i>
+                            <i
+                              class="bi bi-geo-alt rounded-circle d-flex flex-column justify-content-center align-items-center bg-light bg-opacity-10 text-light"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              data-bs-title="Photo"
+                            ></i>
+                            <i
+                              class="bi bi-tag-fill rounded-circle d-flex flex-column justify-content-center align-items-center bg-info bg-opacity-10 text-info"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              data-bs-title="Photo"
+                            ></i>
+                          </div>
+                        </div>
+                        <div
+                          class="modal-footer-2 px-2 py-3 border-top border-light border-opacity-10 d-flex flex-nowrap justify-content-between align-items-center"
+                        >
+                          <div class="modal-event-visibility">
+                            <select
+                              class="event-select px-2 py-2 rounded-2"
+                              aria-label="Default select example"
                             >
-                              &nbsp;  Cancel
-                            </button>
+                              <option selected>Public</option>
+                              <option value="1">Custom</option>
+                              <option value="2">Friend</option>
+                              <option value="3">Only me</option>
+                            </select>
+                          </div>
+                       
+
+                          <div
+                            class="d-flex flex-row justify-content-center align-items-center gap-2"
+                          >
+                          <button class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn-2 bi bi-camera-video-fill" data-bs-dismiss="modal">&nbsp; Live video</button>
                             <button
                               class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn"
                             >
-                              Save changes
+                              Post
                             </button>
                           </div>
                         </div>
                       </div>
                     </div>
+                  </div>
 
+                  <div
+                    class="modal fade"
+                    id="exampleModal1"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog modal-dialog-centered"
+                      role="document"
+                    >
+                      <div class="modal-content rounded-2">
+                        <div
+                          class="modal-header d-flex justify-content-between align-items-center border-light border-opacity-10"
+                        >
+                          <span
+                            class="modal-title fs-6 fw-bolder text-light"
+                            id="exampleModalLabel"
+                          >
+                          </span>
+                          <span
+                            class="bi bi-x-lg text-light"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></span>
+                        </div>
+                        <div class="modal-body">
+                          <div
+                            class="d-flex flex-row justify-content-center align-items-start gap-3"
+                          >
+                            <img
+                              src="Avatar/03.jpg"
+                              alt=""
+                              class="post-profile rounded-circle"
+                            />
+                            <textarea
+                              type="text"
+                              class="modal-post-share-textarea d-flex align-items-start justify-content-start w-100 px-2 py-2 fs-4"
+                              placeholder="Share your thoughts..."
+                            ></textarea>
+                          </div>
+
+                          <div class="modal-file-upload w-100">
+                            <span class="w-100">Upload attachment</span>
+                            <label
+                              for="modal-file-input"
+                              class="modal-file-label w-100 d-flex flex-column justify-content-center align-items-center gap-1 border border-light border-1 rounded-2"
+                            >
+                              <i class="file-darg-icon bi bi-images"></i>
+                              <span class="file-drag-para"></span>
+                              <input
+                                type="file"
+                                id="modal-file-input"
+                                class="d-none"
+                              />
+                            </label>
+                          </div>
+                        </div>
+                        <div
+                          class="modal-footer border-light border-opacity-10 d-flex flex-nowrap justify-content-end align-items-center"
+                        >
+                          <div
+                            class="d-flex flex-row justify-content-center align-items-center gap-2"
+                          >
+                            <button
+                              class="bg-danger bg-opacity-10 text-danger border-0 px-2 py-2 rounded-2 modal-close-btn"
+                              data-bs-dismiss="modal"
+                            ></button>
+                            <button
+                              class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn"
+                            >
+                              Post
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
                   <div class="dropdown">
                     <button

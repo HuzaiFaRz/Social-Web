@@ -337,26 +337,31 @@ var homeModalCancelBtn = document.querySelector(".modal-close-btn");
 var homeModalFileUploadContent = document.querySelector(".file-drag-para");
 var modalTittle = document.querySelector(".modal-title");
 var modalFileUpload = document.querySelector(".modal-file-upload");
+var modalPostShareTextarea = document.querySelector(
+  ".modal-post-share-textarea"
+);
+var fileDargIcon = document.querySelector(".file-darg-icon");
+var modalFooter = document.querySelector(".modal-footer");
+
 for (var u = 0; u <= homeShareBtns.length; u++) {
   homeShareBtns[0].addEventListener("click", function () {
-    modalFileUpload.appendChild(modalFileUpload.firstChild);
     modalTittle.textContent = "Add post photo";
-    homeModalCancelBtn.classList.remove("bi-camera-video-fill");
-    homeModalCancelBtn.textContent = "Cancel";
+    fileDargIcon.classList.replace("bi-camera-reels", "bi-images");
     homeModalFileUploadContent.textContent =
       "Drag here or click to upload photo.";
+    homeModalCancelBtn.textContent = "Cancel";
+    homeModalCancelBtn.classList.remove("bi-camera-video-fill");
+    modalFooter.innerHTML = `<div class="d-flex flex-row justify-content-center align-items-center gap-2"><button class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn" data-bs-dismiss="modal">&nbsp; Cancel</button><button class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn">Post</button></div>
+      `;
   });
+
   homeShareBtns[1].addEventListener("click", function () {
     modalTittle.textContent = "Add post video";
-    modalFileUpload.appendChild(modalFileUpload);
-    homeModalCancelBtn.classList.add("bi-camera-video-fill");
-    homeModalCancelBtn.textContent = " Live video";
+    fileDargIcon.classList.replace("bi-images", "bi-camera-reels");
     homeModalFileUploadContent.textContent =
       "Drag here or click to upload video.";
+    modalFooter.innerHTML = `<div class="d-flex flex-row justify-content-center align-items-center gap-2"><button class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn bi bi-camera-video-fill" data-bs-dismiss="modal">&nbsp; Live video</button><button class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn">Post</button></div>
+      `;
   });
-  homeShareBtns[3].addEventListener("click", function () {
-    modalTittle.textContent = "Create post";
-    homeModalCancelBtn.classList.add("bi-camera-video-fill");
-    modalFileUpload.removeChild(modalFileUpload.firstChild);
-  });
+
 }

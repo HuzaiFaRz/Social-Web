@@ -45,6 +45,7 @@ button:hover {
   --offcanvas-bg: #191a1f;
   --cloud: rgb(12, 188, 135);
   --btn-end-1: #141519;
+  --color-hover: #f9f9f9;
 }
 
 html,
@@ -899,7 +900,9 @@ input::-webkit-file-upload-button {
   width: 100%;
   background-color: var(--btn-end-1);
 }
-.post-share-textarea:focus,.modal-post-share-textarea:focus {
+.post-share-textarea:focus,
+.modal-post-share-textarea:focus,
+.modal-post-share-textarea-2:focus {
   background-color: var(--offcanvas-bg);
   outline: none !important;
   /* color: var(--btn-bg-color) !important; */
@@ -908,11 +911,16 @@ input::-webkit-file-upload-button {
   width: 35px;
   height: 35px;
 }
-.post-share-textarea,.modal-post-share-textarea {
+.post-share-textarea,
+.modal-post-share-textarea,
+.modal-post-share-textarea-2 {
   background-color: var(--offcanvas-bg);
   color: var(--btn-bg-color) !important;
   border: none;
   font-size: 13px;
+}
+.modal-post-share-textarea-2 {
+  height: 120px;
 }
 .post-share-textarea::placeholder {
   font-size: 13px;
@@ -929,22 +937,35 @@ input::-webkit-file-upload-button {
 #home-share-dropdown-items {
   font-size: 15px;
 }
-.home-share-modal-btn {
+.home-share-modal-btn,
+.home-share-modal-btn-event,
+.home-share-modal-btn-feeling {
   background-color: var(--btn-bg);
   color: var(--btn-bg-color-2);
 }
 .home-share-modal-btn > span,
-.home-share-modal-btn > i {
+.home-share-modal-btn-event > span,
+.home-share-modal-btn-feeling > span,
+.home-share-modal-btn > i,
+.home-share-modal-btn-feeling > i,
+.home-share-modal-btn-event > i {
   font-size: 13px;
+}
+.home-share-modal-btn:hover,
+.home-share-modal-btn-event:hover,
+.home-share-modal-btn-feeling:hover {
+  color: var(--notification-2);
 }
 .modal-content {
   background-color: var(--main-color);
 }
 .modal-close-btn,
-.modal-post-btn {
+.modal-post-btn,
+.modal-close-btn-2 {
   font-size: 15px;
 }
-.modal-close-btn:hover {
+.modal-close-btn:hover,
+.modal-close-btn-2:hover {
   background-color: var(--notification) !important;
   color: var(--btn-bg-color) !important;
 }
@@ -952,23 +973,42 @@ input::-webkit-file-upload-button {
   background-color: var(--cloud) !important;
   color: var(--btn-bg-color) !important;
 }
-.modal-post-share-textarea::placeholder {
+.modal-post-share-textarea::placeholder,
+.modal-post-share-textarea-2::placeholder {
   font-size: 22px;
   color: var(--btn-bg-color);
 }
-.modal-file-label{
+.modal-file-label {
   height: 240px;
   border-style: dashed !important;
 }
-.modal-file-label>i{
+.modal-file-label > i {
   font-size: 50px;
   color: var(--btn-bg-color-2);
 }
-.modal-file-upload>span,
-.modal-file-label>span{
+.modal-file-upload > span,
+.modal-file-label > span {
   font-size: 13px;
   color: var(--btn-bg-color-2);
 }
+.modal-feeling-btns > i {
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+}
+.event-select {
+  background-color: var(--main-color);
+  border: 1px solid var(--input-color);
+  color: var(--btn-bg-color-2);
+}
+.event-select:focus {
+  box-shadow: none;
+  border: 1px solid var(--input-color);
+}
+.event-select > option {
+  font-size: 15px;
+}
+
 /* Home Page Column 2 */
 /* Home Page Column 2 */
 
