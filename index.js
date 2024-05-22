@@ -331,3 +331,32 @@
 // }
 
 // homeStories();
+
+var homeShareBtns = document.querySelectorAll(".home-share-modal-btn");
+var homeModalCancelBtn = document.querySelector(".modal-close-btn");
+var homeModalFileUploadContent = document.querySelector(".file-drag-para");
+var modalTittle = document.querySelector(".modal-title");
+var modalFileUpload = document.querySelector(".modal-file-upload");
+for (var u = 0; u <= homeShareBtns.length; u++) {
+  homeShareBtns[0].addEventListener("click", function () {
+    modalFileUpload.appendChild(modalFileUpload.firstChild);
+    modalTittle.textContent = "Add post photo";
+    homeModalCancelBtn.classList.remove("bi-camera-video-fill");
+    homeModalCancelBtn.textContent = "Cancel";
+    homeModalFileUploadContent.textContent =
+      "Drag here or click to upload photo.";
+  });
+  homeShareBtns[1].addEventListener("click", function () {
+    modalTittle.textContent = "Add post video";
+    modalFileUpload.appendChild(modalFileUpload);
+    homeModalCancelBtn.classList.add("bi-camera-video-fill");
+    homeModalCancelBtn.textContent = " Live video";
+    homeModalFileUploadContent.textContent =
+      "Drag here or click to upload video.";
+  });
+  homeShareBtns[3].addEventListener("click", function () {
+    modalTittle.textContent = "Create post";
+    homeModalCancelBtn.classList.add("bi-camera-video-fill");
+    modalFileUpload.removeChild(modalFileUpload.firstChild);
+  });
+}

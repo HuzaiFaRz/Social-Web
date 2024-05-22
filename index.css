@@ -942,7 +942,7 @@ input::-webkit-file-upload-button {
 }
 .modal-close-btn,
 .modal-post-btn {
-  font-size: 14px;
+  font-size: 15px;
 }
 .modal-close-btn:hover {
   background-color: var(--notification) !important;
