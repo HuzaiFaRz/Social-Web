@@ -2227,7 +2227,7 @@
                     aria-hidden="true"
                   >
                     <div
-                      class="modal-dialog modal-dialog modal-dialog-centered m-0"
+                      class="modal-dialog modal-dialog modal-dialog-centered"
                       role="document"
                     >
                       <div class="modal-content rounded-2">
@@ -2308,7 +2308,7 @@
                     aria-hidden="true"
                   >
                     <div
-                      class="modal-dialog modal-dialog modal-dialog-centered m-0"
+                      class="modal-dialog modal-dialog modal-dialog-centered"
                       role="document"
                     >
                       <div class="modal-content rounded-2">
@@ -2427,7 +2427,7 @@
                     aria-labelledby="exampleModalLongTitle"
                     aria-hidden="true"
                   >
-                    <div class="modal-dialog m-0" role="document">
+                    <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div
                           class="modal-header border-light border-opacity-10 d-flex flex-row justify-content-between align-items-center"
@@ -2647,9 +2647,217 @@
                 </div>
               </div>
 
+              <div
+                class="home-post card border border-light border-opacity-10 rounded-2 py-3"
+              >
+                <div
+                  class="card-header border-0 home-post-person-info d-flex flex-row align-items-center justify-content-between"
+                >
+                  <div
+                    class="d-flex flex-row align-items-center justify-content-center gap-2"
+                  >
+                    <img
+                      src="Avatar/04.jpg"
+                      alt="Avatar"
+                      class="rounded-circle border border-primary border-2 accordion home-post-person-info-img"
+                    />
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-start"
+                    >
+                      <span
+                        class="fw-bolder home-post-person-info-name d-flex flex-row justify-content-center align-items-center gap-3"
+                      >
+                        Lori Ferguson
 
+                        <li class="home-post-person-info-time position-">
+                          2hr
+                        </li>
+                      </span>
 
-              
+                      <small class="home-post-person-info-skill"
+                        >Web Developer at Webestica</small
+                      >
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="bi bi-three-dots d-flex flex-column justify-content-center align-items-center home-share-dropdown-btn rounded-2"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></button>
+                    <ul
+                      id="home-share-dropdown-menu"
+                      class="dropdown-menu dropdown-menu-end"
+                    >
+                      <li>
+                        <a
+                          id="home-share-dropdown-items"
+                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-bookmark"
+                          href="javascript:void(0)"
+                        >
+                          &nbsp; Save post</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="home-share-dropdown-items"
+                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-person-x"
+                          href="javascript:void(0)"
+                        >
+                          &nbsp; Unfollow lori ferguson
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          id="home-share-dropdown-items"
+                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-x-circle"
+                          href="javascript:void(0)"
+                        >
+                          &nbsp; Hide Post</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="home-share-dropdown-items"
+                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-slash-circle"
+                          href="javascript:void(0)"
+                        >
+                          &nbsp; Block</a
+                        >
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider bg-light bg-opacity-25" />
+                      </li>
+                      <li>
+                        <a
+                          id="home-share-dropdown-items"
+                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-flag"
+                          href="javascript:void(0)"
+                        >
+                          &nbsp; Report post</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center border-0 gap-1"
+                >
+                  <p class="home-post-info">
+                    I'm thrilled to share that I've completed a graduate
+                    certificate course in project management with the
+                    president's honor roll.
+                  </p>
+                  <img
+                    src="Post/Post_Album_2/01.jpg"
+                    alt="Post"
+                    class="home-post-img"
+                  />
+
+                  <div
+                    class="d-flex flex-row align-items-center justify-content-between w-100 py-3 home-post-l-c-s"
+                  >
+                    <div
+                      class="d-flex flex-row align-items-center justify-content-center gap-2"
+                    >
+                      <a
+                        href="#"
+                        class="bi bi-hand-thumbs-up fw-bolder text-decoration-none home-post-like"
+                      >
+                        Liked (56)</a
+                      >
+                      <a
+                        href="#"
+                        class="bi bi-chat-fill fw-bolder text-decoration-none home-post-comment"
+                      >
+                        Comments (12)</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="#"
+                        class="bi bi-reply-fill fw-bolder text-decoration-none home-post-share"
+                      >
+                        Share (3)
+                      </a>
+                    </div>
+                  </div>
+
+                  <div
+                    class="home-post-me-comment d-flex flex-row justify-content-center align-items-center gap-2 w-100"
+                  >
+                    <img
+                      src="Avatar/12.jpg"
+                      alt="Avatar"
+                      class="rounded-circle home-post-comment-person-profile"
+                    />
+
+                    <form
+                      class="d-flex flex-row justify-content-center align-items-center position-relative w-100"
+                    >
+                      <a
+                        href="#"
+                        class="bi bi-send-fill home-post-me-comment-input-icon position-absolute start-0 px-3 py-2"
+                      ></a>
+                      <textarea
+                        class="form-control home-post-me-comment-input ps-5 py-2 border border-light border-opacity-10 py-2 w-100"
+                        placeholder="Add a Comment..."
+                      ></textarea>
+                    </form>
+                  </div>
+
+                  <div class="home-post-people-comments py-3">
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center gap-1 w-100"
+                    >
+                      <div
+                        class="d-flex flex-row justify-content-center align-items-start gap-2 w-100"
+                      >
+                        <img
+                          src="Avatar/05.jpg"
+                          alt="Avatar"
+                          class="rounded-circle home-post-comment-person-profile"
+                        />
+                        <div
+                          class="d-flex flex-column justify-content-start align-items-start gap-2"
+                        >
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-center post-comment px-3 py-3"
+                          >
+                            <div
+                              class="d-flex flex-row justify-content-between align-items-center w-100"
+                            >
+                              <span
+                                class="text-white fw-bolder post-comment-person-name"
+                                >Frances Guerrero</span
+                              >
+                              <small class="home-post-person-info-time"
+                                >5hr</small
+                              >
+                            </div>
+
+                            <span class="post-comment-person-comment"
+                              >Removed demands expense account in outward
+                              tedious do. Particular way thoroughly unaffected p
+                              rojection.</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex flex-row justify-content-center align-items-center home-post-growth"
+                          >
+                            <span class="px-1"> Like (3)</span>
+                            <li class="px-1">Reply</li>
+                            <li class="px-1">View 5 replies</li>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer border-0"></div>
+              </div>
             </div>
 
             <div
