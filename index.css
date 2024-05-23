@@ -1002,6 +1002,7 @@ input::-webkit-file-upload-button {
   background-color: var(--main-color);
   border: 1px solid var(--input-color);
   color: var(--btn-bg-color-2);
+  padding: 8px 16px;
 }
 .event-select:focus {
   box-shadow: none;
@@ -1023,12 +1024,27 @@ input::-webkit-file-upload-button {
   color: var(--btn-bg-color-2);
   border: none;
 }
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
 .flatpickr-calendar,
 .flatpickr-time {
   background-color: var(--modal-1);
   border: 1px solid var(--modal-1) !important;
   box-shadow: none;
 }
+.flatpickr-input {
+  position: relative;
+}
+
+.flatpickr-calendar {
+  left: 50% !important;
+  transform: translate(-50%, 0%) !important;
+}
+
 .flatpickr-time > div > input {
   color: var(--text-color-end);
 }
@@ -1080,6 +1096,7 @@ input::-webkit-file-upload-button {
 .flatpickr-next-month > svg:hover {
   fill: var(--notification-2) !important;
 }
+
 .modal-date-input:focus {
   border: none;
   background-color: transparent;
@@ -1497,12 +1514,24 @@ input[type="number"]::-webkit-inner-spin-button {
   .modal-avatar > li:nth-child(8) {
     left: 75%;
   }
+  .modal-footer-2 {
+    gap: 0 5rem;
+  }
+  .event-select {
+    padding: 8px 8px;
+    font-size: 13px;
+  }
 }
 
 @media (width: 344px) {
   #navbar-dropdown-right {
     left: 50%;
     transform: translate(-82%, 0%);
+  }
+}
+@media (max-width: 300px) {
+  .navbar-end-ul {
+    gap: 0.7rem !important;
   }
 }
 /* MediaQuiries ===========================> */

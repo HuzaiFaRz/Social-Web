@@ -2136,7 +2136,7 @@
                   ></textarea>
                 </div>
                 <div
-                  class="home-share-content d-flex flex-row justify-content-between align-items-center"
+                  class="home-share-content d-flex flex-row justify-content-between align-items-center gap-1"
                 >
                   <div
                     class="home-share-btns d-flex flex-wrap justify-content-center align-items-center gap-4"
@@ -2174,6 +2174,51 @@
                       <span>Feeling/Activity</span>
                     </div>
                   </div>
+
+                  <div class="dropdown">
+                    <button
+                      class="bi bi-three-dots d-flex flex-column justify-content-center align-items-center home-share-dropdown-btn rounded-2"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></button>
+                    <ul
+                      id="home-share-dropdown-menu"
+                      class="dropdown-menu dropdown-menu-end"
+                    >
+                      <li>
+                        <a
+                          id="home-share-dropdown-items"
+                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-envelope"
+                          href="javascript:void(0)"
+                        >
+                          &nbsp; Create a poll</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="home-share-dropdown-items"
+                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-bookmark-check"
+                          href="javascript:void(0)"
+                        >
+                          &nbsp; Ask a Question</a
+                        >
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider bg-light bg-opacity-25" />
+                      </li>
+                      <li>
+                        <a
+                          id="home-share-dropdown-items"
+                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-pencil-square"
+                          href="javascript:void(0)"
+                        >
+                          &nbsp; Help</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
                   <div
                     class="modal fade"
                     id="exampleModal1"
@@ -2182,7 +2227,7 @@
                     aria-hidden="true"
                   >
                     <div
-                      class="modal-dialog modal-dialog modal-dialog-centered"
+                      class="modal-dialog modal-dialog modal-dialog-centered m-0"
                       role="document"
                     >
                       <div class="modal-content rounded-2">
@@ -2244,7 +2289,7 @@
                               class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn"
                               data-bs-dismiss="modal"
                             >
-                              &nbsp; Cancel</button
+                              Cancel</button
                             ><button
                               class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn"
                             >
@@ -2263,7 +2308,7 @@
                     aria-hidden="true"
                   >
                     <div
-                      class="modal-dialog modal-dialog modal-dialog-centered"
+                      class="modal-dialog modal-dialog modal-dialog-centered m-0"
                       role="document"
                     >
                       <div class="modal-content rounded-2">
@@ -2344,7 +2389,7 @@
                         >
                           <div class="modal-event-visibility">
                             <select
-                              class="event-select px-2 py-2 rounded-2"
+                              class="event-select rounded-2"
                               aria-label="Default select example"
                             >
                               <option selected>Public</option>
@@ -2358,10 +2403,10 @@
                             class="d-flex flex-row justify-content-center align-items-center gap-2"
                           >
                             <button
-                              class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn-2 bi bi-camera-video-fill"
+                              class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn-2 bi bi-camera-video-fill d-flex flex-wrap justify-content-center align-items-center gap-1"
                               data-bs-dismiss="modal"
                             >
-                              &nbsp; Live video
+                              Live video
                             </button>
                             <button
                               class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn"
@@ -2382,7 +2427,7 @@
                     aria-labelledby="exampleModalLongTitle"
                     aria-hidden="true"
                   >
-                    <div class="modal-dialog" role="document">
+                    <div class="modal-dialog m-0" role="document">
                       <div class="modal-content">
                         <div
                           class="modal-header border-light border-opacity-10 d-flex flex-row justify-content-between align-items-center"
@@ -2422,10 +2467,10 @@
                             ></textarea>
                           </div>
                           <div
-                            class="d-flex justify-content-center align-items-center gap-2 w-100 custom-calendar"
+                            class="d-flex justify-content-center align-items-center gap-2 w-100 custom-calendar position-relative"
                           >
                             <div
-                              class="d-flex flex-column justify-content-center align-items-start gap-1 w-100"
+                              class="d-flex flex-column justify-content-center align-items-start gap-1 w-100 position-relative"
                             >
                               <span class="modal-span">Date</span>
                               <input
@@ -2599,52 +2644,12 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="dropdown">
-                    <button
-                      class="bi bi-three-dots d-flex flex-column justify-content-center align-items-center home-share-dropdown-btn rounded-2"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    ></button>
-                    <ul
-                      id="home-share-dropdown-menu"
-                      class="dropdown-menu dropdown-menu-end"
-                    >
-                      <li>
-                        <a
-                          id="home-share-dropdown-items"
-                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-envelope"
-                          href="javascript:void(0)"
-                        >
-                          &nbsp; Create a poll</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          id="home-share-dropdown-items"
-                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-bookmark-check"
-                          href="javascript:void(0)"
-                        >
-                          &nbsp; Ask a Question</a
-                        >
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider bg-light bg-opacity-25" />
-                      </li>
-                      <li>
-                        <a
-                          id="home-share-dropdown-items"
-                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-pencil-square"
-                          href="javascript:void(0)"
-                        >
-                          &nbsp; Help</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
                 </div>
               </div>
+
+
+
+              
             </div>
 
             <div
