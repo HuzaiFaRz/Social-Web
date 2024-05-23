@@ -391,3 +391,34 @@
 //   });
 // }
 
+// var img = document.querySelectorAll("img");
+
+// img.forEach(function (i) {
+//   i.addEventListener("error", function () {
+//     i.style.opacity = "0";
+//   });
+// });
+
+// var reloadContainer = document.querySelector(".reload-container");
+// var reloadBtn = document.querySelector(".reload-btn");
+// var reloadBtnSpinner = document.querySelector(".reload-btn-spinner");
+// var spinnerDot1 = document.querySelector(".spinner-dot-1");
+// var spinnerDot2 = document.querySelector(".spinner-dot-2");
+// var spinnerDot3 = document.querySelector(".spinner-dot-3");
+// function reloadContainerAnimation() {
+//   reloadContainer.style.transition = "all 0.5s linear";
+//   reloadBtn.style.transform = "translateZ(42px)";
+//   reloadBtnSpinner.classList.remove("spinner-border");
+//   spinnerDot1.style.animation = false;
+//   spinnerDot2.style.animation = false;
+//   spinnerDot3.style.animation = false;
+//   reloadBtn.style.opacity = "0";
+//   reloadContainer.style.zIndex = "-99999";
+//   reloadContainer.style.opacity = "0";
+// }
+
+// window.addEventListener("load", function () {
+//   this.setInterval(function () {
+//     reloadContainerAnimation();
+//   },6000);
+// });
