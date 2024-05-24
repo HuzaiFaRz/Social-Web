@@ -1248,7 +1248,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .home-post-info {
-  font-size: 15px;
+  font-size: 13px;
   color: var(--btn-bg-color-2);
 }
 .home-post-img {
@@ -1258,6 +1258,16 @@ input[type="number"]::-webkit-inner-spin-button {
 .home-post-like {
   font-size: 13px;
   color: var(--notification-2);
+}
+.home-post-heart-like{
+  font-size: 13px;
+  color: var(--btn-bg-color-2);
+}
+
+.heart-like{
+  width: 20px ;
+  height: 20px;
+  font-size: 12px;
 }
 .home-post-comment,
 .home-post-share {
@@ -1303,16 +1313,63 @@ input[type="number"]::-webkit-inner-spin-button {
   color: var(--btn-bg-color-2);
 }
 .home-post-growth > span,
-.home-post-growth > li {
+.home-post-growth > li,
+.load-more-reply {
   font-size: 12px;
   color: var(--btn-bg-color-2);
 }
-
+.load-more-reply {
+  color: var(--dropdown-item);
+}
 img {
   color: transparent;
 }
-.home-post-people-comments.two{
+.home-post-people-comments.two {
   width: 75%;
+}
+.card-footer > div > p {
+  font-size: 12px;
+  color: var(--btn-bg-color-2);
+}
+.card-footer > div > a{
+  transition: all 0.3s linear;
+  font-size: 12px;
+}
+.card-footer > div > a:hover {
+  transition: all 0.3s linear;
+  background-color: rgb(13, 110, 253) !important;
+  color: var(--btn-bg-color) !important;
+}
+
+.card-body>p>span{
+  color: var(--active-color);
+}
+
+.card-body>p>span:hover{
+  color:rgb(15, 111, 236) ;
+}
+
+.comment-growth{
+  font-size: 13px;
+  color: var(--btn-bg-color-2);
+  width: 33.33333333333333333%;
+}
+
+
+.comment-growth:hover,.comment-growth-active{
+  background-color: var(--btn-bg);
+  color: var(--notification-2);
+}
+
+a{
+  text-decoration: none !important; 
+}
+.comment-gif{
+  background-color: var(--btn-end-1);
+}
+
+.comment-gif>img{
+  width:300px;height: 300px;
 }
 /* .home-post-growth > span:hover,
 .home-post-growth > li:hover {
@@ -1461,7 +1518,12 @@ img {
   }
 }
 
+
 @media (max-width: 600px) {
+  .comment-growth{
+    width: 100%;
+  }
+  
   .chat-offcanvas-open-btn {
     width: 35px;
     height: 35px;
@@ -1617,7 +1679,7 @@ img {
     width: 200px;
     height: 200px;
   }
-  .home-post-people-comments.two{
+  .home-post-people-comments.two {
     width: 100%;
   }
 }
@@ -1627,6 +1689,9 @@ img {
   }
   .modal-dialog {
     margin: 0;
+  }
+  .post-comment-person-name,.home-post-person-info-name {
+    font-size: 13px;
   }
 }
 @media (max-width: 400px) {
