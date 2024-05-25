@@ -1360,15 +1360,24 @@ img {
 }
 
 .comment-growth {
-  font-size: 13px;
+  transition: all 0.3s linear;
   color: var(--btn-bg-color-2);
+  font-size: 12px;
   width: 33.33333333333333333%;
 }
 
+.post-see-people {
+  transition: all 0.3s linear;
+  font-size: 12px;
+  color: var(--btn-bg-color-2);
+}
+
+.post-see-people:hover,
 .comment-growth:hover,
 .comment-growth-active {
-  background-color: var(--btn-bg);
-  color: var(--notification-2);
+  transition: all 0.3s linear;
+  background-color: rgb(13, 110, 253) !important;
+  color: var(--btn-bg-color) !important;
 }
 
 a {
@@ -1381,11 +1390,109 @@ a {
 .comment-gif > img {
   max-width: 100%;
 }
-
-.post-img-carousel-img {
+.post-images > img {
+  width: 243px;
+  height: 256px;
   max-width: 100%;
 }
 
+.post-images-2 > img,
+.post-images-2 > div > img {
+  width: 243px;
+  height: 119px;
+  max-width: 100%;
+}
+.post-images-2 > div {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+}
+.post-images-2 > div::before {
+  content: "View All";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--btn-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 13px;
+}
+.post-img-carousel-cell {
+  width: 200px !important;
+}
+.post-img-carousel-cell > div {
+  background-color: black;
+}
+.flickity-page-dots {
+  display: none !important;
+}
+
+.flickity-button {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(13, 110, 253);
+  padding: 10px 10px;
+}
+.flickity-button.flickity-prev-next-button.previous {
+  transform: translateX(-100%);
+
+  visibility: hidden;
+  opacity: 0;
+}
+.flickity-button.flickity-prev-next-button.next {
+  transform: translateX(100%);
+
+  visibility: hidden;
+  opacity: 0;
+}
+.post-images-carousel:hover
+  .flickity-button.flickity-prev-next-button.previous {
+  transform: translateX(0%);
+  visibility: visible;
+  opacity: 1;
+}
+
+.post-images-carousel:hover .flickity-button.flickity-prev-next-button.next {
+  transform: translateX(0%);
+  visibility: visible;
+  opacity: 1;
+}
+
+.flickity-button > svg {
+  fill: var(--btn-bg-color);
+}
+
+.flickity-button:hover {
+  background-color: var(--notification-2);
+}
+
+
+.post-img-carousel-cell > div > a {
+  transition: all 0.3s linear;
+  font-size: 14px;
+}
+.post-img-carousel-cell > div > a:hover {
+  transition: all 0.3s linear;
+  background-color: rgb(13, 110, 253) !important;
+  color: var(--btn-bg-color) !important;
+}
+.post-img-carousel-cell > div > small {
+  font-size: 13px;
+  color: var(--btn-bg-color-2);
+}
+
+.post-img-carousel-cell > div > span {
+  font-size: 14px;
+  color: var(--btn-bg-color);
+}
+.post-img-carousel-img {
+  width: 80px;
+  height: 80px;
+}
 /* .home-post-growth > span:hover,
 .home-post-growth > li:hover {
   color: var(--notification-2);
