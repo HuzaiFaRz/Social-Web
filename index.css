@@ -1259,13 +1259,13 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 13px;
   color: var(--notification-2);
 }
-.home-post-heart-like{
+.home-post-heart-like {
   font-size: 13px;
   color: var(--btn-bg-color-2);
 }
 
-.heart-like{
-  width: 20px ;
+.heart-like {
+  width: 20px;
   height: 20px;
   font-size: 12px;
 }
@@ -1327,11 +1327,21 @@ img {
 .home-post-people-comments.two {
   width: 75%;
 }
+
+.home-post-person-info-name {
+  transition: all 0.3s linear;
+}
+
+.home-post-person-info-name:hover {
+  transition: all 0.3s linear;
+  color: var(--notification-2);
+}
+
 .card-footer > div > p {
   font-size: 12px;
   color: var(--btn-bg-color-2);
 }
-.card-footer > div > a{
+.card-footer > div > a {
   transition: all 0.3s linear;
   font-size: 12px;
 }
@@ -1341,36 +1351,41 @@ img {
   color: var(--btn-bg-color) !important;
 }
 
-.card-body>p>span{
+.card-body > p > span {
   color: var(--active-color);
 }
 
-.card-body>p>span:hover{
-  color:rgb(15, 111, 236) ;
+.card-body > p > span:hover {
+  color: rgb(15, 111, 236);
 }
 
-.comment-growth{
+.comment-growth {
   font-size: 13px;
   color: var(--btn-bg-color-2);
   width: 33.33333333333333333%;
 }
 
-
-.comment-growth:hover,.comment-growth-active{
+.comment-growth:hover,
+.comment-growth-active {
   background-color: var(--btn-bg);
   color: var(--notification-2);
 }
 
-a{
-  text-decoration: none !important; 
+a {
+  text-decoration: none !important;
 }
-.comment-gif{
+.comment-gif {
   background-color: var(--btn-end-1);
 }
 
-.comment-gif>img{
-  width:300px;height: 300px;
+.comment-gif > img {
+  max-width: 100%;
 }
+
+.post-img-carousel-img {
+  max-width: 100%;
+}
+
 /* .home-post-growth > span:hover,
 .home-post-growth > li:hover {
   color: var(--notification-2);
@@ -1518,12 +1533,11 @@ a{
   }
 }
 
-
 @media (max-width: 600px) {
-  .comment-growth{
+  .comment-growth {
     width: 100%;
   }
-  
+
   .chat-offcanvas-open-btn {
     width: 35px;
     height: 35px;
@@ -1690,7 +1704,8 @@ a{
   .modal-dialog {
     margin: 0;
   }
-  .post-comment-person-name,.home-post-person-info-name {
+  .post-comment-person-name,
+  .home-post-person-info-name {
     font-size: 13px;
   }
 }
