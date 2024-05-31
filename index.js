@@ -427,3 +427,15 @@
 // const tooltipList = [...tooltipTriggerList].map(
 //   (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
 // );
+
+var postQuestion = document.querySelectorAll(".post-question");
+
+postQuestion.forEach(function (v) {
+  v.addEventListener("click", function () {
+    document
+      .querySelector(".post-question-active")
+      ?.classList.remove("post-question-active");
+
+    v.classList.add("post-question-active");
+  });
+});
