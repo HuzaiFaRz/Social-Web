@@ -18,6 +18,21 @@
   cursor: pointer;
   font-family: "Comfortaa", sans-serif;
 }
+
+
+
+
+*:focus{
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color:  #ffff !important;
+}
+
+
+
+
+
 button {
   transition: all 0.3s linear;
 }
@@ -1531,6 +1546,15 @@ a {
   color: var(--btn-bg-color);
 }
 
+.question-vote-content>li{
+  color: var(--btn-bg-color-2);
+  font-size: 13px;
+}
+
+.question-vote-content>li:hover{
+  color: var(--notification-2);
+}
+
 /* .home-post-growth > span:hover,
 .home-post-growth > li:hover {
   color: var(--notification-2);
@@ -1546,6 +1570,12 @@ a {
 @media (max-width: 1300px) {
   #navbar-dropdown-right {
     height: 550px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .home-profile-banner {
+    width: 500px;
   }
 }
 @media (max-width: 1199px) {
@@ -1564,33 +1594,28 @@ a {
   .page-home {
     margin-top: 4rem;
   }
-}
-@media (max-width: 1200px) {
-  .home-profile-banner {
-    width: 500px;
+  .post-images > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .post-images-2 > img,
+  .post-images-2 > div > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
   }
 }
+
+
+
 @media (max-width: 1150px) {
   .story-time {
     width: 500px;
   }
 }
-@media (max-width: 750px) {
-  .story-header {
-    height: 15%;
-  }
-  .story-body {
-    height: 85%;
-  }
-  .story-time {
-    width: 100%;
-  }
-  .story-close-btn {
-    position: absolute;
-    top: 25%;
-    right: 5%;
-  }
-}
+
 
 @media (max-width: 991px) {
   .page-home {
@@ -1676,19 +1701,26 @@ a {
     justify-content: end;
     align-items: center;
   }
-  .post-images > img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-  }
+ 
+}
 
-  .post-images-2 > img,
-  .post-images-2 > div > img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
+@media (max-width: 750px) {
+  .story-header {
+    height: 15%;
+  }
+  .story-body {
+    height: 85%;
+  }
+  .story-time {
+    width: 100%;
+  }
+  .story-close-btn {
+    position: absolute;
+    top: 25%;
+    right: 5%;
   }
 }
+
 
 @media (max-width: 600px) {
   .comment-growth {
