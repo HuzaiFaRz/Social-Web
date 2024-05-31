@@ -19,19 +19,12 @@
   font-family: "Comfortaa", sans-serif;
 }
 
-
-
-
-*:focus{
+*:focus {
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
-  color:  #ffff !important;
+  color: #ffff !important;
 }
-
-
-
-
 
 button {
   transition: all 0.3s linear;
@@ -1546,13 +1539,32 @@ a {
   color: var(--btn-bg-color);
 }
 
-.question-vote-content>li{
+.question-vote-content > li {
   color: var(--btn-bg-color-2);
   font-size: 13px;
 }
 
-.question-vote-content>li:hover{
+.question-vote-content > li:hover {
   color: var(--notification-2);
+}
+
+.post-link {
+  background-color: var(--btn-bg);
+}
+
+.post-link > a > span {
+  color: var(--notification-2);
+  font-size: 13px;
+}
+
+.post-link > a > h5 {
+  color: var(--btn-bg-color);
+  font-size: 18px;
+}
+
+.post-link > a > small {
+  color: var(--btn-bg-color-2);
+  font-size: 14px;
 }
 
 /* .home-post-growth > span:hover,
@@ -1608,14 +1620,11 @@ a {
   }
 }
 
-
-
 @media (max-width: 1150px) {
   .story-time {
     width: 500px;
   }
 }
-
 
 @media (max-width: 991px) {
   .page-home {
@@ -1701,7 +1710,6 @@ a {
     justify-content: end;
     align-items: center;
   }
- 
 }
 
 @media (max-width: 750px) {
@@ -1720,7 +1728,6 @@ a {
     right: 5%;
   }
 }
-
 
 @media (max-width: 600px) {
   .comment-growth {
