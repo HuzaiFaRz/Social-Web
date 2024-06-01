@@ -439,3 +439,15 @@ postQuestion.forEach(function (v) {
     v.classList.add("post-question-active");
   });
 });
+const player = new Plyr("#player");
+
+var loadingPostBtn = document.querySelector(".loading-post-btn");
+
+loadingPostBtn.addEventListener("click", function () {
+  loadingPostBtn.classList.toggle("loadingPostBtnActive");
+  if (loadingPostBtn.classList.contains("loadingPostBtnActive")) {
+    loadingPostBtn.innerHTML = `<div class="spinner-grow" role="status"></div>`;
+  } else {
+    loadingPostBtn.innerHTML = `<span>Load More</span>`;
+  }
+});

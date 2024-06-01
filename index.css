@@ -20,7 +20,6 @@
 }
 
 *:focus {
-  border: none !important;
   outline: none !important;
   box-shadow: none !important;
   color: #ffff !important;
@@ -56,6 +55,7 @@ button:hover {
   --text-color-end: #bfc0c9;
   --modal-1: #0f0f10;
   --color-hover: #f9f9f9;
+  --end-color: #212529;
 }
 
 html,
@@ -1583,10 +1583,68 @@ a {
   z-index: 111;
 }
 
-/* .home-post-growth > span:hover,
-.home-post-growth > li:hover {
+.post-video {
+  max-width: 100%;
+}
+
+.loading-post-btn {
+  transition: all 0.3s linear;
+  height: 40px;
+  background-color: rgb(13, 110, 253, 0.1);
+  font-size: 14px;
   color: var(--notification-2);
-} */
+}
+.loading-post-btn:hover,
+.loading-post-btn:focus {
+  transition: all 0.3s linear;
+  background-color: rgb(13, 110, 253, 1);
+  color: var(--btn-bg-color);
+}
+.loading-post-btn > div {
+  width: 20px;
+  height: 20px;
+  background-color: var(--btn-bg-color);
+}
+
+.post-ul > div > span {
+  font-size: 13px;
+  color: var(--btn-bg-color-2);
+}
+
+.post-li {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(13, 110, 253, 0.1);
+  color: var(--btn-bg-color-2);
+  font-size: 14px;
+}
+
+.post-li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background-color: rgb(13, 110, 253, 0.3);
+}
+
+.post-li::after {
+  content: "25%";
+  font-size: 15px;
+  color: var(--btn-bg-color-2);
+  position: absolute;
+  top: 0;
+  right: 0%;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1%;
+  background-color: var(--btn-3);
+}
+
 /* Home Page Column 2 */
 /* Home Page Column 2 */
 
@@ -1907,6 +1965,24 @@ a {
   }
   .home-post-people-comments.two {
     width: 100%;
+  }
+  .post-ul > div > span {
+    font-size: 12px;
+    color: var(--btn-bg-color-2);
+  }
+
+  .post-li {
+    font-size: 13px;
+  }
+
+  .post-li::after {
+    font-size: 13px;
+    padding-right: 3%;
+  }
+
+  .post-comment-post-btn {
+    font-size: 13px;
+    padding: 5px 12px !important;
   }
 }
 @media (max-width: 500px) {
