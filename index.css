@@ -715,7 +715,7 @@ navbar-center */
   width: 65px;
   height: 65px;
   position: absolute;
-  top: 10%;
+  top: 26%;
   left: 50%;
   transform: translate(-50%, 0%);
 }
@@ -1533,7 +1533,7 @@ a {
   font-size: 15px;
   font-weight: 900;
 }
-
+.comment-growth:focus,
 .post-question-active {
   background-color: var(--notification-2);
   color: var(--btn-bg-color);
@@ -1565,6 +1565,37 @@ a {
 .post-link > a > small {
   color: var(--btn-bg-color-2);
   font-size: 14px;
+}
+
+.suggest-story {
+  position: relative;
+  overflow: hidden;
+}
+.suggest-story::before {
+  content: "Judy Nguyen";
+  font-size: 13px;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;width: 100%;
+  height: 100%;
+  color: var(--btn-bg-color);
+}
+
+
+
+
+.suggest-story>img{
+  width: 145px;
+  height: 145px;
+  max-width: 100%;
 }
 
 /* .home-post-growth > span:hover,
