@@ -1,10 +1,14 @@
-/* Font ===========================> */
-/* Font ===========================> */
+/* Font */
+/* Font */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+@font-face {
+  font-family: font;
+  src: url(Comfortaa-VariableFont_wght.ttf);
+}
 
-/* Font ===========================> */
-/* Font ===========================> */
+/* Font */
+/* Font */
 
 /* Default ===========================> */
 /* Default ===========================> */
@@ -16,6 +20,7 @@
   -moz-user-select: none;
   -webkit-user-select: none;
   cursor: pointer;
+  font-family: font;
   font-family: "Comfortaa", sans-serif;
 }
 
@@ -1628,21 +1633,14 @@ a {
   height: 100%;
   background-color: rgb(13, 110, 253, 0.3);
 }
-
-.post-li::after {
-  content: "25%";
-  font-size: 15px;
-  color: var(--btn-bg-color-2);
-  position: absolute;
-  top: 0;
-  right: 0%;
-  width: 50px;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 1%;
-  background-color: var(--btn-3);
+.post-li:nth-child(3)::before {
+  width: 15%;
+}
+.post-li:nth-child(4)::before {
+  width: 10%;
+}
+.post-li:nth-child(5)::before {
+  width: 55%;
 }
 
 /* Home Page Column 2 */

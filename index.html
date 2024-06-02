@@ -11,6 +11,14 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -2035,7 +2043,7 @@
             </div>
 
             <div
-              class="col-xl-6 col-lg-12 col-md-12 col-sm-12 d-flex flex-column justify-content-start gap-3"
+              class="col-xl-6 col-lg-12 col-md-12 col-sm-12 d-flex flex-column justify-content-start gap-3 py-3"
             >
               <div
                 class="home-stories justify-content-center align-items-center gap-2"
@@ -2430,35 +2438,29 @@
                           </div>
                         </div>
                         <div
-                          class="modal-footer-2 px-2 py-3 border-top border-light border-opacity-10 d-flex flex-nowrap justify-content-between align-items-center"
+                          class="modal-footer-2 py-3 border-top border-light border-opacity-10 d-flex flex-wrap justify-content-evenly align-items-center w-100 px-1"
                         >
-                          <div class="modal-event-visibility">
-                            <select
-                              class="event-select rounded-2"
-                              aria-label="Default select example"
-                            >
-                              <option selected>Public</option>
-                              <option value="1">Custom</option>
-                              <option value="2">Friend</option>
-                              <option value="3">Only me</option>
-                            </select>
-                          </div>
-
-                          <div
-                            class="d-flex flex-row justify-content-center align-items-center gap-2"
+                          <select
+                            class="event-select rounded-2"
+                            aria-label="Default select example"
                           >
-                            <button
-                              class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn-2 bi bi-camera-video-fill d-flex flex-wrap justify-content-center align-items-center gap-1"
-                              data-bs-dismiss="modal"
-                            >
-                              Live video
-                            </button>
-                            <button
-                              class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn"
-                            >
-                              Post
-                            </button>
-                          </div>
+                            <option selected>Public</option>
+                            <option value="1">Custom</option>
+                            <option value="2">Friend</option>
+                            <option value="3">Only me</option>
+                          </select>
+
+                          <button
+                            class="bg-danger bg-opacity-10 text-danger border-0 px-3 py-2 rounded-2 modal-close-btn-2 bi bi-camera-video-fill d-flex flex-wrap justify-content-center align-items-center gap-1"
+                            data-bs-dismiss="modal"
+                          >
+                            Live video
+                          </button>
+                          <button
+                            class="bg-success bg-opacity-10 text-success border-0 px-3 py-2 rounded-2 modal-post-btn"
+                          >
+                            Post
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -4080,257 +4082,190 @@
                 </div>
               </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
               <div
-              class="home-post card border border-light border-opacity-10 rounded-2 py-2"
-            >
-              <div
-                class="card-header border-0 home-post-person-info d-flex flex-row align-items-center justify-content-between"
+                class="home-post card border border-light border-opacity-10 rounded-2 py-2"
               >
                 <div
-                  class="d-flex flex-row align-items-center justify-content-center gap-2"
+                  class="card-header border-0 home-post-person-info d-flex flex-row align-items-center justify-content-between"
                 >
-                  <img
-                    src="Avatar/04.jpg"
-                    alt="Avatar"
-                    class="rounded-circle home-post-person-info-img"
-                  />
                   <div
-                    class="d-flex flex-column justify-content-center align-items-start"
+                    class="d-flex flex-row align-items-center justify-content-center gap-2"
                   >
-                    <span
-                      class="fw-bolder home-post-person-info-name fw-bolder d-flex flex-row justify-content-center align-items-center gap-3"
+                    <img
+                      src="Avatar/04.jpg"
+                      alt="Avatar"
+                      class="rounded-circle home-post-person-info-img"
+                    />
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-start"
                     >
-                      All in the Mind
-                    </span>
+                      <span
+                        class="fw-bolder home-post-person-info-name fw-bolder d-flex flex-row justify-content-center align-items-center gap-3"
+                      >
+                        All in the Mind
+                      </span>
 
-                    <small class="home-post-person-info-skill"
-                      >19 November at 12:29
-                    </small>
+                      <small class="home-post-person-info-skill"
+                        >19 November at 12:29
+                      </small>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="bi bi-three-dots d-flex flex-column justify-content-center align-items-center home-share-dropdown-btn rounded-2"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></button>
+                    <ul
+                      id="home-share-dropdown-menu"
+                      class="dropdown-menu dropdown-menu-end"
+                    >
+                      <li>
+                        <a
+                          id="home-share-dropdown-items"
+                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-bookmark"
+                          href="javascript:void(0)"
+                        >
+                          &nbsp; Save post</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="home-share-dropdown-items"
+                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-person-x"
+                          href="javascript:void(0)"
+                        >
+                          &nbsp; Unfollow Mind
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          id="home-share-dropdown-items"
+                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-x-circle"
+                          href="javascript:void(0)"
+                        >
+                          &nbsp; Hide Post</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="home-share-dropdown-items"
+                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-slash-circle"
+                          href="javascript:void(0)"
+                        >
+                          &nbsp; Block</a
+                        >
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider bg-light bg-opacity-25" />
+                      </li>
+                      <li>
+                        <a
+                          id="home-share-dropdown-items"
+                          class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-flag"
+                          href="javascript:void(0)"
+                        >
+                          &nbsp; Report post</a
+                        >
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="dropdown">
-                  <button
-                    class="bi bi-three-dots d-flex flex-column justify-content-center align-items-center home-share-dropdown-btn rounded-2"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  ></button>
-                  <ul
-                    id="home-share-dropdown-menu"
-                    class="dropdown-menu dropdown-menu-end"
-                  >
-                    <li>
-                      <a
-                        id="home-share-dropdown-items"
-                        class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-bookmark"
-                        href="javascript:void(0)"
-                      >
-                        &nbsp; Save post</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        id="home-share-dropdown-items"
-                        class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-person-x"
-                        href="javascript:void(0)"
-                      >
-                        &nbsp; Unfollow Mind
-                      </a>
-                    </li>
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center border-0 gap-1 w-100"
+                >
+                  <p class="home-post-info w-100">
+                    How do you protect your business against cyber-crime?
+                  </p>
 
-                    <li>
-                      <a
-                        id="home-share-dropdown-items"
-                        class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-x-circle"
-                        href="javascript:void(0)"
-                      >
-                        &nbsp; Hide Post</a
-                      >
+                  <ul
+                    class="list-unstyled d-flex flex-column justify-content-center align-items-start gap-2 post-ul rounded-2 border border-1 border-dark border-opacity-100 py-2 px-1 w-100"
+                  >
+                    <div
+                      class="d-flex flex-row justify-content-between align-items-center py-2 px-2 w-100"
+                    >
+                      <span>16/20 responded</span>
+                      <span>Results not visible to participants</span>
+                    </div>
+
+                    <li
+                      class="post-li py-2 px-2 fw-bolder rounded-2 w-100 d-flex flex-row justify-content-between align-items-center"
+                    >
+                      We have cybersecurity insurance coverage
+                      <span class="align-self-end">25%</span>
                     </li>
-                    <li>
-                      <a
-                        id="home-share-dropdown-items"
-                        class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-slash-circle"
-                        href="javascript:void(0)"
-                      >
-                        &nbsp; Block</a
-                      >
+                    <li
+                      class="post-li py-2 px-2 fw-bolder rounded-2 w-100 d-flex flex-row justify-content-between align-items-center"
+                    >
+                      Our dedicated staff will protect us
+                      <span class="align-self-end">15%</span>
                     </li>
-                    <li>
-                      <hr class="dropdown-divider bg-light bg-opacity-25" />
+                    <li
+                      class="post-li py-2 px-2 fw-bolder rounded-2 w-100 d-flex flex-row justify-content-between align-items-center"
+                    >
+                      We give regular training for best practices
+                      <span class="align-self-end">10%</span>
                     </li>
-                    <li>
-                      <a
-                        id="home-share-dropdown-items"
-                        class="dropdown-item dropdown-item py-2 px-3 w-100 bi bi-flag"
-                        href="javascript:void(0)"
-                      >
-                        &nbsp; Report post</a
-                      >
+                    <li
+                      class="post-li py-2 px-2 fw-bolder rounded-2 w-100 d-flex flex-row justify-content-between align-items-center"
+                    >
+                      Third-party vendor protection
+                      <span class="align-self-end">55%</span>
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div
-                class="card-body d-flex flex-column justify-content-center align-items-center border-0 gap-1"
-              >
-                <p class="home-post-info w-100">
-                  How do you protect your business against cyber-crime?
-                </p>
 
-                <ul class="list-unstyled d-flex flex-column justify-content-center align-items-start gap-2 post-ul rounded-2 border border-1 border-dark border-opacity-100 py-2 px-2 w-100">
-           
-           
-                  <div class="d-flex flex-row justify-content-between align-items-center py-2 px-2 w-100">
-                    <span>16/20 responded</span>
-                  <span>Results not visible to participants</span>  
+                  <div
+                    class="w-100 d-flex flex-row justify-content-start align-items-center py-2 gap-2 question-vote-content"
+                  >
+                    <li class="list-unstyled fw-900">303 votes</li>
+                    <li class="fw-900">1d Left</li>
                   </div>
-           
-           
-                  <li class="post-li py-2 px-2 fw-bolder rounded-2 w-100">
-                    We have cybersecurity insurance coverage
-                  </li>
-                </ul>
 
+                  <div
+                    class="d-flex flex-row align-items-center justify-content-between w-100 py-3 home-post-l-c-s"
+                  >
+                    <a
+                      href="javascript:void(0)"
+                      class="bi bi-heart-fill text-danger fw-bolder home-post-heart-like"
+                    >
+                      &nbsp; Frances Guerrero and 18 others</a
+                    >
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div
-                  class="w-100 d-flex flex-row justify-content-start align-items-center py-2 gap-2 question-vote-content"
-                >
-                  <li class="list-unstyled fw-900">303 votes</li>
-                  <li class="fw-900">1d Left</li>
+                    <a
+                      href="javascript:void(0)"
+                      class="bi bi-chat-fill fw-bolder home-post-comment"
+                    >
+                      &nbsp; Comments (5)</a
+                    >
+                  </div>
                 </div>
-
-                <div
-                  class="d-flex flex-row align-items-center justify-content-between w-100 py-3 home-post-l-c-s"
-                >
-                  <a
-                    href="javascript:void(0)"
-                    class="bi bi-heart-fill text-danger fw-bolder home-post-heart-like"
+                <div class="card-footer border-0">
+                  <div
+                    class="d-flex flex-row align-items-center justify-content-between w-100 home-post-l-c-s border-top border-bottom border-light border-opacity-10"
                   >
-                    &nbsp; Frances Guerrero and 18 others</a
-                  >
-
-                  <a
-                    href="javascript:void(0)"
-                    class="bi bi-chat-fill fw-bolder home-post-comment"
-                  >
-                    &nbsp; Comments (5)</a
-                  >
+                    <a
+                      href="javascript:void(0)"
+                      class="bi bi-heart text-center comment-growth post-position fw-bolder fw-bolder comment-growth-active py-2 m-2 rounded-2"
+                    >
+                      Liked (76)</a
+                    >
+                    <a
+                      href="javascript:void(0)"
+                      class="bi bi-reply text-center comment-growth post-position fw-bolder fw-bolder py-2 m-2 rounded-2"
+                    >
+                      Share</a
+                    >
+                    <a
+                      href="javascript:void(0)"
+                      class="bi bi-send text-center comment-growth post-position fw-bolder fw-bolder py-2 m-2 rounded-2"
+                    >
+                      Send</a
+                    >
+                  </div>
                 </div>
               </div>
-              <div class="card-footer border-0">
-                <div
-                  class="d-flex flex-row align-items-center justify-content-between w-100 home-post-l-c-s border-top border-bottom border-light border-opacity-10"
-                >
-                  <a
-                    href="javascript:void(0)"
-                    class="bi bi-heart text-center comment-growth post-position fw-bolder fw-bolder comment-growth-active py-2 m-2 rounded-2"
-                  >
-                    Liked (76)</a
-                  >
-                  <a
-                    href="javascript:void(0)"
-                    class="bi bi-reply text-center comment-growth post-position fw-bolder fw-bolder py-2 m-2 rounded-2"
-                  >
-                    Share</a
-                  >
-                  <a
-                    href="javascript:void(0)"
-                    class="bi bi-send text-center comment-growth post-position fw-bolder fw-bolder py-2 m-2 rounded-2"
-                  >
-                    Send</a
-                  >
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
               <div
                 class="home-post card border border-light border-opacity-10 rounded-2 py-2"
@@ -4745,7 +4680,7 @@
                     />
 
                     <form
-                      class="d-flex flex-column justify-content-center align-items-start gap-2 w-100"
+                      class="d-flex flex-column justify-content-center align-items-start gap-3 w-100"
                     >
                       <textarea
                         class="form-control home-post-me-comment-input py-2 border border-light border-opacity-10 py-2"
@@ -5079,7 +5014,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
     <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
