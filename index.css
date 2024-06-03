@@ -1643,6 +1643,14 @@ a {
   width: 55%;
 }
 
+.creater {
+  background-color: var(--btn-bg);
+  font-size: 13px;
+  color: var(--btn-bg-color);
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+
 /* Home Page Column 2 */
 /* Home Page Column 2 */
 

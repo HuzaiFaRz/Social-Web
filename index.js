@@ -402,10 +402,13 @@ function reloadContainerAnimation() {
 }
 
 window.addEventListener("load", function () {
+  document.body.style.overflowY = "hidden";
   this.setInterval(function () {
     reloadContainerAnimation();
+    document.body.style.overflowY = "auto";
   }, 6000);
 });
+
 const tooltipTriggerList = document.querySelectorAll(
   '[data-bs-toggle="tooltip"]'
 );
