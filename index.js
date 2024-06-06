@@ -99,6 +99,7 @@ function chatMassageMaximum() {
       });
       newMassege.innerHTML = chatcontactmassage[0].innerHTML;
     });
+
     chatContacLi[1].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
@@ -210,6 +211,7 @@ function chatMassageMaximum() {
       });
       newMassege.innerHTML = chatcontactmassage[11].innerHTML;
     });
+    break;
   }
   for (var b = 0; b <= chatContactDp.length; b++) {}
   for (var c = 0; c <= chatContactName.length; c++) {}
@@ -404,10 +406,10 @@ function reloadContainerAnimation() {
 
 window.addEventListener("load", function () {
   document.body.style.overflowY = "hidden";
-  this.setInterval(function () {
+  setTimeout(function () {
     reloadContainerAnimation();
     document.body.style.overflowY = "auto";
-  }, 6000);
+  }, 4000);
 });
 
 const tooltipTriggerList = document.querySelectorAll(
