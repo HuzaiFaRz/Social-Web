@@ -92,7 +92,7 @@ function chatMassageMaximum() {
     chatContacLi[0].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/07.jpg";
+        z.setAttribute = ("src", "Avatar/07.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[0].innerHTML;
@@ -102,7 +102,7 @@ function chatMassageMaximum() {
     chatContacLi[1].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/02.jpg";
+        z.setAttribute = ("src", "Avatar/02.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[1].innerHTML;
@@ -112,7 +112,7 @@ function chatMassageMaximum() {
     chatContacLi[2].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/placeholder.jpg";
+        z.setAttribute = ("src", "Avatar/placeholder.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[2].innerHTML;
@@ -122,7 +122,7 @@ function chatMassageMaximum() {
     chatContacLi[3].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/04.jpg";
+        z.setAttribute = ("src", "Avatar/04.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[3].innerHTML;
@@ -132,7 +132,7 @@ function chatMassageMaximum() {
     chatContacLi[4].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/05.jpg";
+        z.setAttribute = ("src", "Avatar/05.jpg");
         z.style.border = "2px solid #0f6fec";
       });
       chatContactMassageName.forEach(function (x) {
@@ -143,7 +143,7 @@ function chatMassageMaximum() {
     chatContacLi[5].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/06.jpg";
+        z.setAttribute = ("src", "Avatar/06.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[5].innerHTML;
@@ -153,7 +153,7 @@ function chatMassageMaximum() {
     chatContacLi[6].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/group-img.avif";
+        z.setAttribute = ("src", "Avatar/group-img.avif");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[6].innerHTML;
@@ -163,7 +163,7 @@ function chatMassageMaximum() {
     chatContacLi[7].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/08.jpg";
+        z.setAttribute = ("src", "Avatar/08.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[7].innerHTML;
@@ -173,7 +173,7 @@ function chatMassageMaximum() {
     chatContacLi[8].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/09.jpg";
+        z.setAttribute = ("src", "Avatar/09.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[8].innerHTML;
@@ -183,7 +183,7 @@ function chatMassageMaximum() {
     chatContacLi[9].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/10.jpg";
+        z.setAttribute = ("src", "Avatar/10.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[9].innerHTML;
@@ -193,7 +193,7 @@ function chatMassageMaximum() {
     chatContacLi[10].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/11.jpg";
+        z.setAttribute = ("src", "Avatar/11.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[10].innerHTML;
@@ -203,7 +203,7 @@ function chatMassageMaximum() {
     chatContacLi[11].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.src = "Avatar/12.jpg";
+        z.setAttribute = ("src", "Avatar/12.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[11].innerHTML;
@@ -399,6 +399,7 @@ function reloadContainerAnimation() {
   reloadBtn.style.opacity = "0";
   reloadContainer.style.zIndex = "-99999";
   reloadContainer.style.opacity = "0";
+  reloadContainer.style.visibility = "hidden";
 }
 
 window.addEventListener("load", function () {

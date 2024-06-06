@@ -100,6 +100,7 @@ img {
   z-index: 10000000000000;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(15px);
+  cursor: not-allowed;
 }
 
 .reload-btn {
@@ -109,10 +110,12 @@ img {
   color: #fff;
   border: none;
   box-shadow: 0 0 50px 0 var(--input-color);
+  cursor: not-allowed;
 }
 .reload-btn-spinner {
   width: 200px;
   height: 200px;
+  cursor: not-allowed;
 }
 
 .spinner-dot-1,
@@ -121,6 +124,7 @@ img {
   width: 10px;
   height: 10px;
   background-color: var(--notification);
+  cursor: not-allowed;
 }
 
 .spinner-dot-1 {
