@@ -409,7 +409,7 @@ window.addEventListener("load", function () {
   setTimeout(function () {
     reloadContainerAnimation();
     document.body.style.overflowY = "auto";
-  }, 4000);
+  }, 3000);
 });
 
 const tooltipTriggerList = document.querySelectorAll(
