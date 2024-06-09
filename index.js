@@ -83,7 +83,7 @@ chatMassageInputMassgese();
 var chatcontactmassage = document.querySelectorAll(".chat-contact-massage");
 var newMassege = document.querySelector(".new-massege");
 var chatMassageOffcanvas = document.querySelector(".offcanvas-end");
-function chatMassageMaximum() {
+function chatbox() {
   chatOffCanvasCloseBtn.addEventListener("click", function () {
     chatMassagebox.style.display = "none";
   });
@@ -92,7 +92,7 @@ function chatMassageMaximum() {
     chatContacLi[0].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.setAttribute = ("src", "Avatar/07.jpg");
+        z.setAttribute("src", "Avatar/07.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[0].innerHTML;
@@ -103,7 +103,7 @@ function chatMassageMaximum() {
     chatContacLi[1].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.setAttribute = ("src", "Avatar/02.jpg");
+        z.setAttribute("src", "Avatar/02.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[1].innerHTML;
@@ -113,17 +113,18 @@ function chatMassageMaximum() {
     chatContacLi[2].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.setAttribute = ("src", "Avatar/placeholder.jpg");
+        z.setAttribute("src", "Avatar/placeholder.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[2].innerHTML;
       });
       newMassege.innerHTML = chatcontactmassage[2].innerHTML;
     });
+
     chatContacLi[3].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.setAttribute = ("src", "Avatar/04.jpg");
+        z.setAttribute("src", "Avatar/04.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[3].innerHTML;
@@ -133,7 +134,7 @@ function chatMassageMaximum() {
     chatContacLi[4].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.setAttribute = ("src", "Avatar/05.jpg");
+        z.setAttribute("src", "Avatar/05.jpg");
         z.style.border = "2px solid #0f6fec";
       });
       chatContactMassageName.forEach(function (x) {
@@ -144,7 +145,7 @@ function chatMassageMaximum() {
     chatContacLi[5].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.setAttribute = ("src", "Avatar/06.jpg");
+        z.setAttribute("src", "Avatar/06.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[5].innerHTML;
@@ -154,7 +155,7 @@ function chatMassageMaximum() {
     chatContacLi[6].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.setAttribute = ("src", "Avatar/group-img.avif");
+        z.setAttribute("src", "Avatar/group-img.avif");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[6].innerHTML;
@@ -164,7 +165,7 @@ function chatMassageMaximum() {
     chatContacLi[7].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.setAttribute = ("src", "Avatar/08.jpg");
+        z.setAttribute("src", "Avatar/08.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[7].innerHTML;
@@ -174,7 +175,7 @@ function chatMassageMaximum() {
     chatContacLi[8].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.setAttribute = ("src", "Avatar/09.jpg");
+        z.setAttribute("src", "Avatar/09.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[8].innerHTML;
@@ -184,7 +185,7 @@ function chatMassageMaximum() {
     chatContacLi[9].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.setAttribute = ("src", "Avatar/10.jpg");
+        z.setAttribute("src", "Avatar/10.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[9].innerHTML;
@@ -194,7 +195,7 @@ function chatMassageMaximum() {
     chatContacLi[10].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.setAttribute = ("src", "Avatar/11.jpg");
+        z.setAttribute("src", "Avatar/11.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[10].innerHTML;
@@ -204,7 +205,7 @@ function chatMassageMaximum() {
     chatContacLi[11].addEventListener("click", function () {
       chatMassagebox.style.display = "flex";
       chatContactMassageDp.forEach(function (z) {
-        z.setAttribute = ("src", "Avatar/12.jpg");
+        z.setAttribute("src", "Avatar/12.jpg");
       });
       chatContactMassageName.forEach(function (x) {
         x.innerHTML = chatContactName[11].innerHTML;
@@ -218,7 +219,7 @@ function chatMassageMaximum() {
   for (var d = 0; d < chatcontactmassage.length; d++) {}
 }
 
-chatMassageMaximum();
+chatbox();
 
 chatContacLi.forEach(function (s) {
   s.addEventListener("click", function () {
@@ -280,50 +281,147 @@ var storyStoryName = document.querySelector(".story-story-name");
 var storyStoryTime = document.querySelector(".story-story-time");
 
 function homeStories() {
-  var homeStoryTimeCurrentInt = null;
-  function showStory(index) {
-    if (homeStoryTimeCurrentInt) {
-      clearInterval(homeStoryTimeCurrentInt);
-    }
+  // for (var w = 0; w < storyName.length; w++) {
+  //   console.log(storyName[w]);
+  // }
+
+  // for (var g = 0; g < storySliderImg.length; g++) {
+  //   console.log(storySliderImg[g]);
+  // }
+
+  for (var r = 0; r < storiesCell.length; r++) {
+    storiesCell[0].addEventListener("click", function () {
+      showStory();
+      storyStoryName.textContent = storyName[0].textContent;
+      storyStoryImg.src = storySliderImg[0].src;
+      storyStoryTime.textContent = 1 + " hour";
+    });
+  }
+  for (var r = 0; r < storiesCell.length; r++) {
+    storiesCell[1].addEventListener("click", function () {
+      showStory();
+      storyStoryName.textContent = storyName[1].textContent;
+      storyStoryImg.src = storySliderImg[1].src;
+      storyStoryTime.textContent = 1 + " hour";
+    });
+  }
+  for (var r = 0; r < storiesCell.length; r++) {
+    storiesCell[2].addEventListener("click", function () {
+      showStory();
+      storyStoryName.textContent = storyName[2].textContent;
+      storyStoryImg.src = storySliderImg[2].src;
+      storyStoryTime.textContent = 1 + " hour";
+    });
+
+    storiesCell[3].addEventListener("click", function () {
+      showStory();
+      storyStoryName.textContent = storyName[3].textContent;
+      storyStoryImg.src = storySliderImg[3].src;
+      storyStoryTime.textContent = 1 + " hour";
+    });
+
+    storiesCell[4].addEventListener("click", function () {
+      showStory();
+      storyStoryName.textContent = storyName[4].textContent;
+      storyStoryImg.src = storySliderImg[4].src;
+      storyStoryTime.textContent = 1 + " hour";
+    });
+
+    storiesCell[5].addEventListener("click", function () {
+      showStory();
+      storyStoryName.textContent = storyName[5].textContent;
+      storyStoryImg.src = storySliderImg[5].src;
+      storyStoryTime.textContent = 1 + " hour";
+    });
+
+    storiesCell[6].addEventListener("click", function () {
+      showStory();
+      storyStoryName.textContent = storyName[6].textContent;
+      storyStoryImg.src = storySliderImg[6].src;
+      storyStoryTime.textContent = 1 + " hour";
+    });
+  }
+
+  function showStory() {
     story.style.transition = "all 0.3s linear";
-    story.style.zIndex = "1000000000";
-    story.style.opacity = "1";
+    story.style.zIndex = "100000";
     story.style.visibility = "visible";
+    story.style.opacity = "1";
     story.style.transform = "rotate(0deg)";
-    storyImg.src = `Post/Story/0${index + 1}.jpg`;
-    storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
-    storyStoryName.textContent = storyName[index].innerHTML;
-    storyStoryImg.src = storySliderImg[index].src;
-    storyStoryTime.textContent = `${(index + 2) * 2} Hour ago`;
+    storyTimeLenght.style.animation = "storytimeani 5s both 0s 1 linear";
     document.body.style.overflow = "hidden";
     homeStoryTimeCurrentInt = setInterval(function () {
       hideStory();
     }, 7000);
-  }
-  function hideStory() {
-    story.style.transition = "all 0.3s linear";
-    story.style.zIndex = "0";
-    story.style.opacity = "0";
-    story.style.visibility = "hidden";
-    story.style.transform = "rotate(-60deg)";
-    document.body.style.overflow = "auto";
-    storyTimeLenght.style.animation = null;
-    if (homeStoryTimeCurrentInt) {
-      clearInterval(homeStoryTimeCurrentInt);
-      homeStoryTimeCurrentInt = null;
-    }
+
+    // storyImg.src = `Post/Story/0${index + 1}.jpg`;
+    // storyStoryName.textContent = storyName[index].innerHTML;
+    // storyStoryImg.src = storySliderImg[index].src;
+    // storyStoryTime.textContent = `${(index + 2) * 2} Hour ago`;
   }
 
-  for (var o = 0; o < storiesCell.length; o++) {
-    storiesCell[o].addEventListener(
-      "click",
-      (function (index) {
-        return function () {
-          showStory(index);
-        };
-      })(o)
-    );
+  function hideStory() {
+    story.style.transition = "all 0.3s linear";
+    story.style.zIndex = "-11111";
+    story.style.visibility = "hidden";
+    story.style.opacity = "0";
+    story.style.transform = "rotate(60deg)";
+    storyTimeLenght.style.animation = false;
+    document.body.style.overflow = "auto";
+    homeStoryTimeCurrentInt = clearInterval(function () {
+      hideStory();
+    }, 7000);
+
+    // storyImg.src = `Post/Story/0${index + 1}.jpg`;
+    // storyStoryName.textContent = storyName[index].innerHTML;
+    // storyStoryImg.src = storySliderImg[index].src;
+    // storyStoryTime.textContent = `${(index + 2) * 2} Hour ago`;
   }
+
+  // var homeStoryTimeCurrentInt = null;
+  // function showStory(index) {
+  //   if (homeStoryTimeCurrentInt) {
+  //     clearInterval(homeStoryTimeCurrentInt);
+  //   }
+  //   story.style.transition = "all 0.3s linear";
+  //   story.style.zIndex = "1000000000";
+  //   story.style.opacity = "1";
+  //   story.style.visibility = "visible";
+  //   story.style.transform = "rotate(0deg)";
+  //   storyImg.src = `Post/Story/0${index + 1}.jpg`;
+  //   storyTimeLenght.style.animation = " storytimeani 5s both 0s 1 linear";
+  //   storyStoryName.textContent = storyName[index].innerHTML;
+  //   storyStoryImg.src = storySliderImg[index].src;
+  //   storyStoryTime.textContent = `${(index + 2) * 2} Hour ago`;
+  //   document.body.style.overflow = "hidden";
+  //   homeStoryTimeCurrentInt = setInterval(function () {
+  //     hideStory();
+  //   }, 7000);
+  // }
+  // function hideStory() {
+  //   story.style.transition = "all 0.3s linear";
+  //   story.style.zIndex = "0";
+  //   story.style.opacity = "0";
+  //   story.style.visibility = "hidden";
+  //   story.style.transform = "rotate(-60deg)";
+  //   document.body.style.overflow = "auto";
+  //   storyTimeLenght.style.animation = null;
+  //   if (homeStoryTimeCurrentInt) {
+  //     clearInterval(homeStoryTimeCurrentInt);
+  //     homeStoryTimeCurrentInt = null;
+  //   }
+  // }
+
+  // for (var o = 0; o < storiesCell.length; o++) {
+  //   storiesCell[o].addEventListener(
+  //     "click",
+  //     (function (index) {
+  //       return function () {
+  //         showStory(index);
+  //       };
+  //     })(o)
+  //   );
+  // }
 
   storyCloseBtn.addEventListener("click", function () {
     hideStory();
@@ -385,24 +483,24 @@ img.forEach(function (i) {
   });
 });
 
-var reloadContainer = document.querySelector(".reload-container");
-var reloadBtn = document.querySelector(".reload-btn");
-var reloadBtnSpinner = document.querySelector(".reload-btn-spinner");
-var spinnerDot1 = document.querySelector(".spinner-dot-1");
-var spinnerDot2 = document.querySelector(".spinner-dot-2");
-var spinnerDot3 = document.querySelector(".spinner-dot-3");
-function reloadContainerAnimation() {
-  reloadContainer.style.transition = "all 0.5s linear";
-  reloadBtn.style.transform = "translateZ(42px)";
-  reloadBtnSpinner.classList.remove("spinner-border");
-  spinnerDot1.style.animation = false;
-  spinnerDot2.style.animation = false;
-  spinnerDot3.style.animation = false;
-  reloadBtn.style.opacity = "0";
-  reloadContainer.style.zIndex = "-99999";
-  reloadContainer.style.opacity = "0";
-  reloadContainer.style.visibility = "hidden";
-}
+// var reloadContainer = document.querySelector(".reload-container");
+// var reloadBtn = document.querySelector(".reload-btn");
+// var reloadBtnSpinner = document.querySelector(".reload-btn-spinner");
+// var spinnerDot1 = document.querySelector(".spinner-dot-1");
+// var spinnerDot2 = document.querySelector(".spinner-dot-2");
+// var spinnerDot3 = document.querySelector(".spinner-dot-3");
+// function reloadContainerAnimation() {
+//   reloadContainer.style.transition = "all 0.5s linear";
+//   reloadBtn.style.transform = "translateZ(42px)";
+//   reloadBtnSpinner.classList.remove("spinner-border");
+//   spinnerDot1.style.animation = false;
+//   spinnerDot2.style.animation = false;
+//   spinnerDot3.style.animation = false;
+//   reloadBtn.style.opacity = "0";
+//   reloadContainer.style.zIndex = "-99999";
+//   reloadContainer.style.opacity = "0";
+//   reloadContainer.style.visibility = "hidden";
+// }
 
 window.addEventListener("load", function () {
   document.body.style.overflowY = "hidden";

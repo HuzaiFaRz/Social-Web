@@ -2,6 +2,7 @@
 /* Font */
 
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
 @font-face {
   font-family: font;
   src: url(Comfortaa-VariableFont_wght.ttf);
@@ -904,14 +905,11 @@ input::-webkit-file-upload-button {
 
 .story {
   background-color: var(--header-color);
-  z-index: -11111;
+   z-index: -11111;
   opacity: 0;
   transform: rotate(60deg);
-  visibility: hidden;
-  /* z-index: 100000;
-  opacity: 1;
-  transform: rotate(0deg);*/
-  visibility: visible;
+  visibility: hidden; 
+
 }
 .story-header {
   position: relative;
