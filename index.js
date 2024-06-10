@@ -552,16 +552,16 @@ loadingPostBtn.addEventListener("click", function () {
 //   chatMassagebox.addEventListener("mousedown", function (e) {
 //     chatMassagebox.classList.add("dragging");
 //   });
-//   document.addEventListener("mousemove", function (dets) {
+//   document.addEventListener("mousemove", function (e) {
 //     if (chatMassagebox.classList.contains("dragging")) {
-//       gsap.to(chatMassagebox, {
-//         y: dets.y,
-//         x: dets.x,
-//         duration:.1
-//       });
+//       // gsap.to(chatMassagebox, {
+//       //   y: dets.y,
+//       //   x: dets.x,
+//       //   duration:.1
+//       // });
 
-//       // chatMassagebox.style.top = e.clientY + "px";
-//       // chatMassagebox.style.left = e.clientX + "px";
+//       chatMassagebox.style.top = e.clientY + "px";
+//       chatMassagebox.style.left = e.clientX + "px";
 //     }
 //   });
 //   document.addEventListener("mouseup", function () {
