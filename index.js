@@ -334,7 +334,7 @@ function homeStories() {
       storyImg.setAttribute("src", "Post/Story/07.jpg");
     });
   }
-  var storyanimationtime;
+  var storyanimationtime = null;
 
   function showStory() {
     story.style.transition = "all 0.3s linear";
@@ -347,7 +347,6 @@ function homeStories() {
     storyanimationtime = setTimeout(function () {
       hideStory();
     }, 6000);
-    console.log(storyanimationtime);
   }
 
   function hideStory() {
@@ -359,10 +358,12 @@ function homeStories() {
     storyTimeLenght.style.animation = false;
     document.body.style.overflow = "auto";
     clearTimeout(storyanimationtime);
+    storyanimationtime = null;
   }
 
   storyCloseBtn.addEventListener("click", function () {
     hideStory();
+    storyanimationtime = null;
   });
 
   // for (var w = 0; w < storyName.length; w++) {
