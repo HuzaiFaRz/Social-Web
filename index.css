@@ -649,7 +649,7 @@ input::-webkit-search-cancel-button {
   background-color: var(--btn-bg);
   color: var(--btn-bg-color-2);
   border: 1px solid transparent;
-  outline: none;
+  cursor: text;
 }
 .chat-massage-input:focus {
   border: 1px solid var(--active-color);
@@ -691,6 +691,9 @@ input::-webkit-search-cancel-button {
   transition: all 0.3s linear;
   background-color: var(--cloud) !important;
   color: var(--btn-bg-color) !important;
+}
+.chat-dropdown-item-icon {
+  color: var(--btn-bg-color-2);
 }
 /* 
 navbar-center */
@@ -905,11 +908,10 @@ input::-webkit-file-upload-button {
 
 .story {
   background-color: var(--header-color);
-   z-index: -11111;
+  z-index: -11111;
   opacity: 0;
   transform: rotate(60deg);
-  visibility: hidden; 
-
+  visibility: hidden;
 }
 .story-header {
   position: relative;
