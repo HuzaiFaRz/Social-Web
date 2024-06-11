@@ -67,10 +67,7 @@ function chatMassageInputMassgese() {
       ${chatMassageInput.value}
       </span><span class="chat-massages-time me">${chatMassageDate} <i class="bi bi-check-lg"></i></span></div></div></div>`;
       chatHistory.appendChild(newMassageElement);
-      localStorage.setItem(
-        "chat",
-        JSON.stringify(chatMassageInput.value, chatMassageDate)
-      );
+
       chatMassageInput.value = "";
       chatScrollToBottom();
     } else {
@@ -334,7 +331,7 @@ function homeStories() {
       storyImg.setAttribute("src", "Post/Story/07.jpg");
     });
   }
-  var storyanimationtime = null;
+  // var storyanimationtime = null;
 
   function showStory() {
     story.style.transition = "all 0.3s linear";
@@ -344,10 +341,11 @@ function homeStories() {
     story.style.transform = "rotate(0deg)";
     storyTimeLenght.style.animation = "storytimeani 5s both 0s 1 linear";
     document.body.style.overflow = "hidden";
-    storyanimationtime = setTimeout(function () {
-      hideStory();
-    }, 6000);
   }
+
+  storyTimeLenght.addEventListener("animationend", function () {
+    hideStory();
+  });
 
   function hideStory() {
     story.style.transition = "all 0.3s linear";
@@ -357,13 +355,10 @@ function homeStories() {
     story.style.transform = "rotate(60deg)";
     storyTimeLenght.style.animation = false;
     document.body.style.overflow = "auto";
-    clearTimeout(storyanimationtime);
-    storyanimationtime = null;
   }
 
   storyCloseBtn.addEventListener("click", function () {
     hideStory();
-    storyanimationtime = null;
   });
 
   // for (var w = 0; w < storyName.length; w++) {
@@ -497,6 +492,7 @@ var reloadBtnSpinner = document.querySelector(".reload-btn-spinner");
 var spinnerDot1 = document.querySelector(".spinner-dot-1");
 var spinnerDot2 = document.querySelector(".spinner-dot-2");
 var spinnerDot3 = document.querySelector(".spinner-dot-3");
+
 function reloadContainerAnimation() {
   reloadContainer.style.transition = "all 0.5s linear";
   reloadBtn.style.transform = "translateZ(42px)";
@@ -509,14 +505,18 @@ function reloadContainerAnimation() {
   reloadContainer.style.opacity = "0";
   reloadContainer.style.visibility = "hidden";
 }
-
-window.addEventListener("load", function () {
-  document.body.style.overflowY = "hidden";
-  setTimeout(function () {
-    reloadContainerAnimation();
-    document.body.style.overflowY = "auto";
-  }, 3000);
+var reloadcontainer = document.querySelector(".reload-container");
+reloadcontainer.addEventListener("animationend", function () {
+  reloadContainerAnimation();
 });
+
+// window.addEventListener("load", function () {
+//   document.body.style.overflowY = "hidden";
+//   setTimeout(function () {
+//     reloadContainerAnimation();
+//     document.body.style.overflowY = "auto";
+//   }, 3000);
+// });
 
 const tooltipTriggerList = document.querySelectorAll(
   '[data-bs-toggle="tooltip"]'
