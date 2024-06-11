@@ -102,11 +102,14 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(15px);
   cursor: not-allowed;
-  animation: reloadbtn 6s linear;
+  animation: reloadbtn 7s linear;
 }
 
 @keyframes reloadbtn {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 1;
   }
   100% {
