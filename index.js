@@ -504,10 +504,15 @@ function reloadContainerAnimation() {
   reloadContainer.style.zIndex = "-99999";
   reloadContainer.style.opacity = "0";
   reloadContainer.style.visibility = "hidden";
+
 }
+
+  document.body.style.overflow = "hidden";
+
 var reloadcontainer = document.querySelector(".reload-container");
 reloadcontainer.addEventListener("animationend", function () {
   reloadContainerAnimation();
+  document.body.style.overflow = "auto";
 });
 
 // window.addEventListener("load", function () {
