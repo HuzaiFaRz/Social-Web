@@ -64,6 +64,12 @@ button:hover {
   --end-color: #212529;
 }
 
+a:focus {
+  background-color: transparent;
+  background-color: transparent !important;
+}
+
+
 html,
 body {
   width: 100%;
