@@ -549,26 +549,18 @@ window.addEventListener("DOMContentLoaded", function () {
 function updateChatContactAttributes() {
   if (window.matchMedia("(max-width: 800px)").matches) {
     chatContacLi.forEach(function (s) {
-      s.addEventListener("click", (e) => {
-        console.log(e.currentTarget);
-        s.setAttribute("data-bs-dismiss", "offcanvas");
-        s.setAttribute("aria-label", "Close");
-      });
+      s.setAttribute("data-bs-dismiss", "offcanvas");
+      s.setAttribute("aria-label", "Close");
     });
   } else {
     chatContacLi.forEach(function (s) {
-      s.addEventListener("click", (e) => {
-        console.log(e.currentTarget);
-        s.setAttribute("data-bs-dismiss", "offcanvas");
-        s.setAttribute("aria-label", "Close");
-      });
+      s.removeAttribute("data-bs-dismiss", "offcanvas");
+      s.removeAttribute("aria-label", "Close");
     });
   }
 }
 updateChatContactAttributes();
 
-
-  
 window.addEventListener("resize", updateChatContactAttributes);
 
 // window.addEventListener("resize", updateChatContactAttributes);
