@@ -64,6 +64,10 @@ var spinnerDot3 = document.querySelector(".spinner-dot-3");
 var reloadcontainer = document.querySelector(".reload-container");
 var postQuestion = document.querySelectorAll(".post-question");
 var loadingPostBtn = document.querySelector(".loading-post-btn");
+var allImg = document.querySelectorAll("img");
+allImg.forEach((data) => {
+  data.setAttribute("loading", "eager");
+});
 
 try {
   window.addEventListener("DOMContentLoaded", function () {
