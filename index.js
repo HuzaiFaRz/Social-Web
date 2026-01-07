@@ -576,27 +576,32 @@ try {
   //   });
   // }
 
-  // function chatMassageBoxMove() {
-  //   chatMassagebox.addEventListener("mousedown", function (e) {
-  //     chatMassagebox.classList.add("dragging");
-  //   });
-  //   document.addEventListener("mousemove", function (e) {
-  //     if (chatMassagebox.classList.contains("dragging")) {
-  //       // gsap.to(chatMassagebox, {
-  //       //   y: dets.y,
-  //       //   x: dets.x,
-  //       //   duration:.1
-  //       // });
+  function chatMassageBoxMove() {
+    chatMassagebox.addEventListener("mousedown", function (e) {
+      chatMassagebox.classList.add("dragging");
+    });
+    document.addEventListener("mousemove", function (e) {
+      if (chatMassagebox.classList.contains("dragging")) {
+        // gsap.to(chatMassagebox, {
+        //   y: dets.y,
+        //   x: dets.x,
+        //   duration:.1
+        // });
 
-  //       chatMassagebox.style.top = e.clientY + "px";
-  //       chatMassagebox.style.left = e.clientX + "px";
-  //     }
-  //   });
-  //   document.addEventListener("mouseup", function () {
-  //     chatMassagebox.classList.remove("dragging");
-  //   });
-  // }
-  // chatMassageBoxMove();
+        chatMassagebox.style.top = e.clientY + "px";
+        chatMassagebox.style.left = e.clientX + "px";
+      }
+    });
+    document.addEventListener("mouseup", function () {
+      chatMassagebox.classList.remove("dragging");
+    });
+  }
+  chatMassageBoxMove();
+
+  const date = new Date();
+  document.querySelector(
+    "#copyright"
+  ).innerHTML = `Social Web. © ${date.getFullYear()} Developed By Huzaifa A`;
 } catch (error) {
   error = "Error";
   console.log(error);
